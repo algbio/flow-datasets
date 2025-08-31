@@ -1,0 +1,94 @@
+#gt5.kmer63.(780000.785000).V25.E38.mincyc8.e0.75
+#construct.py -o cyclic-graphs/ecoli/imperfect-weights/g5-w5000-k63-e0.75/ -g 5 -w 5000 -k 63 --distribution lognormal11 --mincycles 1 --nreads 5 --readlength 1000 -D ecoli -e 0.75
+#kmersize=63
+#windowsize=5000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal11
+#ngenomes=5
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/ecoli/imperfect-weights/g5-w5000-k63-e0.75/
+#pdf=False
+#png=False
+#erroreps=0.75
+#dataset=ecoli
+#abundances=None
+#unique source is 0, unique sink is 1
+#genomes: GCA_000005845.2_ASM584v2.fna.gz GCA_000006665.1_ASM666v1.fna.gz GCA_000007445.1_ASM744v1.fna.gz GCA_000008865.2_ASM886v2.fna.gz GCA_000009565.2_ASM956v1.fna.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 27 0 554 555 569 571 760 781 843 555 569 854 760 781 1109 843 555 569 854 554 555 569 571 555 569 571 1 
+#T 77 0 4842 7603 7666 7828 7891 9499 1 
+#T 44 0 14515 14529 14532 14564 14532 14564 14515 14529 1 
+#T 10 0 14891 4842 7603 14953 7666 7828 15015 7891 9499 15076 1 
+#T 6 0 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 571 1 
+#S 571 1 
+#S 571 1 
+#S 571 1 
+#S 571 1 
+# 1 subpath constraints for genome
+#S 4842 7603 7666 7828 7891 9499 
+#S 9499 1 
+#S 7891 9499 1 
+#S 4842 7603 
+#S 7891 9499 1 
+# 2 subpath constraints for genome
+#S 0 14515 
+#S 0 14515 
+#S 0 14515 
+#S 0 14515 
+#S 0 14515 
+# 3 subpath constraints for genome
+#S 7891 9499 
+#S 7891 9499 15076 
+#S 7891 9499 15076 
+#S 4842 7603 
+#S 4842 7603 
+# 4 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+38
+554 555 51
+555 569 133
+569 571 73
+569 854 57
+571 760 23
+571 555 28
+571 1 33
+760 781 56
+781 843 23
+781 1109 28
+843 555 60
+854 760 25
+854 554 21
+1109 843 31
+4842 7603 77
+7603 7666 78
+7603 14953 12
+7666 7828 85
+7828 7891 82
+7828 15015 12
+7891 9499 83
+9499 1 84
+9499 15076 8
+14515 14529 92
+14529 1 45
+14529 14532 41
+14532 14564 96
+14564 14532 45
+14564 14515 48
+14891 4842 12
+14953 7666 10
+15015 7891 8
+15076 1 9
+0 4842 73
+0 554 26
+0 14515 36
+0 14891 9
+0 1 6

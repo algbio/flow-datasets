@@ -1,0 +1,89 @@
+#gt5.kmer63.(775000.780000).V23.E33.mincyc3.e1.0
+#construct.py -o cyclic-graphs/ecoli/perfect-weights/g5-w5000-k63/ -g 5 -w 5000 -k 63 --distribution lognormal11 --mincycles 1 --nreads 5 --readlength 1000 -D ecoli
+#kmersize=63
+#windowsize=5000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal11
+#ngenomes=5
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/ecoli/perfect-weights/g5-w5000-k63/
+#pdf=False
+#png=False
+#erroreps=1.0
+#dataset=ecoli
+#abundances=None
+#unique source is 0, unique sink is 1
+#genomes: GCA_000005845.2_ASM584v2.fna.gz GCA_000006665.1_ASM666v1.fna.gz GCA_000007445.1_ASM744v1.fna.gz GCA_000008865.2_ASM886v2.fna.gz GCA_000009565.2_ASM956v1.fna.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 28 0 1 
+#T 142 0 4941 5757 5820 5911 5974 6312 6327 6312 6327 6531 6547 6621 6636 6621 6636 6531 6547 7184 7247 9610 9830 1 
+#T 106 0 14769 1 
+#T 16 0 14989 4941 5757 15051 5820 5911 15113 5974 6312 6327 6312 6327 6531 6547 6621 6636 6621 6636 6531 6547 7184 15175 7247 9610 1 
+#T 114 0 20114 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 1 subpath constraints for genome
+#S 7247 9610 9830 
+#S 5974 6312 6327 6312 6327 6531 6547 6621 6636 6621 6636 6531 6547 7184 
+#S 6327 6312 6327 6531 6547 6621 6636 6621 6636 6531 6547 7184 7247 9610 
+#S 6547 6621 6636 6621 6636 6531 6547 7184 7247 9610 
+#S 6621 6636 6621 6636 6531 6547 7184 7247 9610 
+# 2 subpath constraints for genome
+#S 0 14769 
+#S 0 14769 
+#S 0 14769 
+#S 0 14769 
+#S 0 14769 
+# 3 subpath constraints for genome
+#S 7247 9610 
+#S 7247 9610 
+#S 7247 9610 
+#S 7247 9610 
+#S 7247 9610 
+# 4 subpath constraints for genome
+#S 0 20114 
+#S 0 20114 
+#S 0 20114 
+#S 0 20114 
+#S 0 20114 
+33
+4941 5757 158
+5757 5820 142
+5757 15051 16
+5820 5911 158
+5911 5974 142
+5911 15113 16
+5974 6312 158
+6312 6327 316
+6327 6312 158
+6327 6531 158
+6531 6547 316
+6547 6621 158
+6547 7184 158
+6621 6636 316
+6636 6621 158
+6636 6531 158
+7184 7247 142
+7184 15175 16
+7247 9610 158
+9610 1 16
+9610 9830 142
+9830 1 142
+14769 1 106
+14989 4941 16
+15051 5820 16
+15113 5974 16
+15175 7247 16
+20114 1 114
+0 4941 142
+0 1 28
+0 14769 106
+0 14989 16
+0 20114 114

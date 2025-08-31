@@ -1,0 +1,180 @@
+#gt15.kmer63.(1550000.1555000).V34.E54.mincyc1.e0.75
+#construct.py -o cyclic-graphs/ecoli/imperfect-weights/g15-w5000-k63-e0.75/ -g 15 -w 5000 -k 63 --distribution lognormal11 --mincycles 1 --nreads 5 --readlength 1000 -D ecoli -e 0.75
+#kmersize=63
+#windowsize=5000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal11
+#ngenomes=15
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/ecoli/imperfect-weights/g15-w5000-k63-e0.75/
+#pdf=False
+#png=False
+#erroreps=0.75
+#dataset=ecoli
+#abundances=None
+#unique source is 0, unique sink is 1
+#genomes: GCA_000005845.2_ASM584v2.fna.gz GCA_000006665.1_ASM666v1.fna.gz GCA_000007445.1_ASM744v1.fna.gz GCA_000008865.2_ASM886v2.fna.gz GCA_000009565.2_ASM956v1.fna.gz GCA_000010245.1_ASM1024v1.fna.gz GCA_000010385.1_ASM1038v1.fna.gz GCA_000010485.1_ASM1048v1.fna.gz GCA_000010745.1_ASM1074v1.fna.gz GCA_000010765.1_ASM1076v1.fna.gz GCA_000013265.1_ASM1326v1.fna.gz GCA_000013305.1_ASM1330v1.fna.gz GCA_000014845.1_ASM1484v1.fna.gz GCA_000017745.1_ASM1774v1.fna.gz GCA_000017765.1_ASM1776v1.fna.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 30 0 2 2036 2129 2036 2129 3132 4846 1 
+#T 7 0 1 
+#T 5 0 14724 1 
+#T 46 0 19663 1 
+#T 9 0 19689 19767 19842 19857 19960 19978 20126 20153 20263 20285 1 
+#T 40 0 26316 2 2036 2129 2036 2129 3132 1 
+#T 15 0 31255 1 
+#T 19 0 36194 1 
+#T 13 0 41133 1 
+#T 93 0 46072 1 
+#T 14 0 51011 1 
+#T 188 0 52990 19689 19767 53064 19842 19857 53166 19960 19978 53313 20126 20153 53423 20263 20285 55785 1 
+#T 15 0 60724 1 
+#T 11 0 65663 1 
+#T 11 0 70602 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 2129 3132 4846 
+#S 3132 4846 
+#S 2129 3132 4846 
+#S 3132 4846 
+#S 3132 4846 
+# 1 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 2 subpath constraints for genome
+#S 0 14724 
+#S 0 14724 
+#S 0 14724 
+#S 0 14724 
+#S 0 14724 
+# 3 subpath constraints for genome
+#S 0 19663 
+#S 0 19663 
+#S 0 19663 
+#S 0 19663 
+#S 0 19663 
+# 4 subpath constraints for genome
+#S 20153 20263 20285 1 
+#S 20285 1 
+#S 20285 1 
+#S 20285 1 
+#S 20285 1 
+# 5 subpath constraints for genome
+#S 0 26316 2 2036 
+#S 2 2036 2129 2036 2129 3132 
+#S 0 26316 2 2036 
+#S 0 26316 
+#S 0 26316 2 2036 
+# 6 subpath constraints for genome
+#S 0 31255 
+#S 0 31255 
+#S 0 31255 
+#S 0 31255 
+#S 0 31255 
+# 7 subpath constraints for genome
+#S 0 36194 
+#S 0 36194 
+#S 0 36194 
+#S 0 36194 
+#S 0 36194 
+# 8 subpath constraints for genome
+#S 0 41133 
+#S 0 41133 
+#S 0 41133 
+#S 0 41133 
+#S 0 41133 
+# 9 subpath constraints for genome
+#S 0 46072 
+#S 0 46072 
+#S 0 46072 
+#S 0 46072 
+#S 0 46072 
+# 10 subpath constraints for genome
+#S 0 51011 
+#S 0 51011 
+#S 0 51011 
+#S 0 51011 
+#S 0 51011 
+# 11 subpath constraints for genome
+#S 0 52990 19689 19767 
+#S 20285 55785 
+#S 0 52990 19689 19767 53064 19842 19857 53166 19960 19978 53313 20126 20153 53423 
+#S 0 52990 19689 19767 53064 19842 19857 53166 19960 19978 53313 
+#S 20285 55785 
+# 12 subpath constraints for genome
+#S 0 60724 
+#S 0 60724 
+#S 0 60724 
+#S 0 60724 
+#S 0 60724 
+# 13 subpath constraints for genome
+#S 0 65663 
+#S 0 65663 
+#S 0 65663 
+#S 0 65663 
+#S 0 65663 
+# 14 subpath constraints for genome
+#S 0 70602 
+#S 0 70602 
+#S 0 70602 
+#S 0 70602 
+#S 0 70602 
+54
+2 2036 71
+2036 2129 147
+2129 2036 71
+2129 3132 76
+3132 1 39
+3132 4846 25
+4846 1 30
+14724 1 8
+19663 1 42
+19689 19767 201
+19767 19842 7
+19767 53064 198
+19842 19857 192
+19857 19960 7
+19857 53166 189
+19960 19978 182
+19978 20126 8
+19978 53313 194
+20126 20153 187
+20153 20263 7
+20153 53423 182
+20263 20285 207
+20285 1 12
+20285 55785 179
+26316 2 35
+31255 1 13
+36194 1 23
+41133 1 12
+46072 1 90
+51011 1 14
+52990 19689 181
+53064 19842 195
+53166 19960 172
+53313 20126 193
+53423 20263 189
+55785 1 194
+60724 1 14
+65663 1 8
+70602 1 11
+0 2 33
+0 1 7
+0 14724 4
+0 19663 41
+0 19689 7
+0 26316 34
+0 31255 19
+0 36194 14
+0 41133 9
+0 46072 89
+0 51011 16
+0 52990 190
+0 60724 15
+0 65663 9
+0 70602 10

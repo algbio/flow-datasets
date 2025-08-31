@@ -1,0 +1,210 @@
+#gt20.kmer63.(3700000.3705000).V28.E49.mincyc4.e1.0
+#construct.py -o cyclic-graphs/ecoli/perfect-weights/g20-w5000-k63/ -g 20 -w 5000 -k 63 --distribution lognormal11 --mincycles 1 --nreads 5 --readlength 1000 -D ecoli
+#kmersize=63
+#windowsize=5000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal11
+#ngenomes=20
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/ecoli/perfect-weights/g20-w5000-k63/
+#pdf=False
+#png=False
+#erroreps=1.0
+#dataset=ecoli
+#abundances=None
+#unique source is 0, unique sink is 1
+#genomes: GCA_000005845.2_ASM584v2.fna.gz GCA_000006665.1_ASM666v1.fna.gz GCA_000007445.1_ASM744v1.fna.gz GCA_000008865.2_ASM886v2.fna.gz GCA_000009565.2_ASM956v1.fna.gz GCA_000010245.1_ASM1024v1.fna.gz GCA_000010385.1_ASM1038v1.fna.gz GCA_000010485.1_ASM1048v1.fna.gz GCA_000010745.1_ASM1074v1.fna.gz GCA_000010765.1_ASM1076v1.fna.gz GCA_000013265.1_ASM1326v1.fna.gz GCA_000013305.1_ASM1330v1.fna.gz GCA_000014845.1_ASM1484v1.fna.gz GCA_000017745.1_ASM1774v1.fna.gz GCA_000017765.1_ASM1776v1.fna.gz GCA_000017985.1_ASM1798v1.fna.gz GCA_000019385.1_ASM1938v1.fna.gz GCA_000019425.1_ASM1942v1.fna.gz GCA_000019645.1_ASM1964v1.fna.gz GCA_000021125.1_ASM2112v1.fna.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 50 0 1 
+#T 33 0 9879 1 
+#T 21 0 14818 1 
+#T 26 0 19757 1 
+#T 55 0 24696 1 
+#T 79 0 29635 1 
+#T 10 0 34574 1 
+#T 25 0 39513 1 
+#T 28 0 44452 1 
+#T 17 0 49391 1 
+#T 47 0 54330 1 
+#T 367 0 59269 1 
+#T 11 0 64208 1 
+#T 31 0 69147 1 
+#T 5 0 74086 1 
+#T 48 0 74247 74288 74351 74433 74542 74548 74247 74288 76061 74351 74433 76169 74542 74548 1 
+#T 28 0 83832 1 
+#T 43 0 88771 1 
+#T 16 0 93710 1 
+#T 22 0 98649 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 1 subpath constraints for genome
+#S 0 9879 
+#S 0 9879 
+#S 0 9879 
+#S 0 9879 
+#S 0 9879 
+# 2 subpath constraints for genome
+#S 0 14818 
+#S 0 14818 
+#S 0 14818 
+#S 0 14818 
+#S 0 14818 
+# 3 subpath constraints for genome
+#S 0 19757 
+#S 0 19757 
+#S 0 19757 
+#S 0 19757 
+#S 0 19757 
+# 4 subpath constraints for genome
+#S 0 24696 
+#S 0 24696 
+#S 0 24696 
+#S 0 24696 
+#S 0 24696 
+# 5 subpath constraints for genome
+#S 0 29635 
+#S 0 29635 
+#S 0 29635 
+#S 0 29635 
+#S 0 29635 
+# 6 subpath constraints for genome
+#S 0 34574 
+#S 0 34574 
+#S 0 34574 
+#S 0 34574 
+#S 0 34574 
+# 7 subpath constraints for genome
+#S 0 39513 
+#S 0 39513 
+#S 0 39513 
+#S 0 39513 
+#S 0 39513 
+# 8 subpath constraints for genome
+#S 0 44452 
+#S 
+#S 0 44452 
+#S 0 44452 
+#S 0 44452 
+# 9 subpath constraints for genome
+#S 0 49391 
+#S 0 49391 
+#S 0 49391 
+#S 0 49391 
+#S 0 49391 
+# 10 subpath constraints for genome
+#S 0 54330 
+#S 0 54330 
+#S 0 54330 
+#S 0 54330 
+#S 0 54330 
+# 11 subpath constraints for genome
+#S 0 59269 
+#S 0 59269 
+#S 0 59269 
+#S 0 59269 
+#S 0 59269 
+# 12 subpath constraints for genome
+#S 0 64208 
+#S 0 64208 
+#S 0 64208 
+#S 0 64208 
+#S 0 64208 
+# 13 subpath constraints for genome
+#S 0 69147 
+#S 0 69147 
+#S 0 69147 
+#S 0 69147 
+#S 0 69147 
+# 14 subpath constraints for genome
+#S 0 74086 
+#S 0 74086 
+#S 0 74086 
+#S 0 74086 
+#S 0 74086 
+# 15 subpath constraints for genome
+#S 74548 74247 74288 76061 74351 74433 76169 74542 74548 1 
+#S 74548 74247 74288 76061 74351 74433 76169 
+#S 74548 74247 74288 76061 74351 74433 76169 
+#S 74351 74433 76169 74542 74548 1 
+#S 74548 1 
+# 16 subpath constraints for genome
+#S 0 83832 
+#S 0 83832 
+#S 0 83832 
+#S 0 83832 
+#S 0 83832 
+# 17 subpath constraints for genome
+#S 0 88771 
+#S 0 88771 
+#S 0 88771 
+#S 0 88771 
+#S 0 88771 
+# 18 subpath constraints for genome
+#S 0 93710 
+#S 0 93710 
+#S 0 93710 
+#S 0 93710 
+#S 0 93710 
+# 19 subpath constraints for genome
+#S 0 98649 
+#S 0 98649 
+#S 0 98649 
+#S 0 98649 
+#S 0 98649 
+49
+9879 1 33
+14818 1 21
+19757 1 26
+24696 1 55
+29635 1 79
+34574 1 10
+39513 1 25
+44452 1 28
+49391 1 17
+54330 1 47
+59269 1 367
+64208 1 11
+69147 1 31
+74086 1 5
+74247 74288 96
+74288 74351 48
+74288 76061 48
+74351 74433 96
+74433 74542 48
+74433 76169 48
+74542 74548 96
+74548 74247 48
+74548 1 48
+76061 74351 48
+76169 74542 48
+83832 1 28
+88771 1 43
+93710 1 16
+98649 1 22
+0 1 50
+0 9879 33
+0 14818 21
+0 19757 26
+0 24696 55
+0 29635 79
+0 34574 10
+0 39513 25
+0 44452 28
+0 49391 17
+0 54330 47
+0 59269 367
+0 64208 11
+0 69147 31
+0 74086 5
+0 74247 48
+0 83832 28
+0 88771 43
+0 93710 16
+0 98649 22

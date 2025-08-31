@@ -1,0 +1,191 @@
+#gt15.kmer63.(2640000.2645000).V42.E65.mincyc1.e0.75
+#construct.py -o cyclic-graphs/ecoli/imperfect-weights/g15-w5000-k63-e0.75/ -g 15 -w 5000 -k 63 --distribution lognormal11 --mincycles 1 --nreads 5 --readlength 1000 -D ecoli -e 0.75
+#kmersize=63
+#windowsize=5000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal11
+#ngenomes=15
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/ecoli/imperfect-weights/g15-w5000-k63-e0.75/
+#pdf=False
+#png=False
+#erroreps=0.75
+#dataset=ecoli
+#abundances=None
+#unique source is 0, unique sink is 1
+#genomes: GCA_000005845.2_ASM584v2.fna.gz GCA_000006665.1_ASM666v1.fna.gz GCA_000007445.1_ASM744v1.fna.gz GCA_000008865.2_ASM886v2.fna.gz GCA_000009565.2_ASM956v1.fna.gz GCA_000010245.1_ASM1024v1.fna.gz GCA_000010385.1_ASM1038v1.fna.gz GCA_000010485.1_ASM1048v1.fna.gz GCA_000010745.1_ASM1074v1.fna.gz GCA_000010765.1_ASM1076v1.fna.gz GCA_000013265.1_ASM1326v1.fna.gz GCA_000013305.1_ASM1330v1.fna.gz GCA_000014845.1_ASM1484v1.fna.gz GCA_000017745.1_ASM1774v1.fna.gz GCA_000017765.1_ASM1776v1.fna.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 67 0 1345 1346 4940 1 
+#T 122 0 1 
+#T 14 0 14818 1 
+#T 13 0 15946 15956 15946 15956 1 
+#T 32 0 24685 1 
+#T 59 0 1346 4940 26029 1 
+#T 12 0 30968 1 
+#T 11 0 35907 1 
+#T 6 0 40846 1 
+#T 13 0 45785 1 
+#T 65 0 46197 46213 47054 47062 47293 47309 47495 47544 47689 47749 47812 47887 48001 48046 48109 48148 1 
+#T 28 0 55663 1 
+#T 60 0 60602 1 
+#T 77 0 63254 46197 46213 64094 47054 47062 64324 47293 47309 64509 47495 47544 64653 47689 47749 64715 47812 47887 64828 48001 48046 64890 48109 48148 65225 1 
+#T 75 0 70164 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 1346 4940 
+#S 1346 4940 
+#S 1346 4940 
+#S 0 1345 1346 4940 
+#S 1346 4940 
+# 1 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 2 subpath constraints for genome
+#S 0 14818 
+#S 0 14818 
+#S 0 14818 
+#S 0 14818 
+#S 0 14818 
+# 3 subpath constraints for genome
+#S 0 15946 15956 15946 15956 1 
+#S 15956 1 
+#S 15956 1 
+#S 15956 1 
+#S 15956 1 
+# 4 subpath constraints for genome
+#S 0 24685 
+#S 0 24685 
+#S 0 24685 
+#S 0 24685 
+#S 0 24685 
+# 5 subpath constraints for genome
+#S 1346 4940 
+#S 1346 4940 26029 
+#S 1346 4940 
+#S 1346 4940 
+#S 1346 4940 
+# 6 subpath constraints for genome
+#S 0 30968 
+#S 0 30968 
+#S 0 30968 
+#S 0 30968 
+#S 0 30968 
+# 7 subpath constraints for genome
+#S 0 35907 
+#S 0 35907 
+#S 0 35907 
+#S 0 35907 
+#S 0 35907 
+# 8 subpath constraints for genome
+#S 0 40846 
+#S 0 40846 
+#S 0 40846 
+#S 0 40846 
+#S 0 40846 
+# 9 subpath constraints for genome
+#S 0 45785 
+#S 0 45785 
+#S 0 45785 
+#S 0 45785 
+#S 0 45785 
+# 10 subpath constraints for genome
+#S 48148 1 
+#S 48148 1 
+#S 48148 1 
+#S 48148 1 
+#S 0 46197 46213 47054 47062 47293 
+# 11 subpath constraints for genome
+#S 0 55663 
+#S 0 55663 
+#S 0 55663 
+#S 0 55663 
+#S 0 55663 
+# 12 subpath constraints for genome
+#S 0 60602 
+#S 0 60602 
+#S 0 60602 
+#S 0 60602 
+#S 0 60602 
+# 13 subpath constraints for genome
+#S 0 63254 
+#S 0 63254 
+#S 46213 64094 47054 47062 64324 47293 47309 64509 47495 47544 64653 47689 47749 64715 
+#S 48148 65225 
+#S 0 63254 
+# 14 subpath constraints for genome
+#S 0 70164 
+#S 0 70164 
+#S 0 70164 
+#S 0 70164 
+#S 0 70164 
+65
+1345 1346 73
+1346 4940 126
+4940 1 70
+4940 26029 62
+14818 1 18
+15946 15956 24
+15956 15946 12
+15956 1 12
+24685 1 27
+26029 1 52
+30968 1 11
+35907 1 7
+40846 1 8
+45785 1 14
+46197 46213 154
+46213 47054 67
+46213 64094 87
+47054 47062 138
+47062 47293 61
+47062 64324 73
+47293 47309 140
+47309 47495 70
+47309 64509 70
+47495 47544 132
+47544 47689 70
+47544 64653 80
+47689 47749 135
+47749 47812 66
+47749 64715 80
+47812 47887 139
+47887 48001 63
+47887 64828 82
+48001 48046 150
+48046 48109 72
+48046 64890 67
+48109 48148 129
+48148 1 60
+48148 65225 78
+55663 1 22
+60602 1 69
+63254 46197 78
+64094 47054 84
+64324 47293 78
+64509 47495 80
+64653 47689 78
+64715 47812 82
+64828 48001 86
+64890 48109 79
+65225 1 68
+70164 1 71
+0 1346 60
+0 1345 60
+0 1 128
+0 14818 14
+0 15946 12
+0 24685 38
+0 30968 14
+0 35907 10
+0 40846 6
+0 45785 13
+0 46197 72
+0 55663 29
+0 60602 62
+0 63254 79
+0 70164 71

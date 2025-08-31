@@ -1,0 +1,83 @@
+#gt5.kmer63.(665000.670000).V19.E27.mincyc8.e1.0
+#construct.py -o cyclic-graphs/ecoli/perfect-weights/g5-w5000-k63/ -g 5 -w 5000 -k 63 --distribution lognormal11 --mincycles 1 --nreads 5 --readlength 1000 -D ecoli
+#kmersize=63
+#windowsize=5000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal11
+#ngenomes=5
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/ecoli/perfect-weights/g5-w5000-k63/
+#pdf=False
+#png=False
+#erroreps=1.0
+#dataset=ecoli
+#abundances=None
+#unique source is 0, unique sink is 1
+#genomes: GCA_000005845.2_ASM584v2.fna.gz GCA_000006665.1_ASM666v1.fna.gz GCA_000007445.1_ASM744v1.fna.gz GCA_000008865.2_ASM886v2.fna.gz GCA_000009565.2_ASM956v1.fna.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 38 0 1 
+#T 78 0 4941 6482 6495 7128 7146 7209 7215 7446 7506 6482 6495 9057 7128 7146 9119 7209 7215 9533 9839 1 
+#T 170 0 14778 1 
+#T 17 0 15085 4941 6482 6495 7128 7146 7209 7215 7446 15143 7506 6482 6495 9057 7128 7146 9119 7209 7215 9533 1 
+#T 322 0 20082 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 1 subpath constraints for genome
+#S 4941 6482 6495 7128 7146 7209 7215 7446 
+#S 7215 9533 9839 
+#S 4941 6482 6495 7128 7146 7209 7215 7446 
+#S 6495 9057 7128 7146 9119 7209 7215 9533 
+#S 
+# 2 subpath constraints for genome
+#S 0 14778 
+#S 0 14778 
+#S 0 14778 
+#S 0 14778 
+#S 0 14778 
+# 3 subpath constraints for genome
+#S 7506 6482 6495 9057 7128 7146 9119 
+#S 4941 6482 6495 7128 7146 7209 7215 7446 
+#S 7506 6482 6495 9057 7128 7146 9119 7209 7215 9533 
+#S 7506 6482 6495 9057 7128 7146 9119 
+#S 6495 7128 7146 7209 7215 7446 15143 7506 6482 
+# 4 subpath constraints for genome
+#S 0 20082 
+#S 0 20082 
+#S 0 20082 
+#S 0 20082 
+#S 0 20082 
+27
+4941 6482 95
+6482 6495 190
+6495 7128 95
+6495 9057 95
+7128 7146 190
+7146 7209 95
+7146 9119 95
+7209 7215 190
+7215 7446 95
+7215 9533 95
+7446 7506 78
+7446 15143 17
+7506 6482 95
+9057 7128 95
+9119 7209 95
+9533 1 17
+9533 9839 78
+9839 1 78
+14778 1 170
+15085 4941 17
+15143 7506 17
+20082 1 322
+0 4941 78
+0 1 38
+0 14778 170
+0 15085 17
+0 20082 322

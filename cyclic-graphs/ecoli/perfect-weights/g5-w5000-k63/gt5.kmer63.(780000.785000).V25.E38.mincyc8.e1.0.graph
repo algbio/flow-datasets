@@ -1,0 +1,94 @@
+#gt5.kmer63.(780000.785000).V25.E38.mincyc8.e1.0
+#construct.py -o cyclic-graphs/ecoli/perfect-weights/g5-w5000-k63/ -g 5 -w 5000 -k 63 --distribution lognormal11 --mincycles 1 --nreads 5 --readlength 1000 -D ecoli
+#kmersize=63
+#windowsize=5000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal11
+#ngenomes=5
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/ecoli/perfect-weights/g5-w5000-k63/
+#pdf=False
+#png=False
+#erroreps=1.0
+#dataset=ecoli
+#abundances=None
+#unique source is 0, unique sink is 1
+#genomes: GCA_000005845.2_ASM584v2.fna.gz GCA_000006665.1_ASM666v1.fna.gz GCA_000007445.1_ASM744v1.fna.gz GCA_000008865.2_ASM886v2.fna.gz GCA_000009565.2_ASM956v1.fna.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 100 0 554 555 569 571 760 781 843 555 569 854 760 781 1109 843 555 569 854 554 555 569 571 555 569 571 1 
+#T 45 0 4842 7603 7666 7828 7891 9499 1 
+#T 22 0 14515 14529 14532 14564 14532 14564 14515 14529 1 
+#T 36 0 14891 4842 7603 14953 7666 7828 15015 7891 9499 15076 1 
+#T 118 0 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 555 569 854 554 555 569 571 555 569 571 1 
+#S 571 1 
+#S 571 1 
+#S 571 1 
+#S 0 554 555 569 571 760 781 843 555 569 854 760 
+# 1 subpath constraints for genome
+#S 4842 7603 7666 7828 7891 9499 
+#S 4842 7603 
+#S 4842 7603 
+#S 7891 9499 1 
+#S 4842 7603 7666 7828 7891 9499 
+# 2 subpath constraints for genome
+#S 0 14515 
+#S 0 14515 
+#S 0 14515 
+#S 0 14515 
+#S 0 14515 
+# 3 subpath constraints for genome
+#S 4842 7603 
+#S 4842 7603 
+#S 7891 9499 
+#S 7891 9499 15076 
+#S 4842 7603 14953 7666 7828 15015 7891 9499 
+# 4 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+38
+554 555 200
+555 569 500
+569 571 300
+569 854 200
+571 760 100
+571 555 100
+571 1 100
+760 781 200
+781 843 100
+781 1109 100
+843 555 200
+854 760 100
+854 554 100
+1109 843 100
+4842 7603 81
+7603 7666 45
+7603 14953 36
+7666 7828 81
+7828 7891 45
+7828 15015 36
+7891 9499 81
+9499 1 45
+9499 15076 36
+14515 14529 44
+14529 1 22
+14529 14532 22
+14532 14564 44
+14564 14532 22
+14564 14515 22
+14891 4842 36
+14953 7666 36
+15015 7891 36
+15076 1 36
+0 4842 45
+0 554 100
+0 14515 22
+0 14891 36
+0 1 118

@@ -1,0 +1,80 @@
+#gt5.kmer63.(865000.870000).V16.E24.mincyc5.e1.0
+#construct.py -o cyclic-graphs/ecoli/perfect-weights/g5-w5000-k63/ -g 5 -w 5000 -k 63 --distribution lognormal11 --mincycles 1 --nreads 5 --readlength 1000 -D ecoli
+#kmersize=63
+#windowsize=5000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal11
+#ngenomes=5
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/ecoli/perfect-weights/g5-w5000-k63/
+#pdf=False
+#png=False
+#erroreps=1.0
+#dataset=ecoli
+#abundances=None
+#unique source is 0, unique sink is 1
+#genomes: GCA_000005845.2_ASM584v2.fna.gz GCA_000006665.1_ASM666v1.fna.gz GCA_000007445.1_ASM744v1.fna.gz GCA_000008865.2_ASM886v2.fna.gz GCA_000009565.2_ASM956v1.fna.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 12 0 1 
+#T 147 0 6572 6573 6587 6591 6594 6680 6699 6761 6573 6587 6591 6680 6699 6927 6761 6573 6587 6929 6572 6573 6587 6929 9806 1 
+#T 16 0 14745 1 
+#T 9 0 6594 6680 6699 6761 6573 6587 6591 6680 6699 6927 6761 6573 6587 6929 6572 6573 6587 6929 9806 16398 1 
+#T 34 0 21337 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 1 subpath constraints for genome
+#S 6929 9806 
+#S 0 6572 
+#S 0 6572 
+#S 6591 6680 6699 6927 6761 6573 6587 6929 6572 6573 6587 6929 9806 
+#S 0 6572 6573 6587 6591 6594 6680 6699 6761 6573 6587 6591 6680 6699 6927 6761 6573 6587 6929 6572 
+# 2 subpath constraints for genome
+#S 0 14745 
+#S 0 14745 
+#S 0 14745 
+#S 0 14745 
+#S 0 14745 
+# 3 subpath constraints for genome
+#S 9806 16398 
+#S 9806 16398 
+#S 6929 9806 16398 
+#S 6929 6572 6573 6587 6929 9806 
+#S 6929 9806 16398 
+# 4 subpath constraints for genome
+#S 0 21337 
+#S 0 21337 
+#S 0 21337 
+#S 0 21337 
+#S 0 21337 
+24
+6572 6573 303
+6573 6587 615
+6587 6591 303
+6587 6929 312
+6591 6594 147
+6591 6680 156
+6594 6680 156
+6680 6699 312
+6699 6761 156
+6699 6927 156
+6761 6573 312
+6927 6761 156
+6929 6572 156
+6929 9806 156
+9806 1 147
+9806 16398 9
+14745 1 16
+16398 1 9
+21337 1 34
+0 6594 9
+0 1 12
+0 6572 147
+0 14745 16
+0 21337 34

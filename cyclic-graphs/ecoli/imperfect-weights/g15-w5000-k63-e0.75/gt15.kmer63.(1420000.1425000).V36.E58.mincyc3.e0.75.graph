@@ -1,0 +1,184 @@
+#gt15.kmer63.(1420000.1425000).V36.E58.mincyc3.e0.75
+#construct.py -o cyclic-graphs/ecoli/imperfect-weights/g15-w5000-k63-e0.75/ -g 15 -w 5000 -k 63 --distribution lognormal11 --mincycles 1 --nreads 5 --readlength 1000 -D ecoli -e 0.75
+#kmersize=63
+#windowsize=5000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal11
+#ngenomes=15
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/ecoli/imperfect-weights/g15-w5000-k63-e0.75/
+#pdf=False
+#png=False
+#erroreps=0.75
+#dataset=ecoli
+#abundances=None
+#unique source is 0, unique sink is 1
+#genomes: GCA_000005845.2_ASM584v2.fna.gz GCA_000006665.1_ASM666v1.fna.gz GCA_000007445.1_ASM744v1.fna.gz GCA_000008865.2_ASM886v2.fna.gz GCA_000009565.2_ASM956v1.fna.gz GCA_000010245.1_ASM1024v1.fna.gz GCA_000010385.1_ASM1038v1.fna.gz GCA_000010485.1_ASM1048v1.fna.gz GCA_000010745.1_ASM1074v1.fna.gz GCA_000010765.1_ASM1076v1.fna.gz GCA_000013265.1_ASM1326v1.fna.gz GCA_000013305.1_ASM1330v1.fna.gz GCA_000014845.1_ASM1484v1.fna.gz GCA_000017745.1_ASM1774v1.fna.gz GCA_000017765.1_ASM1776v1.fna.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 31 0 2 3226 3343 3509 1 
+#T 27 0 1 
+#T 65 0 3343 3509 14651 1 
+#T 9 0 19590 1 
+#T 64 0 24529 1 
+#T 26 0 26243 2 3226 1 
+#T 17 0 26244 26261 26324 26426 26574 26579 26715 26765 1 
+#T 126 0 36121 1 
+#T 15 0 36359 36377 36440 36458 36359 36377 36598 36440 36458 36678 36704 36678 36704 1 
+#T 31 0 45934 1 
+#T 19 0 50873 1 
+#T 26 0 55812 1 
+#T 11 0 58821 26244 26261 58883 26324 26426 59030 26574 26579 59165 26715 26765 60573 1 
+#T 23 0 65512 1 
+#T 66 0 70451 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 2 3226 
+#S 2 3226 
+#S 2 3226 
+#S 3509 1 
+#S 2 3226 
+# 1 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 2 subpath constraints for genome
+#S 3509 14651 
+#S 3509 14651 
+#S 3509 14651 
+#S 3509 14651 
+#S 0 3343 
+# 3 subpath constraints for genome
+#S 0 19590 
+#S 0 19590 
+#S 0 19590 
+#S 0 19590 
+#S 0 19590 
+# 4 subpath constraints for genome
+#S 0 24529 
+#S 
+#S 0 24529 
+#S 0 24529 
+#S 0 24529 
+# 5 subpath constraints for genome
+#S 2 3226 
+#S 2 3226 
+#S 2 3226 
+#S 2 3226 
+#S 2 3226 
+# 6 subpath constraints for genome
+#S 26765 1 
+#S 26765 1 
+#S 26765 1 
+#S 26765 1 
+#S 26765 1 
+# 7 subpath constraints for genome
+#S 0 36121 
+#S 0 36121 
+#S 0 36121 
+#S 0 36121 
+#S 0 36121 
+# 8 subpath constraints for genome
+#S 36704 1 
+#S 36458 36359 36377 36598 36440 36458 36678 36704 36678 36704 1 
+#S 36440 36458 36678 36704 36678 36704 1 
+#S 36377 36598 36440 36458 36678 36704 36678 36704 1 
+#S 36704 1 
+# 9 subpath constraints for genome
+#S 0 45934 
+#S 0 45934 
+#S 0 45934 
+#S 0 45934 
+#S 0 45934 
+# 10 subpath constraints for genome
+#S 0 50873 
+#S 0 50873 
+#S 0 50873 
+#S 0 50873 
+#S 0 50873 
+# 11 subpath constraints for genome
+#S 0 55812 
+#S 0 55812 
+#S 0 55812 
+#S 0 55812 
+#S 0 55812 
+# 12 subpath constraints for genome
+#S 26765 60573 
+#S 0 58821 
+#S 0 58821 
+#S 26765 60573 
+#S 26765 60573 
+# 13 subpath constraints for genome
+#S 0 65512 
+#S 0 65512 
+#S 0 65512 
+#S 0 65512 
+#S 0 65512 
+# 14 subpath constraints for genome
+#S 0 70451 
+#S 0 70451 
+#S 0 70451 
+#S 0 70451 
+#S 0 70451 
+58
+2 3226 61
+3226 1 31
+3226 3343 35
+3343 3509 98
+3509 1 33
+3509 14651 59
+14651 1 63
+19590 1 12
+24529 1 56
+26243 2 25
+26244 26261 28
+26261 26324 18
+26261 58883 8
+26324 26426 31
+26426 26574 18
+26426 59030 12
+26574 26579 27
+26579 26715 22
+26579 59165 15
+26715 26765 25
+26765 1 18
+26765 60573 14
+36121 1 134
+36359 36377 25
+36377 36440 12
+36377 36598 17
+36440 36458 25
+36458 36359 13
+36458 36678 12
+36598 36440 11
+36678 36704 28
+36704 36678 16
+36704 1 15
+45934 1 35
+50873 1 16
+55812 1 29
+58821 26244 10
+58883 26324 15
+59030 26574 15
+59165 26715 7
+60573 1 12
+65512 1 21
+70451 1 69
+0 2 37
+0 26244 19
+0 1 21
+0 3343 61
+0 19590 11
+0 24529 65
+0 26243 24
+0 36121 113
+0 36359 11
+0 45934 25
+0 50873 21
+0 55812 22
+0 58821 8
+0 65512 23
+0 70451 64

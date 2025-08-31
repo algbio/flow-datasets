@@ -1,0 +1,90 @@
+#gt5.kmer63.(595000.600000).V24.E34.mincyc2.e1.0
+#construct.py -o cyclic-graphs/ecoli/perfect-weights/g5-w5000-k63/ -g 5 -w 5000 -k 63 --distribution lognormal11 --mincycles 1 --nreads 5 --readlength 1000 -D ecoli
+#kmersize=63
+#windowsize=5000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal11
+#ngenomes=5
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/ecoli/perfect-weights/g5-w5000-k63/
+#pdf=False
+#png=False
+#erroreps=1.0
+#dataset=ecoli
+#abundances=None
+#unique source is 0, unique sink is 1
+#genomes: GCA_000005845.2_ASM584v2.fna.gz GCA_000006665.1_ASM666v1.fna.gz GCA_000007445.1_ASM744v1.fna.gz GCA_000008865.2_ASM886v2.fna.gz GCA_000009565.2_ASM956v1.fna.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 63 0 1 
+#T 31 0 4942 4943 6137 6195 6258 6307 6458 6465 6528 7990 8053 8659 8722 9572 9879 1 
+#T 29 0 14818 1 
+#T 23 0 4943 6137 6195 14880 6258 6307 14957 6137 6195 14880 6258 6307 14957 6458 6465 15153 6528 7990 15215 8053 8659 15277 8722 9572 1 
+#T 18 0 20216 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 1 subpath constraints for genome
+#S 8722 9572 9879 
+#S 8659 8722 9572 9879 
+#S 8722 9572 9879 
+#S 6528 7990 
+#S 4943 6137 6195 6258 6307 6458 6465 6528 
+# 2 subpath constraints for genome
+#S 0 14818 
+#S 0 14818 
+#S 0 14818 
+#S 0 14818 
+#S 0 14818 
+# 3 subpath constraints for genome
+#S 6307 14957 6458 6465 15153 6528 7990 
+#S 8722 9572 
+#S 4943 6137 
+#S 4943 6137 6195 14880 6258 6307 14957 6137 6195 14880 6258 6307 14957 6458 6465 15153 6528 7990 
+#S 8053 8659 15277 8722 9572 
+# 4 subpath constraints for genome
+#S 
+#S 0 20216 
+#S 0 20216 
+#S 0 20216 
+#S 0 20216 
+34
+4942 4943 31
+4943 6137 54
+6137 6195 77
+6195 6258 31
+6195 14880 46
+6258 6307 77
+6307 6458 31
+6307 14957 46
+6458 6465 54
+6465 6528 31
+6465 15153 23
+6528 7990 54
+7990 8053 31
+7990 15215 23
+8053 8659 54
+8659 8722 31
+8659 15277 23
+8722 9572 54
+9572 1 23
+9572 9879 31
+9879 1 31
+14818 1 29
+14880 6258 46
+14957 6137 23
+14957 6458 23
+15153 6528 23
+15215 8053 23
+15277 8722 23
+20216 1 18
+0 4943 23
+0 1 63
+0 4942 31
+0 14818 29
+0 20216 18

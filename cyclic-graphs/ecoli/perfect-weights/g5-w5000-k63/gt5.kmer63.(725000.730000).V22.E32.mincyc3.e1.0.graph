@@ -1,0 +1,88 @@
+#gt5.kmer63.(725000.730000).V22.E32.mincyc3.e1.0
+#construct.py -o cyclic-graphs/ecoli/perfect-weights/g5-w5000-k63/ -g 5 -w 5000 -k 63 --distribution lognormal11 --mincycles 1 --nreads 5 --readlength 1000 -D ecoli
+#kmersize=63
+#windowsize=5000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal11
+#ngenomes=5
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/ecoli/perfect-weights/g5-w5000-k63/
+#pdf=False
+#png=False
+#erroreps=1.0
+#dataset=ecoli
+#abundances=None
+#unique source is 0, unique sink is 1
+#genomes: GCA_000005845.2_ASM584v2.fna.gz GCA_000006665.1_ASM666v1.fna.gz GCA_000007445.1_ASM744v1.fna.gz GCA_000008865.2_ASM886v2.fna.gz GCA_000009565.2_ASM956v1.fna.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 22 0 1 
+#T 26 0 4941 5771 5834 6352 6415 8709 8772 9660 9879 1 
+#T 22 0 14181 14196 14181 14196 14400 14408 14491 14505 14491 14505 14400 14408 1 
+#T 47 0 14997 4941 5771 15059 5834 6352 15121 6415 8709 15183 8772 9660 1 
+#T 162 0 20122 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 1 subpath constraints for genome
+#S 6415 8709 
+#S 8772 9660 9879 
+#S 5834 6352 6415 8709 
+#S 6415 8709 
+#S 6415 8709 
+# 2 subpath constraints for genome
+#S 0 14181 
+#S 0 14181 
+#S 0 14181 
+#S 0 14181 14196 14181 14196 14400 14408 14491 14505 14491 
+#S 0 14181 
+# 3 subpath constraints for genome
+#S 5771 15059 5834 6352 15121 6415 8709 
+#S 4941 5771 15059 5834 6352 15121 6415 8709 
+#S 4941 5771 15059 5834 6352 15121 6415 8709 
+#S 8772 9660 
+#S 6415 8709 
+# 4 subpath constraints for genome
+#S 0 20122 
+#S 0 20122 
+#S 0 20122 
+#S 0 20122 
+#S 0 20122 
+32
+4941 5771 73
+5771 5834 26
+5771 15059 47
+5834 6352 73
+6352 6415 26
+6352 15121 47
+6415 8709 73
+8709 8772 26
+8709 15183 47
+8772 9660 73
+9660 1 47
+9660 9879 26
+9879 1 26
+14181 14196 44
+14196 14181 22
+14196 14400 22
+14400 14408 44
+14408 1 22
+14408 14491 22
+14491 14505 44
+14505 14491 22
+14505 14400 22
+14997 4941 47
+15059 5834 47
+15121 6415 47
+15183 8772 47
+20122 1 162
+0 4941 26
+0 1 22
+0 14181 22
+0 14997 47
+0 20122 162

@@ -1,0 +1,86 @@
+#gt5.kmer63.(930000.935000).V21.E30.mincyc2.e1.0
+#construct.py -o cyclic-graphs/ecoli/perfect-weights/g5-w5000-k63/ -g 5 -w 5000 -k 63 --distribution lognormal11 --mincycles 1 --nreads 5 --readlength 1000 -D ecoli
+#kmersize=63
+#windowsize=5000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal11
+#ngenomes=5
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/ecoli/perfect-weights/g5-w5000-k63/
+#pdf=False
+#png=False
+#erroreps=1.0
+#dataset=ecoli
+#abundances=None
+#unique source is 0, unique sink is 1
+#genomes: GCA_000005845.2_ASM584v2.fna.gz GCA_000006665.1_ASM666v1.fna.gz GCA_000007445.1_ASM744v1.fna.gz GCA_000008865.2_ASM886v2.fna.gz GCA_000009565.2_ASM956v1.fna.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 55 0 1 
+#T 69 0 6591 6592 7008 7071 7130 7193 8615 8678 9879 1 
+#T 17 0 14818 1 
+#T 84 0 6592 7008 14880 7071 7130 14942 7193 8615 15004 8678 9879 16655 1 
+#T 32 0 17195 17294 17351 17370 17195 17294 17427 17351 17370 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 1 subpath constraints for genome
+#S 7193 8615 
+#S 6592 7008 7071 7130 7193 8615 
+#S 7193 8615 8678 9879 
+#S 7193 8615 8678 9879 
+#S 0 6591 6592 7008 7071 7130 7193 8615 
+# 2 subpath constraints for genome
+#S 0 14818 
+#S 0 14818 
+#S 0 14818 
+#S 0 14818 
+#S 0 14818 
+# 3 subpath constraints for genome
+#S 9879 16655 
+#S 7193 8615 15004 8678 9879 
+#S 7193 8615 15004 8678 9879 
+#S 9879 16655 
+#S 7193 8615 15004 8678 9879 
+# 4 subpath constraints for genome
+#S 17370 1 
+#S 17370 1 
+#S 17370 1 
+#S 17370 1 
+#S 17370 1 
+30
+6591 6592 69
+6592 7008 153
+7008 7071 69
+7008 14880 84
+7071 7130 153
+7130 7193 69
+7130 14942 84
+7193 8615 153
+8615 8678 69
+8615 15004 84
+8678 9879 153
+9879 1 69
+9879 16655 84
+14818 1 17
+14880 7071 84
+14942 7193 84
+15004 8678 84
+16655 1 84
+17195 17294 64
+17294 17351 32
+17294 17427 32
+17351 17370 64
+17370 17195 32
+17370 1 32
+17427 17351 32
+0 6592 84
+0 1 55
+0 6591 69
+0 14818 17
+0 17195 32

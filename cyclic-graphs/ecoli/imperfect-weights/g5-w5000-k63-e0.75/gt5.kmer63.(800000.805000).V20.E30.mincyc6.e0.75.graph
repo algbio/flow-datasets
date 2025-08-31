@@ -1,0 +1,86 @@
+#gt5.kmer63.(800000.805000).V20.E30.mincyc6.e0.75
+#construct.py -o cyclic-graphs/ecoli/imperfect-weights/g5-w5000-k63-e0.75/ -g 5 -w 5000 -k 63 --distribution lognormal11 --mincycles 1 --nreads 5 --readlength 1000 -D ecoli -e 0.75
+#kmersize=63
+#windowsize=5000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal11
+#ngenomes=5
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/ecoli/imperfect-weights/g5-w5000-k63-e0.75/
+#pdf=False
+#png=False
+#erroreps=0.75
+#dataset=ecoli
+#abundances=None
+#unique source is 0, unique sink is 1
+#genomes: GCA_000005845.2_ASM584v2.fna.gz GCA_000006665.1_ASM666v1.fna.gz GCA_000007445.1_ASM744v1.fna.gz GCA_000008865.2_ASM886v2.fna.gz GCA_000009565.2_ASM956v1.fna.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 24 0 1 
+#T 30 0 4941 6087 6150 9661 9879 1 
+#T 66 0 13103 13104 13118 13122 13209 13230 13292 13104 13118 13122 13394 13209 13230 13456 13292 13104 13118 13458 13103 13104 13118 13104 13118 13458 1 
+#T 63 0 14946 4941 6087 15008 6150 9661 1 
+#T 4 0 19947 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 1 subpath constraints for genome
+#S 6150 9661 
+#S 6150 9661 
+#S 6150 9661 
+#S 6150 9661 
+#S 6150 9661 
+# 2 subpath constraints for genome
+#S 13458 1 
+#S 0 13103 13104 13118 13122 13209 13230 13292 13104 13118 13122 13394 13209 13230 13456 13292 13104 13118 13458 13103 13104 13118 13104 13118 13458 1 
+#S 0 13103 
+#S 13458 1 
+#S 0 13103 
+# 3 subpath constraints for genome
+#S 6150 9661 
+#S 6150 9661 
+#S 4941 6087 15008 6150 9661 
+#S 4941 6087 15008 6150 9661 
+#S 6150 9661 
+# 4 subpath constraints for genome
+#S 0 19947 
+#S 0 19947 
+#S 0 19947 
+#S 0 19947 
+#S 0 19947 
+30
+4941 6087 86
+6087 6150 35
+6087 15008 64
+6150 9661 91
+9661 1 58
+9661 9879 26
+9879 1 27
+13103 13104 138
+13104 13118 332
+13118 13122 119
+13118 13458 132
+13118 13104 72
+13122 13209 61
+13122 13394 73
+13209 13230 123
+13230 13292 57
+13230 13456 73
+13292 13104 127
+13394 13209 66
+13456 13292 74
+13458 13103 61
+13458 1 63
+14946 4941 70
+15008 6150 54
+19947 1 4
+0 4941 36
+0 1 22
+0 13103 65
+0 14946 56
+0 19947 2

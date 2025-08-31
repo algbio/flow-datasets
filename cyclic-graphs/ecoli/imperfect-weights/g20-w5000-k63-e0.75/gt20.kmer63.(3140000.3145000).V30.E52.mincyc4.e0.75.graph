@@ -1,0 +1,213 @@
+#gt20.kmer63.(3140000.3145000).V30.E52.mincyc4.e0.75
+#construct.py -o cyclic-graphs/ecoli/imperfect-weights/g20-w5000-k63-e0.75/ -g 20 -w 5000 -k 63 --distribution lognormal11 --mincycles 1 --nreads 5 --readlength 1000 -D ecoli -e 0.75
+#kmersize=63
+#windowsize=5000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal11
+#ngenomes=20
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/ecoli/imperfect-weights/g20-w5000-k63-e0.75/
+#pdf=False
+#png=False
+#erroreps=0.75
+#dataset=ecoli
+#abundances=None
+#unique source is 0, unique sink is 1
+#genomes: GCA_000005845.2_ASM584v2.fna.gz GCA_000006665.1_ASM666v1.fna.gz GCA_000007445.1_ASM744v1.fna.gz GCA_000008865.2_ASM886v2.fna.gz GCA_000009565.2_ASM956v1.fna.gz GCA_000010245.1_ASM1024v1.fna.gz GCA_000010385.1_ASM1038v1.fna.gz GCA_000010485.1_ASM1048v1.fna.gz GCA_000010745.1_ASM1074v1.fna.gz GCA_000010765.1_ASM1076v1.fna.gz GCA_000013265.1_ASM1326v1.fna.gz GCA_000013305.1_ASM1330v1.fna.gz GCA_000014845.1_ASM1484v1.fna.gz GCA_000017745.1_ASM1774v1.fna.gz GCA_000017765.1_ASM1776v1.fna.gz GCA_000017985.1_ASM1798v1.fna.gz GCA_000019385.1_ASM1938v1.fna.gz GCA_000019425.1_ASM1942v1.fna.gz GCA_000019645.1_ASM1964v1.fna.gz GCA_000021125.1_ASM2112v1.fna.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 7 0 1345 1346 4940 1 
+#T 25 0 1 
+#T 26 0 14818 1 
+#T 36 0 19757 1 
+#T 12 0 24696 1 
+#T 372 0 1346 4940 26040 1 
+#T 76 0 30979 1 
+#T 41 0 35918 1 
+#T 28 0 40857 1 
+#T 131 0 45796 1 
+#T 114 0 50735 1 
+#T 55 0 55674 1 
+#T 16 0 60613 1 
+#T 34 0 65552 1 
+#T 23 0 70491 1 
+#T 45 0 75430 1 
+#T 14 0 75521 75547 75652 75724 75787 75853 75521 75547 79976 75652 75724 80038 75787 75853 1 
+#T 4 0 85141 1 
+#T 12 0 90080 1 
+#T 18 0 95019 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 0 1345 1346 4940 
+#S 1346 4940 
+#S 1346 4940 
+#S 0 1345 
+#S 1346 4940 
+# 1 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 2 subpath constraints for genome
+#S 0 14818 
+#S 0 14818 
+#S 0 14818 
+#S 0 14818 
+#S 0 14818 
+# 3 subpath constraints for genome
+#S 0 19757 
+#S 0 19757 
+#S 0 19757 
+#S 0 19757 
+#S 0 19757 
+# 4 subpath constraints for genome
+#S 0 24696 
+#S 0 24696 
+#S 0 24696 
+#S 0 24696 
+#S 0 24696 
+# 5 subpath constraints for genome
+#S 1346 4940 
+#S 1346 4940 
+#S 1346 4940 
+#S 4940 26040 
+#S 4940 26040 
+# 6 subpath constraints for genome
+#S 0 30979 
+#S 0 30979 
+#S 0 30979 
+#S 0 30979 
+#S 0 30979 
+# 7 subpath constraints for genome
+#S 0 35918 
+#S 0 35918 
+#S 0 35918 
+#S 0 35918 
+#S 0 35918 
+# 8 subpath constraints for genome
+#S 0 40857 
+#S 0 40857 
+#S 0 40857 
+#S 0 40857 
+#S 0 40857 
+# 9 subpath constraints for genome
+#S 0 45796 
+#S 0 45796 
+#S 0 45796 
+#S 0 45796 
+#S 0 45796 
+# 10 subpath constraints for genome
+#S 0 50735 
+#S 0 50735 
+#S 0 50735 
+#S 0 50735 
+#S 0 50735 
+# 11 subpath constraints for genome
+#S 0 55674 
+#S 0 55674 
+#S 0 55674 
+#S 0 55674 
+#S 0 55674 
+# 12 subpath constraints for genome
+#S 0 60613 
+#S 0 60613 
+#S 0 60613 
+#S 0 60613 
+#S 0 60613 
+# 13 subpath constraints for genome
+#S 0 65552 
+#S 0 65552 
+#S 0 65552 
+#S 0 65552 
+#S 0 65552 
+# 14 subpath constraints for genome
+#S 0 70491 
+#S 0 70491 
+#S 0 70491 
+#S 0 70491 
+#S 0 70491 
+# 15 subpath constraints for genome
+#S 0 75430 
+#S 0 75430 
+#S 0 75430 
+#S 0 75430 
+#S 0 75430 
+# 16 subpath constraints for genome
+#S 75853 75521 
+#S 75853 75521 
+#S 75853 75521 
+#S 
+#S 75853 75521 
+# 17 subpath constraints for genome
+#S 0 85141 
+#S 0 85141 
+#S 0 85141 
+#S 0 85141 
+#S 0 85141 
+# 18 subpath constraints for genome
+#S 0 90080 
+#S 0 90080 
+#S 0 90080 
+#S 0 90080 
+#S 0 90080 
+# 19 subpath constraints for genome
+#S 0 95019 
+#S 0 95019 
+#S 0 95019 
+#S 0 95019 
+#S 0 95019 
+52
+1345 1346 7
+1346 4940 394
+4940 1 9
+4940 26040 361
+14818 1 23
+19757 1 37
+24696 1 11
+26040 1 378
+30979 1 69
+35918 1 46
+40857 1 31
+45796 1 120
+50735 1 121
+55674 1 59
+60613 1 17
+65552 1 38
+70491 1 25
+75430 1 53
+75521 75547 30
+75547 75652 14
+75547 79976 14
+75652 75724 29
+75724 75787 15
+75724 80038 15
+75787 75853 33
+75853 75521 14
+75853 1 18
+79976 75652 15
+80038 75787 15
+85141 1 4
+90080 1 16
+95019 1 18
+0 1346 366
+0 1345 9
+0 1 28
+0 14818 23
+0 19757 33
+0 24696 10
+0 30979 78
+0 35918 46
+0 40857 23
+0 45796 129
+0 50735 107
+0 55674 57
+0 60613 14
+0 65552 27
+0 70491 27
+0 75430 43
+0 75521 11
+0 85141 3
+0 90080 12
+0 95019 19

@@ -1,0 +1,75 @@
+#gt5.kmer63.(670000.675000).V13.E19.mincyc1.e0.75
+#construct.py -o cyclic-graphs/ecoli/imperfect-weights/g5-w5000-k63-e0.75/ -g 5 -w 5000 -k 63 --distribution lognormal11 --mincycles 1 --nreads 5 --readlength 1000 -D ecoli -e 0.75
+#kmersize=63
+#windowsize=5000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal11
+#ngenomes=5
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/ecoli/imperfect-weights/g5-w5000-k63-e0.75/
+#pdf=False
+#png=False
+#erroreps=0.75
+#dataset=ecoli
+#abundances=None
+#unique source is 0, unique sink is 1
+#genomes: GCA_000005845.2_ASM584v2.fna.gz GCA_000006665.1_ASM666v1.fna.gz GCA_000007445.1_ASM744v1.fna.gz GCA_000008865.2_ASM886v2.fna.gz GCA_000009565.2_ASM956v1.fna.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 14 0 1 
+#T 26 0 4941 5234 5265 5234 5265 7976 8039 9628 9847 1 
+#T 86 0 14786 1 
+#T 35 0 15092 4941 5234 5265 7976 15154 8039 9628 1 
+#T 24 0 20093 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 1 subpath constraints for genome
+#S 8039 9628 9847 
+#S 5265 7976 
+#S 8039 9628 9847 
+#S 5265 7976 
+#S 8039 9628 9847 
+# 2 subpath constraints for genome
+#S 0 14786 
+#S 0 14786 
+#S 0 14786 
+#S 0 14786 
+#S 0 14786 
+# 3 subpath constraints for genome
+#S 5265 7976 15154 8039 9628 
+#S 4941 5234 5265 7976 
+#S 5265 7976 
+#S 4941 5234 5265 7976 
+#S 5265 7976 15154 8039 9628 
+# 4 subpath constraints for genome
+#S 0 20093 
+#S 0 20093 
+#S 0 20093 
+#S 0 20093 
+#S 0 20093 
+19
+4941 5234 56
+5234 5265 81
+5265 5234 20
+5265 7976 56
+7976 8039 31
+7976 15154 37
+8039 9628 61
+9628 1 30
+9628 9847 21
+9847 1 30
+14786 1 85
+15092 4941 42
+15154 8039 33
+20093 1 26
+0 4941 28
+0 1 13
+0 14786 96
+0 15092 31
+0 20093 22

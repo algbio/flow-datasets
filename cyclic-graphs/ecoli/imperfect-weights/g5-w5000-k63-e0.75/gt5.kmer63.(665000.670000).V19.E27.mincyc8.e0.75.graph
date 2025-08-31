@@ -1,0 +1,83 @@
+#gt5.kmer63.(665000.670000).V19.E27.mincyc8.e0.75
+#construct.py -o cyclic-graphs/ecoli/imperfect-weights/g5-w5000-k63-e0.75/ -g 5 -w 5000 -k 63 --distribution lognormal11 --mincycles 1 --nreads 5 --readlength 1000 -D ecoli -e 0.75
+#kmersize=63
+#windowsize=5000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal11
+#ngenomes=5
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/ecoli/imperfect-weights/g5-w5000-k63-e0.75/
+#pdf=False
+#png=False
+#erroreps=0.75
+#dataset=ecoli
+#abundances=None
+#unique source is 0, unique sink is 1
+#genomes: GCA_000005845.2_ASM584v2.fna.gz GCA_000006665.1_ASM666v1.fna.gz GCA_000007445.1_ASM744v1.fna.gz GCA_000008865.2_ASM886v2.fna.gz GCA_000009565.2_ASM956v1.fna.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 17 0 1 
+#T 10 0 4941 6482 6495 7128 7146 7209 7215 7446 7506 6482 6495 9057 7128 7146 9119 7209 7215 9533 9839 1 
+#T 6 0 14778 1 
+#T 38 0 15085 4941 6482 6495 7128 7146 7209 7215 7446 15143 7506 6482 6495 9057 7128 7146 9119 7209 7215 9533 1 
+#T 56 0 20082 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 1 subpath constraints for genome
+#S 4941 6482 
+#S 4941 6482 6495 7128 
+#S 6482 6495 9057 7128 7146 9119 7209 7215 9533 
+#S 7215 9533 9839 
+#S 7215 9533 9839 
+# 2 subpath constraints for genome
+#S 0 14778 
+#S 0 14778 
+#S 0 14778 
+#S 0 14778 
+#S 0 14778 
+# 3 subpath constraints for genome
+#S 6495 7128 7146 7209 7215 7446 15143 7506 6482 
+#S 7215 9533 
+#S 7146 7209 7215 7446 15143 7506 6482 
+#S 0 15085 4941 6482 
+#S 7146 7209 7215 7446 15143 7506 6482 
+# 4 subpath constraints for genome
+#S 0 20082 
+#S 0 20082 
+#S 0 20082 
+#S 0 20082 
+#S 0 20082 
+27
+4941 6482 46
+6482 6495 92
+6495 7128 45
+6495 9057 45
+7128 7146 103
+7146 7209 55
+7146 9119 53
+7209 7215 105
+7215 7446 43
+7215 9533 40
+7446 7506 10
+7446 15143 34
+7506 6482 52
+9057 7128 48
+9119 7209 47
+9533 1 33
+9533 9839 6
+9839 1 9
+14778 1 5
+15085 4941 42
+15143 7506 35
+20082 1 48
+0 4941 8
+0 1 13
+0 14778 9
+0 15085 36
+0 20082 50
