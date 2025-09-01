@@ -118,12 +118,6 @@ def main():
         print(f"ERROR: Directory not found: {root}", file=sys.stderr)
         sys.exit(1)
 
-    # Optional: enforce that path is (or is inside) 'graphs'
-    # Allow user flexibility but warn if not inside 'graphs'.
-    parts = os.path.normpath(root).split(os.sep)
-    if 'graphs' not in parts:
-        print(f"WARNING: Provided directory '{root}' is not under a 'graphs' directory.")
-
     to_process = []
     for dirpath, _, filenames in os.walk(root):
         for fname in filenames:
