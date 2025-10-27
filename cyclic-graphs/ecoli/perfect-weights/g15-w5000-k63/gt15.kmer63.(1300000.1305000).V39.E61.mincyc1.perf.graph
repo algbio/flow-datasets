@@ -1,0 +1,190 @@
+#gt15.kmer63.(1300000.1305000).V39.E61.mincyc1.perf
+#construct.py -o cyclic-graphs/ecoli/perfect-weights/g15-w5000-k63/ -g 15 -w 5000 -k 63 --distribution lognormal11 --mincycles 1 --nreads 5 --readlength 1000 -D ecoli
+#kmersize=63
+#windowsize=5000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal11
+#ngenomes=15
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/ecoli/perfect-weights/g15-w5000-k63/
+#pdf=False
+#png=False
+#style=default
+#poisson_edge_errors=False
+#dataset=ecoli
+#abundances=None
+#left_index=None
+#right_index=None
+#unique source is 0, unique sink is 1
+#genomes: GCA_000005845.2_ASM584v2.fna.gz GCA_000006665.1_ASM666v1.fna.gz GCA_000007445.1_ASM744v1.fna.gz GCA_000008865.2_ASM886v2.fna.gz GCA_000009565.2_ASM956v1.fna.gz GCA_000010245.1_ASM1024v1.fna.gz GCA_000010385.1_ASM1038v1.fna.gz GCA_000010485.1_ASM1048v1.fna.gz GCA_000010745.1_ASM1074v1.fna.gz GCA_000010765.1_ASM1076v1.fna.gz GCA_000013265.1_ASM1326v1.fna.gz GCA_000013305.1_ASM1330v1.fna.gz GCA_000014845.1_ASM1484v1.fna.gz GCA_000017745.1_ASM1774v1.fna.gz GCA_000017765.1_ASM1776v1.fna.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 52 0 695 3226 4940 1 
+#T 21 0 1 
+#T 24 0 14818 1 
+#T 34 0 19757 1 
+#T 53 0 24696 1 
+#T 4 0 27103 695 3226 1 
+#T 14 0 32042 1 
+#T 20 0 32043 32212 32275 32291 32354 33437 33500 33538 33601 33816 33894 34077 34140 35026 36981 1 
+#T 17 0 41920 1 
+#T 28 0 46859 1 
+#T 261 0 51798 1 
+#T 20 0 56737 1 
+#T 9 0 57477 57503 57477 57503 32043 32212 58727 32275 32291 58789 32354 33437 58851 33500 33538 58913 33601 33816 58990 33894 34077 59052 34140 35026 1 
+#T 8 0 63991 1 
+#T 58 0 68930 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 695 3226 4940 
+#S 695 3226 
+#S 695 3226 
+#S 3226 4940 
+#S 695 3226 4940 
+# 1 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 2 subpath constraints for genome
+#S 
+#S 0 14818 
+#S 0 14818 
+#S 0 14818 
+#S 0 14818 
+# 3 subpath constraints for genome
+#S 0 19757 
+#S 0 19757 
+#S 0 19757 
+#S 0 19757 
+#S 0 19757 
+# 4 subpath constraints for genome
+#S 0 24696 
+#S 0 24696 
+#S 0 24696 
+#S 0 24696 
+#S 0 24696 
+# 5 subpath constraints for genome
+#S 0 27103 695 3226 
+#S 695 3226 
+#S 0 27103 
+#S 0 27103 
+#S 695 3226 
+# 6 subpath constraints for genome
+#S 0 32042 
+#S 0 32042 
+#S 0 32042 
+#S 0 32042 
+#S 0 32042 
+# 7 subpath constraints for genome
+#S 32354 33437 33500 33538 33601 33816 33894 34077 
+#S 35026 36981 
+#S 33538 33601 33816 33894 34077 34140 35026 
+#S 33500 33538 33601 33816 33894 34077 34140 35026 
+#S 35026 36981 
+# 8 subpath constraints for genome
+#S 0 41920 
+#S 0 41920 
+#S 0 41920 
+#S 0 41920 
+#S 0 41920 
+# 9 subpath constraints for genome
+#S 0 46859 
+#S 0 46859 
+#S 0 46859 
+#S 0 46859 
+#S 0 46859 
+# 10 subpath constraints for genome
+#S 0 51798 
+#S 0 51798 
+#S 0 51798 
+#S 0 51798 
+#S 0 51798 
+# 11 subpath constraints for genome
+#S 0 56737 
+#S 0 56737 
+#S 0 56737 
+#S 0 56737 
+#S 0 56737 
+# 12 subpath constraints for genome
+#S 34140 35026 
+#S 57503 32043 32212 58727 32275 32291 58789 32354 33437 
+#S 34140 35026 
+#S 32354 33437 58851 33500 33538 58913 33601 33816 58990 
+#S 34140 35026 
+# 13 subpath constraints for genome
+#S 0 63991 
+#S 0 63991 
+#S 0 63991 
+#S 0 63991 
+#S 0 63991 
+# 14 subpath constraints for genome
+#S 
+#S 0 68930 
+#S 0 68930 
+#S 0 68930 
+#S 0 68930 
+61
+695 3226 56
+3226 1 4
+3226 4940 52
+4940 1 52
+14818 1 24
+19757 1 34
+24696 1 53
+27103 695 4
+32042 1 14
+32043 32212 29
+32212 32275 20
+32212 58727 9
+32275 32291 29
+32291 32354 20
+32291 58789 9
+32354 33437 29
+33437 33500 20
+33437 58851 9
+33500 33538 29
+33538 33601 20
+33538 58913 9
+33601 33816 29
+33816 33894 20
+33816 58990 9
+33894 34077 29
+34077 34140 20
+34077 59052 9
+34140 35026 29
+35026 1 9
+35026 36981 20
+36981 1 20
+41920 1 17
+46859 1 28
+51798 1 261
+56737 1 20
+57477 57503 18
+57503 57477 9
+57503 32043 9
+58727 32275 9
+58789 32354 9
+58851 33500 9
+58913 33601 9
+58990 33894 9
+59052 34140 9
+63991 1 8
+68930 1 58
+0 32043 20
+0 695 52
+0 1 21
+0 14818 24
+0 19757 34
+0 24696 53
+0 27103 4
+0 32042 14
+0 41920 17
+0 46859 28
+0 51798 261
+0 56737 20
+0 57477 9
+0 63991 8
+0 68930 58

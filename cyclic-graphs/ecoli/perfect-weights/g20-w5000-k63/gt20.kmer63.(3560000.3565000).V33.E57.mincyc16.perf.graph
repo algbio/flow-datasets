@@ -1,0 +1,221 @@
+#gt20.kmer63.(3560000.3565000).V33.E57.mincyc16.perf
+#construct.py -o cyclic-graphs/ecoli/perfect-weights/g20-w5000-k63/ -g 20 -w 5000 -k 63 --distribution lognormal11 --mincycles 1 --nreads 5 --readlength 1000 -D ecoli
+#kmersize=63
+#windowsize=5000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal11
+#ngenomes=20
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/ecoli/perfect-weights/g20-w5000-k63/
+#pdf=False
+#png=False
+#style=default
+#poisson_edge_errors=False
+#dataset=ecoli
+#abundances=None
+#left_index=None
+#right_index=None
+#unique source is 0, unique sink is 1
+#genomes: GCA_000005845.2_ASM584v2.fna.gz GCA_000006665.1_ASM666v1.fna.gz GCA_000007445.1_ASM744v1.fna.gz GCA_000008865.2_ASM886v2.fna.gz GCA_000009565.2_ASM956v1.fna.gz GCA_000010245.1_ASM1024v1.fna.gz GCA_000010385.1_ASM1038v1.fna.gz GCA_000010485.1_ASM1048v1.fna.gz GCA_000010745.1_ASM1074v1.fna.gz GCA_000010765.1_ASM1076v1.fna.gz GCA_000013265.1_ASM1326v1.fna.gz GCA_000013305.1_ASM1330v1.fna.gz GCA_000014845.1_ASM1484v1.fna.gz GCA_000017745.1_ASM1774v1.fna.gz GCA_000017765.1_ASM1776v1.fna.gz GCA_000017985.1_ASM1798v1.fna.gz GCA_000019385.1_ASM1938v1.fna.gz GCA_000019425.1_ASM1942v1.fna.gz GCA_000019645.1_ASM1964v1.fna.gz GCA_000021125.1_ASM2112v1.fna.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 60 0 1 
+#T 101 0 9879 1 
+#T 6 0 14818 1 
+#T 10 0 19757 1 
+#T 26 0 20858 20869 20932 20950 21092 21102 21107 21166 21256 21294 21448 21460 21092 21102 21107 21256 21294 20858 20869 21830 20932 20950 21448 21460 21102 21107 21166 1 
+#T 13 0 29471 1 
+#T 10 0 34410 1 
+#T 15 0 39349 1 
+#T 30 0 44288 1 
+#T 37 0 49227 1 
+#T 297 0 54166 1 
+#T 19 0 59105 1 
+#T 23 0 64044 1 
+#T 8 0 68983 1 
+#T 42 0 73922 1 
+#T 81 0 78861 1 
+#T 4 0 83800 1 
+#T 53 0 88739 1 
+#T 13 0 93678 1 
+#T 30 0 98617 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 1 subpath constraints for genome
+#S 0 9879 
+#S 0 9879 
+#S 0 9879 
+#S 
+#S 0 9879 
+# 2 subpath constraints for genome
+#S 0 14818 
+#S 0 14818 
+#S 0 14818 
+#S 0 14818 
+#S 
+# 3 subpath constraints for genome
+#S 0 19757 
+#S 0 19757 
+#S 0 19757 
+#S 
+#S 0 19757 
+# 4 subpath constraints for genome
+#S 21166 1 
+#S 21166 1 
+#S 0 20858 
+#S 0 20858 20869 20932 20950 21092 21102 21107 21166 21256 21294 21448 21460 21092 
+#S 21294 20858 20869 21830 20932 20950 21448 21460 21102 21107 21166 1 
+# 5 subpath constraints for genome
+#S 0 29471 
+#S 0 29471 
+#S 0 29471 
+#S 0 29471 
+#S 0 29471 
+# 6 subpath constraints for genome
+#S 0 34410 
+#S 0 34410 
+#S 0 34410 
+#S 0 34410 
+#S 0 34410 
+# 7 subpath constraints for genome
+#S 0 39349 
+#S 0 39349 
+#S 0 39349 
+#S 0 39349 
+#S 0 39349 
+# 8 subpath constraints for genome
+#S 0 44288 
+#S 0 44288 
+#S 0 44288 
+#S 0 44288 
+#S 0 44288 
+# 9 subpath constraints for genome
+#S 0 49227 
+#S 0 49227 
+#S 0 49227 
+#S 0 49227 
+#S 0 49227 
+# 10 subpath constraints for genome
+#S 0 54166 
+#S 0 54166 
+#S 0 54166 
+#S 0 54166 
+#S 0 54166 
+# 11 subpath constraints for genome
+#S 0 59105 
+#S 0 59105 
+#S 0 59105 
+#S 0 59105 
+#S 0 59105 
+# 12 subpath constraints for genome
+#S 0 64044 
+#S 0 64044 
+#S 0 64044 
+#S 0 64044 
+#S 0 64044 
+# 13 subpath constraints for genome
+#S 0 68983 
+#S 0 68983 
+#S 0 68983 
+#S 0 68983 
+#S 0 68983 
+# 14 subpath constraints for genome
+#S 0 73922 
+#S 0 73922 
+#S 0 73922 
+#S 0 73922 
+#S 0 73922 
+# 15 subpath constraints for genome
+#S 0 78861 
+#S 0 78861 
+#S 0 78861 
+#S 0 78861 
+#S 0 78861 
+# 16 subpath constraints for genome
+#S 0 83800 
+#S 0 83800 
+#S 0 83800 
+#S 0 83800 
+#S 0 83800 
+# 17 subpath constraints for genome
+#S 0 88739 
+#S 0 88739 
+#S 0 88739 
+#S 0 88739 
+#S 0 88739 
+# 18 subpath constraints for genome
+#S 0 93678 
+#S 0 93678 
+#S 0 93678 
+#S 0 93678 
+#S 0 93678 
+# 19 subpath constraints for genome
+#S 0 98617 
+#S 0 98617 
+#S 0 98617 
+#S 0 98617 
+#S 0 98617 
+57
+9879 1 101
+14818 1 6
+19757 1 10
+20858 20869 52
+20869 20932 26
+20869 21830 26
+20932 20950 52
+20950 21092 26
+20950 21448 26
+21092 21102 52
+21102 21107 78
+21107 21166 52
+21107 21256 26
+21166 21256 26
+21166 1 26
+21256 21294 52
+21294 21448 26
+21294 20858 26
+21448 21460 52
+21460 21092 26
+21460 21102 26
+21830 20932 26
+29471 1 13
+34410 1 10
+39349 1 15
+44288 1 30
+49227 1 37
+54166 1 297
+59105 1 19
+64044 1 23
+68983 1 8
+73922 1 42
+78861 1 81
+83800 1 4
+88739 1 53
+93678 1 13
+98617 1 30
+0 1 60
+0 9879 101
+0 14818 6
+0 19757 10
+0 20858 26
+0 29471 13
+0 34410 10
+0 39349 15
+0 44288 30
+0 49227 37
+0 54166 297
+0 59105 19
+0 64044 23
+0 68983 8
+0 73922 42
+0 78861 81
+0 83800 4
+0 88739 53
+0 93678 13
+0 98617 30

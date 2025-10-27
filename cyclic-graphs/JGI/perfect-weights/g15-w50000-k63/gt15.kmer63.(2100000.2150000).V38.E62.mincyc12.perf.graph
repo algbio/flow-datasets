@@ -1,0 +1,191 @@
+#gt15.kmer63.(2100000.2150000).V38.E62.mincyc12.perf
+#construct.py -o cyclic-graphs/JGI/perfect-weights/g15-w50000-k63/ -g 15 -w 50000 -k 63 --mincycles 1 --nreads 5 --readlength 1000 -D JGI
+#kmersize=63
+#windowsize=50000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal-44
+#ngenomes=15
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/JGI/perfect-weights/g15-w50000-k63/
+#pdf=False
+#png=False
+#style=default
+#poisson_edge_errors=False
+#dataset=JGI
+#abundances=None
+#left_index=None
+#right_index=None
+#unique source is 0, unique sink is 1
+#genomes: Clostridium_perfringensATCC_13124.fasta.gz Clostridium_thermocellumVPI_7372_ATCC_27405.fasta.gz Coraliomargarita_akajimensis_DSM_45221.fasta.gz Corynebacterium_glutamicum_ATCC_13032.fasta.gz Desulfosporosinus_acidiphilus_SJ4_DSM_22704.fasta.gz Desulfosporosinus_meridiei_DSM_13257.fasta.gz Desulfotomaculum_gibsoniae_DSM_7213.fasta.gz E.coli_K12_ATCC_700926.fasta.gz Echinicola_vietnamensis_DSM_17526.fasta.gz Fervidobacterium_pennivorans_DSM_9078.fasta.gz Frateuria_aurantia_DSM_6220.fasta.gz Halovivax_ruber_XH-70.fasta.gz Hirschia_baltica_ATCC_49814.fasta.gz Meiothermus_silvanus_DSM_9946.fasta.gz Natronobacterium_gregoryi_SP2.fasta.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 35 0 1 
+#T 3 0 86889 86973 86979 86994 87165 87192 86979 86994 87517 87165 87192 86889 86973 87828 87849 87956 88020 87828 87849 88179 87956 88020 88236 88272 88236 88272 1 
+#T 8 0 149565 1 
+#T 89 0 199504 1 
+#T 42 0 249443 1 
+#T 1 0 299382 1 
+#T 7 0 306919 306947 306919 306947 327325 327344 327367 327556 327325 327344 327367 327782 327556 327325 327344 1 
+#T 1 0 399129 1 
+#T 1 0 449068 1 
+#T 3 0 499007 1 
+#T 2 0 548946 1 
+#T 19 0 598885 1 
+#T 5 0 648824 1 
+#T 2 0 650368 650386 650368 650386 650470 650512 650470 650512 1 
+#T 3 0 748640 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 1 subpath constraints for genome
+#S 0 86889 
+#S 88272 1 
+#S 0 86889 
+#S 88272 1 
+#S 0 86889 
+# 2 subpath constraints for genome
+#S 0 149565 
+#S 0 149565 
+#S 0 149565 
+#S 0 149565 
+#S 0 149565 
+# 3 subpath constraints for genome
+#S 0 199504 
+#S 0 199504 
+#S 0 199504 
+#S 0 199504 
+#S 0 199504 
+# 4 subpath constraints for genome
+#S 0 249443 
+#S 0 249443 
+#S 0 249443 
+#S 0 249443 
+#S 0 249443 
+# 5 subpath constraints for genome
+#S 0 299382 
+#S 0 299382 
+#S 0 299382 
+#S 0 299382 
+#S 0 299382 
+# 6 subpath constraints for genome
+#S 306947 327325 
+#S 306947 327325 
+#S 306947 327325 
+#S 0 306919 306947 306919 306947 327325 
+#S 327344 1 
+# 7 subpath constraints for genome
+#S 0 399129 
+#S 0 399129 
+#S 0 399129 
+#S 0 399129 
+#S 0 399129 
+# 8 subpath constraints for genome
+#S 0 449068 
+#S 0 449068 
+#S 0 449068 
+#S 0 449068 
+#S 0 449068 
+# 9 subpath constraints for genome
+#S 0 499007 
+#S 0 499007 
+#S 0 499007 
+#S 0 499007 
+#S 0 499007 
+# 10 subpath constraints for genome
+#S 0 548946 
+#S 0 548946 
+#S 0 548946 
+#S 0 548946 
+#S 0 548946 
+# 11 subpath constraints for genome
+#S 0 598885 
+#S 0 598885 
+#S 0 598885 
+#S 0 598885 
+#S 0 598885 
+# 12 subpath constraints for genome
+#S 0 648824 
+#S 0 648824 
+#S 0 648824 
+#S 0 648824 
+#S 0 648824 
+# 13 subpath constraints for genome
+#S 650512 650470 
+#S 650512 650470 
+#S 650512 650470 
+#S 650512 1 
+#S 650512 650470 650512 
+# 14 subpath constraints for genome
+#S 0 748640 
+#S 0 748640 
+#S 0 748640 
+#S 0 748640 
+#S 0 748640 
+62
+86889 86973 6
+86973 86979 3
+86973 87828 3
+86979 86994 6
+86994 87165 3
+86994 87517 3
+87165 87192 6
+87192 86979 3
+87192 86889 3
+87517 87165 3
+87828 87849 6
+87849 87956 3
+87849 88179 3
+87956 88020 6
+88020 87828 3
+88020 88236 3
+88179 87956 3
+88236 88272 6
+88272 88236 3
+88272 1 3
+149565 1 8
+199504 1 89
+249443 1 42
+299382 1 1
+306919 306947 14
+306947 306919 7
+306947 327325 7
+327325 327344 21
+327344 327367 14
+327344 1 7
+327367 327556 7
+327367 327782 7
+327556 327325 14
+327782 327556 7
+399129 1 1
+449068 1 1
+499007 1 3
+548946 1 2
+598885 1 19
+648824 1 5
+650368 650386 4
+650386 650368 2
+650386 650470 2
+650470 650512 4
+650512 650470 2
+650512 1 2
+748640 1 3
+0 1 35
+0 86889 3
+0 149565 8
+0 199504 89
+0 249443 42
+0 299382 1
+0 306919 7
+0 399129 1
+0 449068 1
+0 499007 3
+0 548946 2
+0 598885 19
+0 648824 5
+0 650368 2
+0 748640 3

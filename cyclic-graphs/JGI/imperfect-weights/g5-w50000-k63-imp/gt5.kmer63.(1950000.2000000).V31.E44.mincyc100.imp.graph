@@ -1,0 +1,103 @@
+#gt5.kmer63.(1950000.2000000).V31.E44.mincyc100.imp
+#construct.py -o cyclic-graphs/JGI/imperfect-weights/g5-w50000-k63-imp/ -g 5 -w 50000 -k 63 --mincycles 1 --nreads 5 --readlength 1000 -D JGI --poisson-edge-errors
+#kmersize=63
+#windowsize=50000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal-44
+#ngenomes=5
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/JGI/imperfect-weights/g5-w50000-k63-imp/
+#pdf=False
+#png=False
+#style=default
+#poisson_edge_errors=True
+#dataset=JGI
+#abundances=None
+#left_index=None
+#right_index=None
+#unique source is 0, unique sink is 1
+#genomes: Clostridium_perfringensATCC_13124.fasta.gz Clostridium_thermocellumVPI_7372_ATCC_27405.fasta.gz Coraliomargarita_akajimensis_DSM_45221.fasta.gz Corynebacterium_glutamicum_ATCC_13032.fasta.gz Desulfosporosinus_acidiphilus_SJ4_DSM_22704.fasta.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 35 0 1 
+#T 3 0 82799 83843 83906 84102 82799 83843 88797 83906 84102 1 
+#T 8 0 148576 1 
+#T 89 0 157546 157781 157844 158440 158503 159679 159742 160036 160099 160771 160834 160885 184790 184805 185188 157546 157781 189031 157844 158440 189093 158503 159679 189155 159742 160036 189217 160099 160771 189279 160834 160885 190499 184790 184805 190881 185188 1 
+#T 42 0 245407 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 1 subpath constraints for genome
+#S 0 82799 
+#S 0 82799 
+#S 0 82799 
+#S 0 82799 
+#S 0 82799 
+# 2 subpath constraints for genome
+#S 0 148576 
+#S 0 148576 
+#S 0 148576 
+#S 0 148576 
+#S 0 148576 
+# 3 subpath constraints for genome
+#S 0 157546 
+#S 160885 184790 
+#S 160885 184790 
+#S 0 157546 
+#S 160834 160885 190499 
+# 4 subpath constraints for genome
+#S 0 245407 
+#S 0 245407 
+#S 0 245407 
+#S 0 245407 
+#S 0 245407 
+44
+82799 83843 6
+83843 83906 1
+83843 88797 6
+83906 84102 10
+84102 82799 1
+84102 1 5
+88797 83906 6
+148576 1 6
+157546 157781 184
+157781 157844 88
+157781 189031 87
+157844 158440 185
+158440 158503 82
+158440 189093 82
+158503 159679 168
+159679 159742 85
+159679 189155 79
+159742 160036 202
+160036 160099 100
+160036 189217 114
+160099 160771 187
+160771 160834 90
+160771 189279 88
+160834 160885 195
+160885 184790 95
+160885 190499 78
+184790 184805 197
+184805 185188 90
+184805 190881 95
+185188 157546 81
+185188 1 84
+189031 157844 89
+189093 158503 67
+189155 159742 115
+189217 160099 102
+189279 160834 83
+190499 184790 76
+190881 185188 98
+245407 1 39
+0 1 39
+0 82799 3
+0 148576 9
+0 157546 83
+0 245407 36

@@ -1,0 +1,74 @@
+#gt1.kmer15.(0.10000).V33.E43.mincyc100.perf
+#construct.py -o cyclic-graphs/labmix/perfect-weights/g1-w10000-k15/ -g 1 -w 10000 -k 15 --mincycles 1 --nreads 5 --readlength 1000 -D labmix
+#kmersize=15
+#windowsize=10000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal-44
+#ngenomes=1
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/labmix/perfect-weights/g1-w10000-k15/
+#pdf=False
+#png=False
+#style=default
+#poisson_edge_errors=False
+#dataset=labmix
+#abundances=None
+#left_index=None
+#right_index=None
+#unique source is 0, unique sink is 1
+#genomes: 896.fasta 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 17 0 8 26 42 57 77 124 139 169 206 295 310 323 338 376 394 396 411 463 478 623 4780 4786 4780 4786 8 26 9092 42 57 9111 77 124 9125 139 169 9161 206 295 9175 310 323 9189 338 376 9206 394 396 9220 411 463 9234 478 623 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 623 4780 
+#S 4786 4780 4786 8 26 9092 42 57 9111 77 124 9125 139 169 9161 206 295 9175 310 323 9189 338 376 9206 394 396 9220 411 463 9234 478 623 
+#S 4786 4780 
+#S 4786 4780 4786 8 26 9092 42 57 9111 77 124 9125 139 169 9161 206 295 9175 310 323 9189 
+#S 4786 4780 4786 8 26 9092 42 57 9111 77 124 9125 139 169 9161 206 295 
+43
+8 26 34
+26 42 17
+26 9092 17
+42 57 34
+57 77 17
+57 9111 17
+77 124 34
+124 139 17
+124 9125 17
+139 169 34
+169 206 17
+169 9161 17
+206 295 34
+295 310 17
+295 9175 17
+310 323 34
+323 338 17
+323 9189 17
+338 376 34
+376 394 17
+376 9206 17
+394 396 34
+396 411 17
+396 9220 17
+411 463 34
+463 478 17
+463 9234 17
+478 623 34
+623 1 17
+623 4780 17
+4780 4786 34
+4786 4780 17
+4786 8 17
+9092 42 17
+9111 77 17
+9125 139 17
+9161 206 17
+9175 310 17
+9189 338 17
+9206 394 17
+9220 411 17
+9234 478 17
+0 8 17

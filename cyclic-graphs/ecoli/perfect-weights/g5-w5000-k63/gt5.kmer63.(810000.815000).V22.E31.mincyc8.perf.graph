@@ -1,0 +1,90 @@
+#gt5.kmer63.(810000.815000).V22.E31.mincyc8.perf
+#construct.py -o cyclic-graphs/ecoli/perfect-weights/g5-w5000-k63/ -g 5 -w 5000 -k 63 --distribution lognormal11 --mincycles 1 --nreads 5 --readlength 1000 -D ecoli
+#kmersize=63
+#windowsize=5000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal11
+#ngenomes=5
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/ecoli/perfect-weights/g5-w5000-k63/
+#pdf=False
+#png=False
+#style=default
+#poisson_edge_errors=False
+#dataset=ecoli
+#abundances=None
+#left_index=None
+#right_index=None
+#unique source is 0, unique sink is 1
+#genomes: GCA_000005845.2_ASM584v2.fna.gz GCA_000006665.1_ASM666v1.fna.gz GCA_000007445.1_ASM744v1.fna.gz GCA_000008865.2_ASM886v2.fna.gz GCA_000009565.2_ASM956v1.fna.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 47 0 1 
+#T 32 0 4941 4965 5097 5441 5507 5624 5825 5888 6137 6248 6315 5441 5507 7427 5624 5825 7489 5888 6137 7599 6248 6315 9292 1 
+#T 41 0 14231 1 
+#T 44 0 14449 4941 4965 14580 5097 5441 5507 5624 5825 7489 5888 6137 7599 6248 6315 9292 16233 1 
+#T 33 0 21172 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 1 subpath constraints for genome
+#S 6315 5441 5507 7427 5624 5825 7489 5888 6137 
+#S 5507 5624 5825 5888 6137 6248 6315 5441 
+#S 5097 5441 5507 5624 5825 5888 6137 6248 
+#S 6315 5441 5507 7427 5624 5825 7489 5888 6137 
+#S 5624 5825 7489 5888 6137 7599 6248 6315 9292 
+# 2 subpath constraints for genome
+#S 0 14231 
+#S 0 14231 
+#S 0 14231 
+#S 0 14231 
+#S 0 14231 
+# 3 subpath constraints for genome
+#S 9292 16233 
+#S 5624 5825 7489 5888 6137 7599 6248 6315 9292 
+#S 9292 16233 
+#S 9292 16233 
+#S 5507 5624 5825 7489 5888 6137 7599 6248 6315 9292 
+# 4 subpath constraints for genome
+#S 0 21172 
+#S 0 21172 
+#S 0 21172 
+#S 0 21172 
+#S 0 21172 
+31
+4941 4965 76
+4965 5097 32
+4965 14580 44
+5097 5441 76
+5441 5507 108
+5507 5624 76
+5507 7427 32
+5624 5825 108
+5825 5888 32
+5825 7489 76
+5888 6137 108
+6137 6248 32
+6137 7599 76
+6248 6315 108
+6315 5441 32
+6315 9292 76
+7427 5624 32
+7489 5888 76
+7599 6248 76
+9292 1 32
+9292 16233 44
+14231 1 41
+14449 4941 44
+14580 5097 44
+16233 1 44
+21172 1 33
+0 4941 32
+0 1 47
+0 14231 41
+0 14449 44
+0 21172 33

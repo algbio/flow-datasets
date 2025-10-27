@@ -1,0 +1,202 @@
+#gt15.kmer63.(1270000.1275000).V47.E73.mincyc12.imp
+#construct.py -o cyclic-graphs/ecoli/imperfect-weights/g15-w5000-k63-imp/ -g 15 -w 5000 -k 63 --distribution lognormal11 --mincycles 1 --nreads 5 --readlength 1000 -D ecoli --poisson-edge-errors
+#kmersize=63
+#windowsize=5000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal11
+#ngenomes=15
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/ecoli/imperfect-weights/g15-w5000-k63-imp/
+#pdf=False
+#png=False
+#style=default
+#poisson_edge_errors=True
+#dataset=ecoli
+#abundances=None
+#left_index=None
+#right_index=None
+#unique source is 0, unique sink is 1
+#genomes: GCA_000005845.2_ASM584v2.fna.gz GCA_000006665.1_ASM666v1.fna.gz GCA_000007445.1_ASM744v1.fna.gz GCA_000008865.2_ASM886v2.fna.gz GCA_000009565.2_ASM956v1.fna.gz GCA_000010245.1_ASM1024v1.fna.gz GCA_000010385.1_ASM1038v1.fna.gz GCA_000010485.1_ASM1048v1.fna.gz GCA_000010745.1_ASM1074v1.fna.gz GCA_000010765.1_ASM1076v1.fna.gz GCA_000013265.1_ASM1326v1.fna.gz GCA_000013305.1_ASM1330v1.fna.gz GCA_000014845.1_ASM1484v1.fna.gz GCA_000017745.1_ASM1774v1.fna.gz GCA_000017765.1_ASM1776v1.fna.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 27 0 2 149 164 200 322 330 358 421 434 3363 4940 1 
+#T 49 0 5193 5220 5757 5804 5867 5912 6160 6168 6231 6259 6322 7558 1 
+#T 15 0 1 
+#T 147 0 17720 5193 5220 17861 5757 5804 17923 5867 5912 18169 6160 6168 18231 6231 6259 18293 6322 7558 18360 1 
+#T 14 0 23299 1 
+#T 20 0 23300 23404 164 200 322 330 434 24096 149 164 200 24441 322 330 358 24503 421 434 24096 2 149 164 200 322 330 358 421 434 3363 1 
+#T 53 0 29519 1 
+#T 96 0 34353 23300 23404 1 
+#T 11 0 39292 1 
+#T 12 0 44231 1 
+#T 26 0 49170 1 
+#T 24 0 54109 1 
+#T 10 0 59048 1 
+#T 27 0 63987 1 
+#T 54 0 68926 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 434 3363 4940 
+#S 3363 4940 
+#S 3363 4940 
+#S 434 3363 4940 
+#S 434 3363 4940 
+# 1 subpath constraints for genome
+#S 6322 7558 1 
+#S 5220 5757 5804 5867 5912 6160 6168 6231 6259 6322 7558 
+#S 7558 1 
+#S 7558 1 
+#S 7558 1 
+# 2 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 3 subpath constraints for genome
+#S 0 17720 
+#S 0 17720 5193 5220 17861 5757 5804 17923 
+#S 5912 18169 6160 6168 18231 6231 6259 18293 6322 7558 
+#S 6322 7558 18360 
+#S 0 17720 
+# 4 subpath constraints for genome
+#S 0 23299 
+#S 0 23299 
+#S 0 23299 
+#S 0 23299 
+#S 0 23299 
+# 5 subpath constraints for genome
+#S 434 3363 
+#S 434 3363 
+#S 24096 149 164 200 24441 322 330 358 24503 421 434 24096 2 149 164 200 322 330 358 421 434 3363 
+#S 23404 164 200 322 330 434 24096 149 164 200 24441 322 330 358 24503 421 434 24096 2 149 
+#S 200 322 330 358 421 434 3363 
+# 6 subpath constraints for genome
+#S 0 29519 
+#S 0 29519 
+#S 0 29519 
+#S 0 29519 
+#S 0 29519 
+# 7 subpath constraints for genome
+#S 0 34353 23300 23404 
+#S 0 34353 
+#S 0 34353 
+#S 0 34353 23300 23404 
+#S 0 34353 23300 23404 
+# 8 subpath constraints for genome
+#S 0 39292 
+#S 0 39292 
+#S 0 39292 
+#S 0 39292 
+#S 0 39292 
+# 9 subpath constraints for genome
+#S 0 44231 
+#S 0 44231 
+#S 0 44231 
+#S 0 44231 
+#S 0 44231 
+# 10 subpath constraints for genome
+#S 0 49170 
+#S 0 49170 
+#S 0 49170 
+#S 0 49170 
+#S 0 49170 
+# 11 subpath constraints for genome
+#S 0 54109 
+#S 
+#S 0 54109 
+#S 0 54109 
+#S 0 54109 
+# 12 subpath constraints for genome
+#S 0 59048 
+#S 0 59048 
+#S 0 59048 
+#S 0 59048 
+#S 0 59048 
+# 13 subpath constraints for genome
+#S 0 63987 
+#S 0 63987 
+#S 0 63987 
+#S 0 63987 
+#S 0 63987 
+# 14 subpath constraints for genome
+#S 0 68926 
+#S 0 68926 
+#S 0 68926 
+#S 0 68926 
+#S 0 68926 
+73
+2 149 49
+149 164 58
+164 200 89
+200 322 66
+200 24441 9
+322 330 84
+330 358 61
+330 434 19
+358 421 48
+358 24503 26
+421 434 66
+434 3363 50
+434 24096 34
+3363 1 15
+3363 4940 23
+4940 1 25
+5193 5220 218
+5220 5757 50
+5220 17861 147
+5757 5804 214
+5804 5867 50
+5804 17923 179
+5867 5912 200
+5912 6160 52
+5912 18169 134
+6160 6168 181
+6168 6231 47
+6168 18231 152
+6231 6259 201
+6259 6322 55
+6259 18293 145
+6322 7558 181
+7558 1 48
+7558 18360 133
+17720 5193 134
+17861 5757 145
+17923 5867 140
+18169 6160 153
+18231 6231 163
+18293 6322 168
+18360 1 141
+23299 1 18
+23300 23404 122
+23404 1 96
+23404 164 19
+24096 149 19
+24096 2 13
+24441 322 19
+24503 421 21
+29519 1 55
+34353 23300 110
+39292 1 8
+44231 1 18
+49170 1 31
+54109 1 23
+59048 1 6
+63987 1 30
+68926 1 58
+0 2 28
+0 23300 23
+0 5193 40
+0 1 14
+0 17720 162
+0 23299 8
+0 29519 67
+0 34353 112
+0 39292 8
+0 44231 12
+0 49170 20
+0 54109 27
+0 59048 8
+0 63987 27
+0 68926 75

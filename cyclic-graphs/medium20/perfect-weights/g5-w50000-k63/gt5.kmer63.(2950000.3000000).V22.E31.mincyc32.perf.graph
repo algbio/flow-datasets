@@ -1,0 +1,90 @@
+#gt5.kmer63.(2950000.3000000).V22.E31.mincyc32.perf
+#construct.py -o cyclic-graphs/medium20/perfect-weights/g5-w50000-k63/ -g 5 -w 50000 -k 63 --mincycles 1 --nreads 5 --readlength 1000 -D medium20
+#kmersize=63
+#windowsize=50000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal-44
+#ngenomes=5
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/medium20/perfect-weights/g5-w50000-k63/
+#pdf=False
+#png=False
+#style=default
+#poisson_edge_errors=False
+#dataset=medium20
+#abundances=None
+#left_index=None
+#right_index=None
+#unique source is 0, unique sink is 1
+#genomes: GCF_000005845.2_ASM584v2_genomic.fna.gz GCF_000009045.1_ASM904v1_genomic.fna.gz GCF_000013285.1_ASM1328v1_genomic.fna.gz GCF_000025905.1_ASM2590v1_genomic.fna.gz GCF_000092125.1_ASM9212v1_genomic.fna.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 5 0 1 
+#T 1 0 99879 1 
+#T 8 0 125843 125855 125918 126083 126170 126458 126536 126674 126737 126851 126914 126992 125843 125855 141915 125918 126083 142001 126170 126458 142078 126536 126674 142140 126737 126851 142202 126914 126992 1 
+#T 6 0 198956 1 
+#T 4 0 248895 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 1 subpath constraints for genome
+#S 0 99879 
+#S 0 99879 
+#S 0 99879 
+#S 0 99879 
+#S 0 99879 
+# 2 subpath constraints for genome
+#S 0 125843 
+#S 0 125843 125855 125918 126083 126170 
+#S 0 125843 
+#S 0 125843 
+#S 126992 125843 
+# 3 subpath constraints for genome
+#S 0 198956 
+#S 0 198956 
+#S 0 198956 
+#S 0 198956 
+#S 0 198956 
+# 4 subpath constraints for genome
+#S 0 248895 
+#S 0 248895 
+#S 0 248895 
+#S 0 248895 
+#S 0 248895 
+31
+99879 1 1
+125843 125855 16
+125855 125918 8
+125855 141915 8
+125918 126083 16
+126083 126170 8
+126083 142001 8
+126170 126458 16
+126458 126536 8
+126458 142078 8
+126536 126674 16
+126674 126737 8
+126674 142140 8
+126737 126851 16
+126851 126914 8
+126851 142202 8
+126914 126992 16
+126992 125843 8
+126992 1 8
+141915 125918 8
+142001 126170 8
+142078 126536 8
+142140 126737 8
+142202 126914 8
+198956 1 6
+248895 1 4
+0 1 5
+0 99879 1
+0 125843 8
+0 198956 6
+0 248895 4

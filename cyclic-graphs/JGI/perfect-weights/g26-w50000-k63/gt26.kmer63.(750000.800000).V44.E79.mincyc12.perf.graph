@@ -1,0 +1,285 @@
+#gt26.kmer63.(750000.800000).V44.E79.mincyc12.perf
+#construct.py -o cyclic-graphs/JGI/perfect-weights/g26-w50000-k63/ -g 26 -w 50000 -k 63 --mincycles 1 --nreads 5 --readlength 1000 -D JGI
+#kmersize=63
+#windowsize=50000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal-44
+#ngenomes=26
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/JGI/perfect-weights/g26-w50000-k63/
+#pdf=False
+#png=False
+#style=default
+#poisson_edge_errors=False
+#dataset=JGI
+#abundances=None
+#left_index=None
+#right_index=None
+#unique source is 0, unique sink is 1
+#genomes: Clostridium_perfringensATCC_13124.fasta.gz Clostridium_thermocellumVPI_7372_ATCC_27405.fasta.gz Coraliomargarita_akajimensis_DSM_45221.fasta.gz Corynebacterium_glutamicum_ATCC_13032.fasta.gz Desulfosporosinus_acidiphilus_SJ4_DSM_22704.fasta.gz Desulfosporosinus_meridiei_DSM_13257.fasta.gz Desulfotomaculum_gibsoniae_DSM_7213.fasta.gz E.coli_K12_ATCC_700926.fasta.gz Echinicola_vietnamensis_DSM_17526.fasta.gz Fervidobacterium_pennivorans_DSM_9078.fasta.gz Frateuria_aurantia_DSM_6220.fasta.gz Halovivax_ruber_XH-70.fasta.gz Hirschia_baltica_ATCC_49814.fasta.gz Meiothermus_silvanus_DSM_9946.fasta.gz Natronobacterium_gregoryi_SP2.fasta.gz Natronococcus_occultus_DSM_3396.fasta.gz Nocardiopsis_dassonvillei_DSM_43111.fasta.gz Olsenella_uli_DSM_7084.fasta.gz Pseudomonas_stutzeri_RCH2.fasta.gz Salmonella_bongori_NCTC_12419.fasta.gz Salmonella_enterica_subsp._arizonae_serovar_62_z4_z23_-_strain_RSK2980.fasta.gz Segniliparus_rotundus_DSM_44985.fasta.gz Spirochaeta_smaragdinae_DSM_11293.fasta.gz Streptococcus_pyogenes_M1_GAS.fasta.gz Terriglobus_roseus_DSM_18391.fasta.gz Thermobacillus_composti_KWC4.fasta.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 35 0 1 
+#T 3 0 99879 1 
+#T 8 0 149818 1 
+#T 89 0 199757 1 
+#T 42 0 249696 1 
+#T 1 0 299635 1 
+#T 7 0 349574 1 
+#T 1 0 379350 379351 379365 379367 379556 379577 379639 379351 379365 379650 379556 379577 379905 379639 379351 379365 379650 379350 379351 379365 379367 379351 379365 379367 1 
+#T 1 0 449353 1 
+#T 3 0 449396 449628 449396 449628 1 
+#T 2 0 548998 1 
+#T 19 0 598937 1 
+#T 5 0 648876 1 
+#T 2 0 698815 1 
+#T 3 0 718452 718477 718452 718477 718452 718477 1 
+#T 2 0 798634 1 
+#T 20 0 810415 810416 810415 810416 810415 810416 810415 810416 810415 810416 810415 810416 810415 810416 810415 810416 813389 813416 813477 813510 813389 813416 813983 813477 813510 1 
+#T 1 0 898394 1 
+#T 2 0 901863 901892 901863 901892 1 
+#T 1 0 998242 1 
+#T 1 0 1048181 1 
+#T 4 0 1098120 1 
+#T 6 0 1148059 1 
+#T 1 0 1197998 1 
+#T 94 0 1247937 1 
+#T 1 0 1297876 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 1 subpath constraints for genome
+#S 0 99879 
+#S 0 99879 
+#S 0 99879 
+#S 0 99879 
+#S 0 99879 
+# 2 subpath constraints for genome
+#S 0 149818 
+#S 0 149818 
+#S 0 149818 
+#S 0 149818 
+#S 0 149818 
+# 3 subpath constraints for genome
+#S 0 199757 
+#S 0 199757 
+#S 0 199757 
+#S 0 199757 
+#S 0 199757 
+# 4 subpath constraints for genome
+#S 0 249696 
+#S 0 249696 
+#S 0 249696 
+#S 0 249696 
+#S 0 249696 
+# 5 subpath constraints for genome
+#S 0 299635 
+#S 0 299635 
+#S 0 299635 
+#S 0 299635 
+#S 0 299635 
+# 6 subpath constraints for genome
+#S 0 349574 
+#S 0 349574 
+#S 0 349574 
+#S 0 349574 
+#S 0 349574 
+# 7 subpath constraints for genome
+#S 0 379350 
+#S 379367 1 
+#S 0 379350 
+#S 0 379350 
+#S 0 379350 
+# 8 subpath constraints for genome
+#S 0 449353 
+#S 0 449353 
+#S 0 449353 
+#S 0 449353 
+#S 0 449353 
+# 9 subpath constraints for genome
+#S 449628 1 
+#S 449628 1 
+#S 449628 1 
+#S 449628 1 
+#S 449628 1 
+# 10 subpath constraints for genome
+#S 0 548998 
+#S 0 548998 
+#S 0 548998 
+#S 0 548998 
+#S 0 548998 
+# 11 subpath constraints for genome
+#S 0 598937 
+#S 0 598937 
+#S 0 598937 
+#S 0 598937 
+#S 0 598937 
+# 12 subpath constraints for genome
+#S 0 648876 
+#S 0 648876 
+#S 0 648876 
+#S 0 648876 
+#S 0 648876 
+# 13 subpath constraints for genome
+#S 0 698815 
+#S 0 698815 
+#S 0 698815 
+#S 0 698815 
+#S 0 698815 
+# 14 subpath constraints for genome
+#S 718477 1 
+#S 718477 1 
+#S 718477 1 
+#S 718477 1 
+#S 0 718452 
+# 15 subpath constraints for genome
+#S 0 798634 
+#S 0 798634 
+#S 0 798634 
+#S 0 798634 
+#S 0 798634 
+# 16 subpath constraints for genome
+#S 813510 1 
+#S 813510 1 
+#S 813510 1 
+#S 0 810415 810416 810415 810416 810415 810416 810415 810416 810415 810416 810415 810416 810415 810416 810415 810416 813389 
+#S 813510 1 
+# 17 subpath constraints for genome
+#S 0 898394 
+#S 0 898394 
+#S 0 898394 
+#S 0 898394 
+#S 0 898394 
+# 18 subpath constraints for genome
+#S 901892 1 
+#S 901892 1 
+#S 901892 1 
+#S 901892 1 
+#S 901892 1 
+# 19 subpath constraints for genome
+#S 0 998242 
+#S 0 998242 
+#S 0 998242 
+#S 0 998242 
+#S 0 998242 
+# 20 subpath constraints for genome
+#S 0 1048181 
+#S 0 1048181 
+#S 0 1048181 
+#S 0 1048181 
+#S 0 1048181 
+# 21 subpath constraints for genome
+#S 0 1098120 
+#S 0 1098120 
+#S 0 1098120 
+#S 0 1098120 
+#S 0 1098120 
+# 22 subpath constraints for genome
+#S 0 1148059 
+#S 0 1148059 
+#S 0 1148059 
+#S 0 1148059 
+#S 0 1148059 
+# 23 subpath constraints for genome
+#S 0 1197998 
+#S 0 1197998 
+#S 0 1197998 
+#S 0 1197998 
+#S 0 1197998 
+# 24 subpath constraints for genome
+#S 0 1247937 
+#S 0 1247937 
+#S 0 1247937 
+#S 0 1247937 
+#S 0 1247937 
+# 25 subpath constraints for genome
+#S 0 1297876 
+#S 0 1297876 
+#S 0 1297876 
+#S 0 1297876 
+#S 0 1297876 
+79
+99879 1 3
+149818 1 8
+199757 1 89
+249696 1 42
+299635 1 1
+349574 1 7
+379350 379351 2
+379351 379365 5
+379365 379367 3
+379365 379650 2
+379367 379556 1
+379367 379351 1
+379367 1 1
+379556 379577 2
+379577 379639 1
+379577 379905 1
+379639 379351 2
+379650 379556 1
+379650 379350 1
+379905 379639 1
+449353 1 1
+449396 449628 6
+449628 449396 3
+449628 1 3
+548998 1 2
+598937 1 19
+648876 1 5
+698815 1 2
+718452 718477 9
+718477 718452 6
+718477 1 3
+798634 1 2
+810415 810416 160
+810416 810415 140
+810416 813389 20
+813389 813416 40
+813416 813477 20
+813416 813983 20
+813477 813510 40
+813510 813389 20
+813510 1 20
+813983 813477 20
+898394 1 1
+901863 901892 4
+901892 901863 2
+901892 1 2
+998242 1 1
+1048181 1 1
+1098120 1 4
+1148059 1 6
+1197998 1 1
+1247937 1 94
+1297876 1 1
+0 1 35
+0 99879 3
+0 149818 8
+0 199757 89
+0 249696 42
+0 299635 1
+0 349574 7
+0 379350 1
+0 449353 1
+0 449396 3
+0 548998 2
+0 598937 19
+0 648876 5
+0 698815 2
+0 718452 3
+0 798634 2
+0 810415 20
+0 898394 1
+0 901863 2
+0 998242 1
+0 1048181 1
+0 1098120 4
+0 1148059 6
+0 1197998 1
+0 1247937 94
+0 1297876 1

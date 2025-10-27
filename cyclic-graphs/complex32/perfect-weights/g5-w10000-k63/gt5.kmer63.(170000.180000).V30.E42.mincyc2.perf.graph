@@ -1,0 +1,101 @@
+#gt5.kmer63.(170000.180000).V30.E42.mincyc2.perf
+#construct.py -o cyclic-graphs/complex32/perfect-weights/g5-w10000-k63/ -g 5 -w 10000 -k 63 --mincycles 1 --nreads 5 --readlength 1000 -D complex32
+#kmersize=63
+#windowsize=10000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal-44
+#ngenomes=5
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/complex32/perfect-weights/g5-w10000-k63/
+#pdf=False
+#png=False
+#style=default
+#poisson_edge_errors=False
+#dataset=complex32
+#abundances=None
+#left_index=None
+#right_index=None
+#unique source is 0, unique sink is 1
+#genomes: GCF_000005845.2_ASM584v2_genomic.fna.gz GCF_000006925.2_ASM692v2_genomic.fna.gz GCF_000006945.2_ASM694v2_genomic.fna.gz GCF_000009045.1_ASM904v1_genomic.fna.gz GCF_000013285.1_ASM1328v1_genomic.fna.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 16 0 8346 8347 8357 8469 8808 8906 8912 8975 9406 9550 9565 9628 9748 9844 9910 1 
+#T 7 0 8347 8357 10051 8469 8808 10148 8906 8912 10210 8975 9406 10353 9550 9565 10415 9628 9748 10510 9844 9910 18885 1 
+#T 1 0 1 
+#T 7 0 28890 29153 29215 30077 28890 29153 33950 29215 30077 1 
+#T 1 0 47575 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 8357 8469 8808 8906 8912 8975 9406 
+#S 0 8346 
+#S 0 8346 
+#S 0 8346 
+#S 0 8346 
+# 1 subpath constraints for genome
+#S 9910 18885 
+#S 9910 18885 
+#S 9910 18885 
+#S 9910 18885 
+#S 9910 18885 
+# 2 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 3 subpath constraints for genome
+#S 30077 1 
+#S 30077 28890 
+#S 30077 28890 
+#S 30077 1 
+#S 30077 28890 29153 33950 29215 30077 
+# 4 subpath constraints for genome
+#S 0 47575 
+#S 0 47575 
+#S 0 47575 
+#S 0 47575 
+#S 0 47575 
+42
+8346 8347 16
+8347 8357 23
+8357 8469 16
+8357 10051 7
+8469 8808 23
+8808 8906 16
+8808 10148 7
+8906 8912 23
+8912 8975 16
+8912 10210 7
+8975 9406 23
+9406 9550 16
+9406 10353 7
+9550 9565 23
+9565 9628 16
+9565 10415 7
+9628 9748 23
+9748 9844 16
+9748 10510 7
+9844 9910 23
+9910 1 16
+9910 18885 7
+10051 8469 7
+10148 8906 7
+10210 8975 7
+10353 9550 7
+10415 9628 7
+10510 9844 7
+18885 1 7
+28890 29153 14
+29153 29215 7
+29153 33950 7
+29215 30077 14
+30077 28890 7
+30077 1 7
+33950 29215 7
+47575 1 1
+0 8347 7
+0 8346 16
+0 1 1
+0 28890 7
+0 47575 1

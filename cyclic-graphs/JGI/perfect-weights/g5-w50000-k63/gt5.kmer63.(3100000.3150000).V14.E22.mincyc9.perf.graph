@@ -1,0 +1,81 @@
+#gt5.kmer63.(3100000.3150000).V14.E22.mincyc9.perf
+#construct.py -o cyclic-graphs/JGI/perfect-weights/g5-w50000-k63/ -g 5 -w 50000 -k 63 --mincycles 1 --nreads 5 --readlength 1000 -D JGI
+#kmersize=63
+#windowsize=50000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal-44
+#ngenomes=5
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/JGI/perfect-weights/g5-w50000-k63/
+#pdf=False
+#png=False
+#style=default
+#poisson_edge_errors=False
+#dataset=JGI
+#abundances=None
+#left_index=None
+#right_index=None
+#unique source is 0, unique sink is 1
+#genomes: Clostridium_perfringensATCC_13124.fasta.gz Clostridium_thermocellumVPI_7372_ATCC_27405.fasta.gz Coraliomargarita_akajimensis_DSM_45221.fasta.gz Corynebacterium_glutamicum_ATCC_13032.fasta.gz Desulfosporosinus_acidiphilus_SJ4_DSM_22704.fasta.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 35 0 1 
+#T 3 0 99879 1 
+#T 8 0 131100 131180 131349 131385 131448 131460 132195 131349 132362 131448 131460 132649 131100 131180 132195 131349 131385 132362 131448 131460 132649 1 
+#T 89 0 199225 1 
+#T 42 0 249164 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 1 subpath constraints for genome
+#S 0 99879 
+#S 0 99879 
+#S 0 99879 
+#S 0 99879 
+#S 0 99879 
+# 2 subpath constraints for genome
+#S 0 131100 
+#S 0 131100 
+#S 132649 1 
+#S 0 131100 
+#S 0 131100 
+# 3 subpath constraints for genome
+#S 0 199225 
+#S 0 199225 
+#S 0 199225 
+#S 0 199225 
+#S 0 199225 
+# 4 subpath constraints for genome
+#S 0 249164 
+#S 0 249164 
+#S 0 249164 
+#S 0 249164 
+#S 0 249164 
+22
+99879 1 3
+131100 131180 16
+131180 131349 8
+131180 132195 8
+131349 131385 16
+131349 132362 8
+131385 131448 8
+131385 132362 8
+131448 131460 24
+131460 132195 8
+131460 132649 16
+132195 131349 16
+132362 131448 16
+132649 131100 8
+132649 1 8
+199225 1 89
+249164 1 42
+0 1 35
+0 99879 3
+0 131100 8
+0 199225 89
+0 249164 42

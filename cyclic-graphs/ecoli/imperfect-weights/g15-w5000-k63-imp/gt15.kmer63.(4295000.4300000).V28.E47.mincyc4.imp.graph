@@ -1,0 +1,176 @@
+#gt15.kmer63.(4295000.4300000).V28.E47.mincyc4.imp
+#construct.py -o cyclic-graphs/ecoli/imperfect-weights/g15-w5000-k63-imp/ -g 15 -w 5000 -k 63 --distribution lognormal11 --mincycles 1 --nreads 5 --readlength 1000 -D ecoli --poisson-edge-errors
+#kmersize=63
+#windowsize=5000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal11
+#ngenomes=15
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/ecoli/imperfect-weights/g15-w5000-k63-imp/
+#pdf=False
+#png=False
+#style=default
+#poisson_edge_errors=True
+#dataset=ecoli
+#abundances=None
+#left_index=None
+#right_index=None
+#unique source is 0, unique sink is 1
+#genomes: GCA_000005845.2_ASM584v2.fna.gz GCA_000006665.1_ASM666v1.fna.gz GCA_000007445.1_ASM744v1.fna.gz GCA_000008865.2_ASM886v2.fna.gz GCA_000009565.2_ASM956v1.fna.gz GCA_000010245.1_ASM1024v1.fna.gz GCA_000010385.1_ASM1038v1.fna.gz GCA_000010485.1_ASM1048v1.fna.gz GCA_000010745.1_ASM1074v1.fna.gz GCA_000010765.1_ASM1076v1.fna.gz GCA_000013265.1_ASM1326v1.fna.gz GCA_000013305.1_ASM1330v1.fna.gz GCA_000014845.1_ASM1484v1.fna.gz GCA_000017745.1_ASM1774v1.fna.gz GCA_000017765.1_ASM1776v1.fna.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 23 0 2 836 854 868 854 868 967 984 836 854 868 854 868 854 868 967 1107 1186 4665 1 
+#T 39 0 1 
+#T 35 0 14543 1 
+#T 43 0 19482 1 
+#T 84 0 23356 23372 23380 23453 23356 23372 23380 23538 23453 23356 23372 1 
+#T 20 0 27954 2 836 854 868 854 868 967 984 836 854 868 854 868 967 984 1107 1186 1 
+#T 268 0 32938 1 
+#T 70 0 37877 1 
+#T 5 0 42816 1 
+#T 71 0 47755 1 
+#T 26 0 52694 1 
+#T 36 0 57633 1 
+#T 25 0 62572 1 
+#T 40 0 67511 1 
+#T 71 0 72450 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 2 836 854 868 854 868 967 984 836 854 868 854 
+#S 2 836 854 868 854 868 967 984 836 854 868 854 868 854 868 967 1107 1186 
+#S 1186 4665 
+#S 1186 4665 
+#S 1186 4665 
+# 1 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 2 subpath constraints for genome
+#S 0 14543 
+#S 0 14543 
+#S 0 14543 
+#S 0 14543 
+#S 0 14543 
+# 3 subpath constraints for genome
+#S 0 19482 
+#S 0 19482 
+#S 0 19482 
+#S 0 19482 
+#S 0 19482 
+# 4 subpath constraints for genome
+#S 0 23356 
+#S 0 23356 
+#S 23356 23372 23380 23453 23356 23372 23380 23538 23453 23356 23372 1 
+#S 0 23356 
+#S 0 23356 
+# 5 subpath constraints for genome
+#S 2 836 854 868 854 868 967 984 836 854 868 854 868 967 984 1107 1186 
+#S 868 854 868 967 984 836 854 868 854 868 967 984 1107 1186 
+#S 0 27954 2 836 854 868 854 
+#S 0 27954 
+#S 0 27954 2 836 
+# 6 subpath constraints for genome
+#S 0 32938 
+#S 0 32938 
+#S 0 32938 
+#S 0 32938 
+#S 0 32938 
+# 7 subpath constraints for genome
+#S 0 37877 
+#S 0 37877 
+#S 0 37877 
+#S 0 37877 
+#S 0 37877 
+# 8 subpath constraints for genome
+#S 0 42816 
+#S 0 42816 
+#S 0 42816 
+#S 0 42816 
+#S 0 42816 
+# 9 subpath constraints for genome
+#S 0 47755 
+#S 0 47755 
+#S 0 47755 
+#S 0 47755 
+#S 0 47755 
+# 10 subpath constraints for genome
+#S 0 52694 
+#S 0 52694 
+#S 0 52694 
+#S 0 52694 
+#S 0 52694 
+# 11 subpath constraints for genome
+#S 0 57633 
+#S 0 57633 
+#S 0 57633 
+#S 0 57633 
+#S 0 57633 
+# 12 subpath constraints for genome
+#S 0 62572 
+#S 0 62572 
+#S 0 62572 
+#S 0 62572 
+#S 0 62572 
+# 13 subpath constraints for genome
+#S 0 67511 
+#S 0 67511 
+#S 0 67511 
+#S 0 67511 
+#S 0 67511 
+# 14 subpath constraints for genome
+#S 0 72450 
+#S 0 72450 
+#S 0 72450 
+#S 0 72450 
+#S 0 72450 
+47
+2 836 57
+836 854 84
+854 868 217
+868 967 76
+868 854 121
+967 984 54
+967 1107 25
+984 836 46
+984 1107 16
+1107 1186 45
+1186 1 17
+1186 4665 23
+4665 1 27
+14543 1 34
+19482 1 46
+23356 23372 275
+23372 23380 176
+23372 1 85
+23380 23453 100
+23380 23538 76
+23453 23356 171
+23538 23453 92
+27954 2 25
+32938 1 252
+37877 1 56
+42816 1 4
+47755 1 71
+52694 1 18
+57633 1 28
+62572 1 18
+67511 1 45
+72450 1 66
+0 2 20
+0 1 43
+0 14543 24
+0 19482 51
+0 23356 93
+0 27954 9
+0 32938 271
+0 37877 72
+0 42816 9
+0 47755 75
+0 52694 34
+0 57633 32
+0 62572 36
+0 67511 37
+0 72450 76

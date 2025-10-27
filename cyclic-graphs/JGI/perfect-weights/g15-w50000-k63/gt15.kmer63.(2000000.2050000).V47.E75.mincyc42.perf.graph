@@ -1,0 +1,204 @@
+#gt15.kmer63.(2000000.2050000).V47.E75.mincyc42.perf
+#construct.py -o cyclic-graphs/JGI/perfect-weights/g15-w50000-k63/ -g 15 -w 50000 -k 63 --mincycles 1 --nreads 5 --readlength 1000 -D JGI
+#kmersize=63
+#windowsize=50000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal-44
+#ngenomes=15
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/JGI/perfect-weights/g15-w50000-k63/
+#pdf=False
+#png=False
+#style=default
+#poisson_edge_errors=False
+#dataset=JGI
+#abundances=None
+#left_index=None
+#right_index=None
+#unique source is 0, unique sink is 1
+#genomes: Clostridium_perfringensATCC_13124.fasta.gz Clostridium_thermocellumVPI_7372_ATCC_27405.fasta.gz Coraliomargarita_akajimensis_DSM_45221.fasta.gz Corynebacterium_glutamicum_ATCC_13032.fasta.gz Desulfosporosinus_acidiphilus_SJ4_DSM_22704.fasta.gz Desulfosporosinus_meridiei_DSM_13257.fasta.gz Desulfotomaculum_gibsoniae_DSM_7213.fasta.gz E.coli_K12_ATCC_700926.fasta.gz Echinicola_vietnamensis_DSM_17526.fasta.gz Fervidobacterium_pennivorans_DSM_9078.fasta.gz Frateuria_aurantia_DSM_6220.fasta.gz Halovivax_ruber_XH-70.fasta.gz Hirschia_baltica_ATCC_49814.fasta.gz Meiothermus_silvanus_DSM_9946.fasta.gz Natronobacterium_gregoryi_SP2.fasta.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 35 0 1 
+#T 3 0 49941 50335 50396 50398 50445 50446 50601 50602 49941 50335 50396 50398 50445 50446 56375 50601 50602 49941 50335 50396 50602 49941 50335 50398 50445 1 
+#T 8 0 105136 105141 105136 105141 105136 105141 105136 105141 105136 105141 105136 105141 105136 105141 109034 109043 109034 109043 109034 109043 109034 109043 109034 109043 1 
+#T 89 0 196480 1 
+#T 42 0 246419 1 
+#T 1 0 296358 1 
+#T 7 0 309515 309521 309626 309815 309878 309881 309967 310067 310167 310193 310454 310505 309515 309521 319036 309626 309815 319098 309878 309881 319183 309967 310067 319282 310167 310193 319542 310454 310505 1 
+#T 1 0 395855 1 
+#T 1 0 445794 1 
+#T 3 0 495733 1 
+#T 2 0 515152 515169 515152 515169 1 
+#T 19 0 563576 563585 563576 563585 580143 580162 580143 580162 1 
+#T 5 0 645502 1 
+#T 2 0 695441 1 
+#T 3 0 745380 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 1 subpath constraints for genome
+#S 50602 49941 50335 50396 50398 50445 50446 56375 
+#S 50396 50602 
+#S 50445 1 
+#S 50445 1 
+#S 50445 1 
+# 2 subpath constraints for genome
+#S 109043 1 
+#S 105141 109034 109043 109034 109043 109034 109043 109034 109043 109034 109043 1 
+#S 0 105136 
+#S 109043 1 
+#S 109043 1 
+# 3 subpath constraints for genome
+#S 0 196480 
+#S 0 196480 
+#S 0 196480 
+#S 0 196480 
+#S 0 196480 
+# 4 subpath constraints for genome
+#S 0 246419 
+#S 0 246419 
+#S 0 246419 
+#S 0 246419 
+#S 0 246419 
+# 5 subpath constraints for genome
+#S 0 296358 
+#S 0 296358 
+#S 0 296358 
+#S 0 296358 
+#S 0 296358 
+# 6 subpath constraints for genome
+#S 310505 1 
+#S 310505 309515 
+#S 310505 1 
+#S 310505 309515 
+#S 0 309515 
+# 7 subpath constraints for genome
+#S 0 395855 
+#S 0 395855 
+#S 0 395855 
+#S 0 395855 
+#S 0 395855 
+# 8 subpath constraints for genome
+#S 0 445794 
+#S 0 445794 
+#S 0 445794 
+#S 0 445794 
+#S 0 445794 
+# 9 subpath constraints for genome
+#S 0 495733 
+#S 0 495733 
+#S 0 495733 
+#S 0 495733 
+#S 0 495733 
+# 10 subpath constraints for genome
+#S 515169 1 
+#S 0 515152 
+#S 0 515152 
+#S 515169 1 
+#S 515169 1 
+# 11 subpath constraints for genome
+#S 563585 580143 
+#S 563585 580143 
+#S 0 563576 
+#S 580162 1 
+#S 563585 580143 
+# 12 subpath constraints for genome
+#S 0 645502 
+#S 0 645502 
+#S 0 645502 
+#S 0 645502 
+#S 0 645502 
+# 13 subpath constraints for genome
+#S 0 695441 
+#S 0 695441 
+#S 0 695441 
+#S 0 695441 
+#S 0 695441 
+# 14 subpath constraints for genome
+#S 0 745380 
+#S 0 745380 
+#S 0 745380 
+#S 0 745380 
+#S 0 745380 
+75
+49941 50335 12
+50335 50396 9
+50335 50398 3
+50396 50398 6
+50396 50602 3
+50398 50445 9
+50445 50446 6
+50445 1 3
+50446 50601 3
+50446 56375 3
+50601 50602 6
+50602 49941 9
+56375 50601 3
+105136 105141 56
+105141 105136 48
+105141 109034 8
+109034 109043 40
+109043 109034 32
+109043 1 8
+196480 1 89
+246419 1 42
+296358 1 1
+309515 309521 14
+309521 309626 7
+309521 319036 7
+309626 309815 14
+309815 309878 7
+309815 319098 7
+309878 309881 14
+309881 309967 7
+309881 319183 7
+309967 310067 14
+310067 310167 7
+310067 319282 7
+310167 310193 14
+310193 310454 7
+310193 319542 7
+310454 310505 14
+310505 309515 7
+310505 1 7
+319036 309626 7
+319098 309878 7
+319183 309967 7
+319282 310167 7
+319542 310454 7
+395855 1 1
+445794 1 1
+495733 1 3
+515152 515169 4
+515169 515152 2
+515169 1 2
+563576 563585 38
+563585 563576 19
+563585 580143 19
+580143 580162 38
+580162 580143 19
+580162 1 19
+645502 1 5
+695441 1 2
+745380 1 3
+0 49941 3
+0 1 35
+0 105136 8
+0 196480 89
+0 246419 42
+0 296358 1
+0 309515 7
+0 395855 1
+0 445794 1
+0 495733 3
+0 515152 2
+0 563576 19
+0 645502 5
+0 695441 2
+0 745380 3

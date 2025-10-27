@@ -1,0 +1,83 @@
+#gt5.kmer63.(865000.870000).V16.E24.mincyc5.imp
+#construct.py -o cyclic-graphs/ecoli/imperfect-weights/g5-w5000-k63-imp/ -g 5 -w 5000 -k 63 --distribution lognormal11 --mincycles 1 --nreads 5 --readlength 1000 -D ecoli --poisson-edge-errors
+#kmersize=63
+#windowsize=5000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal11
+#ngenomes=5
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/ecoli/imperfect-weights/g5-w5000-k63-imp/
+#pdf=False
+#png=False
+#style=default
+#poisson_edge_errors=True
+#dataset=ecoli
+#abundances=None
+#left_index=None
+#right_index=None
+#unique source is 0, unique sink is 1
+#genomes: GCA_000005845.2_ASM584v2.fna.gz GCA_000006665.1_ASM666v1.fna.gz GCA_000007445.1_ASM744v1.fna.gz GCA_000008865.2_ASM886v2.fna.gz GCA_000009565.2_ASM956v1.fna.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 11 0 1 
+#T 52 0 6572 6573 6587 6591 6594 6680 6699 6761 6573 6587 6591 6680 6699 6927 6761 6573 6587 6929 6572 6573 6587 6929 9806 1 
+#T 23 0 14745 1 
+#T 108 0 6594 6680 6699 6761 6573 6587 6591 6680 6699 6927 6761 6573 6587 6929 6572 6573 6587 6929 9806 16398 1 
+#T 76 0 21337 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 1 subpath constraints for genome
+#S 0 6572 6573 6587 6591 6594 6680 6699 6761 6573 6587 6591 6680 6699 6927 6761 6573 6587 6929 6572 
+#S 0 6572 6573 6587 6591 6594 6680 6699 
+#S 6929 9806 
+#S 0 6572 6573 6587 6591 6594 6680 6699 6761 6573 6587 6591 6680 6699 6927 6761 6573 6587 6929 6572 
+#S 6929 9806 
+# 2 subpath constraints for genome
+#S 0 14745 
+#S 0 14745 
+#S 
+#S 0 14745 
+#S 0 14745 
+# 3 subpath constraints for genome
+#S 9806 16398 
+#S 6929 9806 
+#S 9806 16398 
+#S 9806 16398 
+#S 6929 9806 
+# 4 subpath constraints for genome
+#S 0 21337 
+#S 0 21337 
+#S 0 21337 
+#S 0 21337 
+#S 0 21337 
+24
+6572 6573 198
+6573 6587 515
+6587 6591 201
+6587 6929 328
+6591 6594 60
+6591 6680 165
+6594 6680 160
+6680 6699 275
+6699 6761 177
+6699 6927 160
+6761 6573 344
+6927 6761 158
+6929 6572 163
+6929 9806 181
+9806 1 66
+9806 16398 113
+14745 1 17
+16398 1 114
+21337 1 72
+0 6594 106
+0 1 10
+0 6572 53
+0 14745 31
+0 21337 69

@@ -1,0 +1,84 @@
+#gt5.kmer63.(1350000.1400000).V16.E25.mincyc6.imp
+#construct.py -o cyclic-graphs/JGI/imperfect-weights/g5-w50000-k63-imp/ -g 5 -w 50000 -k 63 --mincycles 1 --nreads 5 --readlength 1000 -D JGI --poisson-edge-errors
+#kmersize=63
+#windowsize=50000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal-44
+#ngenomes=5
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/JGI/imperfect-weights/g5-w50000-k63-imp/
+#pdf=False
+#png=False
+#style=default
+#poisson_edge_errors=True
+#dataset=JGI
+#abundances=None
+#left_index=None
+#right_index=None
+#unique source is 0, unique sink is 1
+#genomes: Clostridium_perfringensATCC_13124.fasta.gz Clostridium_thermocellumVPI_7372_ATCC_27405.fasta.gz Coraliomargarita_akajimensis_DSM_45221.fasta.gz Corynebacterium_glutamicum_ATCC_13032.fasta.gz Desulfosporosinus_acidiphilus_SJ4_DSM_22704.fasta.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 35 0 1 
+#T 3 0 81977 81984 81995 82320 82326 81984 81995 82929 81977 81984 81995 82929 82320 82326 1 
+#T 8 0 149325 1 
+#T 89 0 164916 164943 165006 165042 164916 164943 165225 165006 165042 1 
+#T 42 0 200046 200061 200046 200061 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 1 subpath constraints for genome
+#S 82326 1 
+#S 0 81977 
+#S 0 81977 
+#S 82326 1 
+#S 82326 1 
+# 2 subpath constraints for genome
+#S 0 149325 
+#S 0 149325 
+#S 0 149325 
+#S 0 149325 
+#S 0 149325 
+# 3 subpath constraints for genome
+#S 165042 1 
+#S 0 164916 
+#S 165042 1 
+#S 165042 1 
+#S 165042 1 
+# 4 subpath constraints for genome
+#S 200061 1 
+#S 200061 200046 
+#S 200061 1 
+#S 200061 1 
+#S 200061 200046 
+25
+81977 81984 7
+81984 81995 13
+81995 82320 5
+81995 82929 5
+82320 82326 3
+82326 81984 5
+82326 1 3
+82929 81977 4
+82929 82320 1
+149325 1 4
+164916 164943 158
+164943 165006 99
+164943 165225 94
+165006 165042 180
+165042 164916 86
+165042 1 96
+165225 165006 87
+200046 200061 88
+200061 200046 36
+200061 1 49
+0 1 42
+0 81977 2
+0 149325 12
+0 164916 93
+0 200046 41

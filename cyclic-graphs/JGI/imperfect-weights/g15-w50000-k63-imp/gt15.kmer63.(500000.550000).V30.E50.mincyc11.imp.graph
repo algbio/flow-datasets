@@ -1,0 +1,179 @@
+#gt15.kmer63.(500000.550000).V30.E50.mincyc11.imp
+#construct.py -o cyclic-graphs/JGI/imperfect-weights/g15-w50000-k63-imp/ -g 15 -w 50000 -k 63 --mincycles 1 --nreads 5 --readlength 1000 -D JGI --poisson-edge-errors
+#kmersize=63
+#windowsize=50000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal-44
+#ngenomes=15
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/JGI/imperfect-weights/g15-w50000-k63-imp/
+#pdf=False
+#png=False
+#style=default
+#poisson_edge_errors=True
+#dataset=JGI
+#abundances=None
+#left_index=None
+#right_index=None
+#unique source is 0, unique sink is 1
+#genomes: Clostridium_perfringensATCC_13124.fasta.gz Clostridium_thermocellumVPI_7372_ATCC_27405.fasta.gz Coraliomargarita_akajimensis_DSM_45221.fasta.gz Corynebacterium_glutamicum_ATCC_13032.fasta.gz Desulfosporosinus_acidiphilus_SJ4_DSM_22704.fasta.gz Desulfosporosinus_meridiei_DSM_13257.fasta.gz Desulfotomaculum_gibsoniae_DSM_7213.fasta.gz E.coli_K12_ATCC_700926.fasta.gz Echinicola_vietnamensis_DSM_17526.fasta.gz Fervidobacterium_pennivorans_DSM_9078.fasta.gz Frateuria_aurantia_DSM_6220.fasta.gz Halovivax_ruber_XH-70.fasta.gz Hirschia_baltica_ATCC_49814.fasta.gz Meiothermus_silvanus_DSM_9946.fasta.gz Natronobacterium_gregoryi_SP2.fasta.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 35 0 39284 39380 39284 39380 1 
+#T 3 0 67034 67068 67221 67224 67383 67905 68051 68112 67034 67068 70399 67221 67224 70557 67383 67905 70702 68051 68112 1 
+#T 8 0 1 
+#T 89 0 199036 1 
+#T 42 0 248975 1 
+#T 1 0 298914 1 
+#T 7 0 348853 1 
+#T 1 0 398792 1 
+#T 1 0 448731 1 
+#T 3 0 498670 1 
+#T 2 0 548609 1 
+#T 19 0 598548 1 
+#T 5 0 648487 1 
+#T 2 0 698426 1 
+#T 3 0 736198 736218 736198 736218 736245 736254 736245 736254 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 0 39284 
+#S 0 39284 
+#S 0 39284 
+#S 0 39284 
+#S 39380 1 
+# 1 subpath constraints for genome
+#S 68112 1 
+#S 0 67034 
+#S 68112 1 
+#S 0 67034 
+#S 0 67034 
+# 2 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 3 subpath constraints for genome
+#S 0 199036 
+#S 0 199036 
+#S 0 199036 
+#S 0 199036 
+#S 0 199036 
+# 4 subpath constraints for genome
+#S 0 248975 
+#S 0 248975 
+#S 0 248975 
+#S 0 248975 
+#S 0 248975 
+# 5 subpath constraints for genome
+#S 0 298914 
+#S 0 298914 
+#S 0 298914 
+#S 0 298914 
+#S 0 298914 
+# 6 subpath constraints for genome
+#S 0 348853 
+#S 0 348853 
+#S 0 348853 
+#S 0 348853 
+#S 0 348853 
+# 7 subpath constraints for genome
+#S 0 398792 
+#S 0 398792 
+#S 0 398792 
+#S 0 398792 
+#S 0 398792 
+# 8 subpath constraints for genome
+#S 0 448731 
+#S 0 448731 
+#S 0 448731 
+#S 0 448731 
+#S 0 448731 
+# 9 subpath constraints for genome
+#S 0 498670 
+#S 0 498670 
+#S 0 498670 
+#S 0 498670 
+#S 0 498670 
+# 10 subpath constraints for genome
+#S 0 548609 
+#S 0 548609 
+#S 0 548609 
+#S 0 548609 
+#S 0 548609 
+# 11 subpath constraints for genome
+#S 0 598548 
+#S 0 598548 
+#S 0 598548 
+#S 0 598548 
+#S 0 598548 
+# 12 subpath constraints for genome
+#S 0 648487 
+#S 0 648487 
+#S 0 648487 
+#S 0 648487 
+#S 0 648487 
+# 13 subpath constraints for genome
+#S 0 698426 
+#S 0 698426 
+#S 0 698426 
+#S 0 698426 
+#S 0 698426 
+# 14 subpath constraints for genome
+#S 0 736198 
+#S 736254 1 
+#S 0 736198 
+#S 0 736198 
+#S 0 736198 
+50
+39284 39380 74
+39380 39284 38
+39380 1 37
+67034 67068 4
+67068 67221 2
+67068 70399 4
+67221 67224 7
+67224 67383 1
+67224 70557 5
+67383 67905 11
+67905 68051 2
+67905 70702 2
+68051 68112 5
+68112 67034 5
+68112 1 3
+70399 67221 5
+70557 67383 1
+70702 68051 4
+199036 1 83
+248975 1 49
+298914 1 1
+348853 1 1
+398792 1 1
+448731 1 1
+498670 1 4
+548609 1 2
+598548 1 20
+648487 1 4
+698426 1 1
+736198 736218 4
+736218 736198 1
+736218 736245 2
+736245 736254 8
+736254 736245 1
+736254 1 3
+0 39284 46
+0 67034 1
+0 1 6
+0 199036 84
+0 248975 38
+0 298914 1
+0 348853 9
+0 398792 1
+0 448731 1
+0 498670 7
+0 548609 3
+0 598548 19
+0 648487 1
+0 698426 1
+0 736198 6

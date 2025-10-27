@@ -1,0 +1,97 @@
+#gt5.kmer63.(3210000.3220000).V26.E38.mincyc18.perf
+#construct.py -o cyclic-graphs/complex32/perfect-weights/g5-w10000-k63/ -g 5 -w 10000 -k 63 --mincycles 1 --nreads 5 --readlength 1000 -D complex32
+#kmersize=63
+#windowsize=10000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal-44
+#ngenomes=5
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/complex32/perfect-weights/g5-w10000-k63/
+#pdf=False
+#png=False
+#style=default
+#poisson_edge_errors=False
+#dataset=complex32
+#abundances=None
+#left_index=None
+#right_index=None
+#unique source is 0, unique sink is 1
+#genomes: GCF_000005845.2_ASM584v2_genomic.fna.gz GCF_000006925.2_ASM692v2_genomic.fna.gz GCF_000006945.2_ASM694v2_genomic.fna.gz GCF_000009045.1_ASM904v1_genomic.fna.gz GCF_000013285.1_ASM1328v1_genomic.fna.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 16 0 9557 9558 9646 9738 9777 9880 9900 1 
+#T 7 0 9558 9646 10031 9738 9777 10133 9880 9900 19729 1 
+#T 1 0 1 
+#T 7 0 39607 1 
+#T 1 0 45167 45170 45192 45197 45258 45272 45275 45338 45341 45355 45358 45170 45192 45484 45258 45272 45275 45549 45338 45341 45355 45358 45167 45170 45192 45197 45484 45258 45272 45341 45355 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 0 9557 
+#S 0 9557 
+#S 0 9557 
+#S 0 9557 
+#S 0 9557 
+# 1 subpath constraints for genome
+#S 9900 19729 
+#S 9900 19729 
+#S 9900 19729 
+#S 9900 19729 
+#S 9900 19729 
+# 2 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 3 subpath constraints for genome
+#S 0 39607 
+#S 0 39607 
+#S 0 39607 
+#S 0 39607 
+#S 0 39607 
+# 4 subpath constraints for genome
+#S 45355 1 
+#S 0 45167 
+#S 0 45167 
+#S 45192 45484 45258 45272 45275 45549 45338 45341 45355 45358 45167 45170 45192 45197 45484 45258 45272 45341 45355 1 
+#S 45355 1 
+38
+9557 9558 16
+9558 9646 23
+9646 9738 16
+9646 10031 7
+9738 9777 23
+9777 9880 16
+9777 10133 7
+9880 9900 23
+9900 1 16
+9900 19729 7
+10031 9738 7
+10133 9880 7
+19729 1 7
+39607 1 7
+45167 45170 2
+45170 45192 3
+45192 45197 2
+45192 45484 1
+45197 45258 1
+45197 45484 1
+45258 45272 3
+45272 45275 2
+45272 45341 1
+45275 45338 1
+45275 45549 1
+45338 45341 2
+45341 45355 3
+45355 45358 2
+45355 1 1
+45358 45170 1
+45358 45167 1
+45484 45258 2
+45549 45338 1
+0 9558 7
+0 9557 16
+0 1 1
+0 39607 7
+0 45167 1

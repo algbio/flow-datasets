@@ -1,0 +1,90 @@
+#gt5.kmer63.(810000.815000).V22.E31.mincyc8.imp
+#construct.py -o cyclic-graphs/ecoli/imperfect-weights/g5-w5000-k63-imp/ -g 5 -w 5000 -k 63 --distribution lognormal11 --mincycles 1 --nreads 5 --readlength 1000 -D ecoli --poisson-edge-errors
+#kmersize=63
+#windowsize=5000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal11
+#ngenomes=5
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/ecoli/imperfect-weights/g5-w5000-k63-imp/
+#pdf=False
+#png=False
+#style=default
+#poisson_edge_errors=True
+#dataset=ecoli
+#abundances=None
+#left_index=None
+#right_index=None
+#unique source is 0, unique sink is 1
+#genomes: GCA_000005845.2_ASM584v2.fna.gz GCA_000006665.1_ASM666v1.fna.gz GCA_000007445.1_ASM744v1.fna.gz GCA_000008865.2_ASM886v2.fna.gz GCA_000009565.2_ASM956v1.fna.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 91 0 1 
+#T 18 0 4941 4965 5097 5441 5507 5624 5825 5888 6137 6248 6315 5441 5507 7427 5624 5825 7489 5888 6137 7599 6248 6315 9292 1 
+#T 41 0 14231 1 
+#T 49 0 14449 4941 4965 14580 5097 5441 5507 5624 5825 7489 5888 6137 7599 6248 6315 9292 16233 1 
+#T 129 0 21172 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 1 subpath constraints for genome
+#S 4965 5097 5441 5507 5624 5825 5888 6137 
+#S 4965 5097 5441 5507 5624 5825 5888 6137 
+#S 6315 5441 5507 7427 5624 5825 
+#S 5624 5825 5888 6137 6248 6315 5441 
+#S 6315 5441 5507 7427 5624 5825 
+# 2 subpath constraints for genome
+#S 0 14231 
+#S 0 14231 
+#S 0 14231 
+#S 0 14231 
+#S 0 14231 
+# 3 subpath constraints for genome
+#S 6315 9292 16233 
+#S 6315 9292 
+#S 6315 9292 16233 
+#S 9292 16233 
+#S 6315 9292 16233 
+# 4 subpath constraints for genome
+#S 0 21172 
+#S 0 21172 
+#S 0 21172 
+#S 0 21172 
+#S 0 21172 
+31
+4941 4965 74
+4965 5097 27
+4965 14580 43
+5097 5441 72
+5441 5507 85
+5507 5624 60
+5507 7427 19
+5624 5825 93
+5825 5888 23
+5825 7489 53
+5888 6137 89
+6137 6248 12
+6137 7599 56
+6248 6315 88
+6315 5441 13
+6315 9292 65
+7427 5624 19
+7489 5888 71
+7599 6248 60
+9292 1 16
+9292 16233 43
+14231 1 30
+14449 4941 49
+14580 5097 49
+16233 1 48
+21172 1 126
+0 4941 14
+0 1 86
+0 14231 42
+0 14449 37
+0 21172 136

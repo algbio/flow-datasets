@@ -1,0 +1,87 @@
+#gt5.kmer63.(2100000.2150000).V19.E28.mincyc7.imp
+#construct.py -o cyclic-graphs/JGI/imperfect-weights/g5-w50000-k63-imp/ -g 5 -w 50000 -k 63 --mincycles 1 --nreads 5 --readlength 1000 -D JGI --poisson-edge-errors
+#kmersize=63
+#windowsize=50000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal-44
+#ngenomes=5
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/JGI/imperfect-weights/g5-w50000-k63-imp/
+#pdf=False
+#png=False
+#style=default
+#poisson_edge_errors=True
+#dataset=JGI
+#abundances=None
+#left_index=None
+#right_index=None
+#unique source is 0, unique sink is 1
+#genomes: Clostridium_perfringensATCC_13124.fasta.gz Clostridium_thermocellumVPI_7372_ATCC_27405.fasta.gz Coraliomargarita_akajimensis_DSM_45221.fasta.gz Corynebacterium_glutamicum_ATCC_13032.fasta.gz Desulfosporosinus_acidiphilus_SJ4_DSM_22704.fasta.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 35 0 1 
+#T 3 0 86889 86973 86979 86994 87165 87192 86979 86994 87517 87165 87192 86889 86973 87828 87849 87956 88020 87828 87849 88179 87956 88020 88236 88272 88236 88272 1 
+#T 8 0 149565 1 
+#T 89 0 199504 1 
+#T 42 0 249443 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 
+#S 0 1 
+#S 0 1 
+# 1 subpath constraints for genome
+#S 88272 1 
+#S 0 86889 
+#S 0 86889 86973 86979 86994 87165 
+#S 0 86889 
+#S 88272 1 
+# 2 subpath constraints for genome
+#S 0 149565 
+#S 0 149565 
+#S 0 149565 
+#S 0 149565 
+#S 0 149565 
+# 3 subpath constraints for genome
+#S 0 199504 
+#S 0 199504 
+#S 0 199504 
+#S 0 199504 
+#S 0 199504 
+# 4 subpath constraints for genome
+#S 0 249443 
+#S 0 249443 
+#S 0 249443 
+#S 0 249443 
+#S 0 249443 
+28
+86889 86973 4
+86973 86979 6
+86973 87828 3
+86979 86994 10
+86994 87165 1
+86994 87517 5
+87165 87192 5
+87192 86979 1
+87192 86889 3
+87517 87165 3
+87828 87849 12
+87849 87956 1
+87849 88179 4
+87956 88020 8
+88020 87828 7
+88020 88236 3
+88179 87956 4
+88236 88272 5
+88272 88236 4
+88272 1 2
+149565 1 9
+199504 1 93
+249443 1 30
+0 1 25
+0 86889 2
+0 149565 10
+0 199504 85
+0 249443 44

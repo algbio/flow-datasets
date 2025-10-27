@@ -1,0 +1,84 @@
+#gt5.kmer63.(2790000.2800000).V16.E25.mincyc6.perf
+#construct.py -o cyclic-graphs/complex32/perfect-weights/g5-w10000-k63/ -g 5 -w 10000 -k 63 --mincycles 1 --nreads 5 --readlength 1000 -D complex32
+#kmersize=63
+#windowsize=10000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal-44
+#ngenomes=5
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/complex32/perfect-weights/g5-w10000-k63/
+#pdf=False
+#png=False
+#style=default
+#poisson_edge_errors=False
+#dataset=complex32
+#abundances=None
+#left_index=None
+#right_index=None
+#unique source is 0, unique sink is 1
+#genomes: GCF_000005845.2_ASM584v2_genomic.fna.gz GCF_000006925.2_ASM692v2_genomic.fna.gz GCF_000006945.2_ASM694v2_genomic.fna.gz GCF_000009045.1_ASM904v1_genomic.fna.gz GCF_000013285.1_ASM1328v1_genomic.fna.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 16 0 1 
+#T 7 0 11488 11502 11565 11616 11488 11502 11631 11679 11616 11488 11502 11631 11679 11565 11616 11488 11502 11631 1 
+#T 1 0 29642 1 
+#T 7 0 39581 1 
+#T 1 0 45522 45535 45901 45908 45929 46111 45901 45908 46111 45901 45908 45929 45522 45535 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 1 subpath constraints for genome
+#S 11631 1 
+#S 0 11488 
+#S 0 11488 11502 11565 11616 11488 11502 11631 11679 11616 11488 11502 11631 11679 
+#S 11631 1 
+#S 11631 1 
+# 2 subpath constraints for genome
+#S 0 29642 
+#S 0 29642 
+#S 0 29642 
+#S 0 29642 
+#S 0 29642 
+# 3 subpath constraints for genome
+#S 0 39581 
+#S 0 39581 
+#S 0 39581 
+#S 0 39581 
+#S 0 39581 
+# 4 subpath constraints for genome
+#S 0 45522 45535 45901 45908 45929 46111 45901 45908 46111 45901 45908 45929 45522 45535 1 
+#S 45535 1 
+#S 0 45522 
+#S 0 45522 
+#S 0 45522 
+25
+11488 11502 28
+11502 11565 7
+11502 11631 21
+11565 11616 14
+11616 11488 21
+11631 11679 14
+11631 1 7
+11679 11616 7
+11679 11565 7
+29642 1 1
+39581 1 7
+45522 45535 2
+45535 45901 1
+45535 1 1
+45901 45908 3
+45908 45929 2
+45908 46111 1
+45929 46111 1
+45929 45522 1
+46111 45901 2
+0 1 16
+0 11488 7
+0 29642 1
+0 39581 7
+0 45522 1

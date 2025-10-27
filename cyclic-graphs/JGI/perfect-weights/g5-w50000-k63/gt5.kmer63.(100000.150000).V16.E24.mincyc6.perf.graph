@@ -1,0 +1,83 @@
+#gt5.kmer63.(100000.150000).V16.E24.mincyc6.perf
+#construct.py -o cyclic-graphs/JGI/perfect-weights/g5-w50000-k63/ -g 5 -w 50000 -k 63 --mincycles 1 --nreads 5 --readlength 1000 -D JGI
+#kmersize=63
+#windowsize=50000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal-44
+#ngenomes=5
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/JGI/perfect-weights/g5-w50000-k63/
+#pdf=False
+#png=False
+#style=default
+#poisson_edge_errors=False
+#dataset=JGI
+#abundances=None
+#left_index=None
+#right_index=None
+#unique source is 0, unique sink is 1
+#genomes: Clostridium_perfringensATCC_13124.fasta.gz Clostridium_thermocellumVPI_7372_ATCC_27405.fasta.gz Coraliomargarita_akajimensis_DSM_45221.fasta.gz Corynebacterium_glutamicum_ATCC_13032.fasta.gz Desulfosporosinus_acidiphilus_SJ4_DSM_22704.fasta.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 35 0 1 
+#T 3 0 99879 1 
+#T 8 0 124746 124821 124746 124821 1 
+#T 89 0 199681 1 
+#T 42 0 202746 202761 202829 202844 203299 203313 210376 210404 210376 210404 202746 202761 213690 202829 202844 213839 203299 203313 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 1 subpath constraints for genome
+#S 0 99879 
+#S 0 99879 
+#S 0 99879 
+#S 0 99879 
+#S 0 99879 
+# 2 subpath constraints for genome
+#S 124821 124746 
+#S 0 124746 
+#S 124821 1 
+#S 124821 1 
+#S 0 124746 124821 124746 
+# 3 subpath constraints for genome
+#S 0 199681 
+#S 0 199681 
+#S 0 199681 
+#S 0 199681 
+#S 0 199681 
+# 4 subpath constraints for genome
+#S 203313 1 
+#S 203313 1 
+#S 203313 1 
+#S 203313 1 
+#S 203313 1 
+24
+99879 1 3
+124746 124821 16
+124821 124746 8
+124821 1 8
+199681 1 89
+202746 202761 84
+202761 202829 42
+202761 213690 42
+202829 202844 84
+202844 203299 42
+202844 213839 42
+203299 203313 84
+203313 210376 42
+203313 1 42
+210376 210404 84
+210404 210376 42
+210404 202746 42
+213690 202829 42
+213839 203299 42
+0 1 35
+0 99879 3
+0 124746 8
+0 199681 89
+0 202746 42

@@ -1,0 +1,208 @@
+#gt20.kmer63.(3080000.3085000).V24.E44.mincyc1.imp
+#construct.py -o cyclic-graphs/ecoli/imperfect-weights/g20-w5000-k63-imp/ -g 20 -w 5000 -k 63 --distribution lognormal11 --mincycles 1 --nreads 5 --readlength 1000 -D ecoli --poisson-edge-errors
+#kmersize=63
+#windowsize=5000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal11
+#ngenomes=20
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/ecoli/imperfect-weights/g20-w5000-k63-imp/
+#pdf=False
+#png=False
+#style=default
+#poisson_edge_errors=True
+#dataset=ecoli
+#abundances=None
+#left_index=None
+#right_index=None
+#unique source is 0, unique sink is 1
+#genomes: GCA_000005845.2_ASM584v2.fna.gz GCA_000006665.1_ASM666v1.fna.gz GCA_000007445.1_ASM744v1.fna.gz GCA_000008865.2_ASM886v2.fna.gz GCA_000009565.2_ASM956v1.fna.gz GCA_000010245.1_ASM1024v1.fna.gz GCA_000010385.1_ASM1038v1.fna.gz GCA_000010485.1_ASM1048v1.fna.gz GCA_000010745.1_ASM1074v1.fna.gz GCA_000010765.1_ASM1076v1.fna.gz GCA_000013265.1_ASM1326v1.fna.gz GCA_000013305.1_ASM1330v1.fna.gz GCA_000014845.1_ASM1484v1.fna.gz GCA_000017745.1_ASM1774v1.fna.gz GCA_000017765.1_ASM1776v1.fna.gz GCA_000017985.1_ASM1798v1.fna.gz GCA_000019385.1_ASM1938v1.fna.gz GCA_000019425.1_ASM1942v1.fna.gz GCA_000019645.1_ASM1964v1.fna.gz GCA_000021125.1_ASM2112v1.fna.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 30 0 1345 1346 4940 1 
+#T 44 0 1 
+#T 67 0 14818 1 
+#T 20 0 19757 1 
+#T 9 0 24696 1 
+#T 32 0 1346 4940 26040 1 
+#T 32 0 30979 1 
+#T 62 0 35918 1 
+#T 9 0 40857 1 
+#T 9 0 45796 1 
+#T 10 0 50735 1 
+#T 9 0 55674 1 
+#T 64 0 60613 1 
+#T 106 0 65552 1 
+#T 19 0 70491 1 
+#T 33 0 70647 70667 70647 70667 1 
+#T 111 0 80348 1 
+#T 21 0 85287 1 
+#T 87 0 90226 1 
+#T 19 0 95165 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 1346 4940 
+#S 1346 4940 
+#S 1346 4940 
+#S 1346 4940 
+#S 0 1345 1346 4940 
+# 1 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 2 subpath constraints for genome
+#S 0 14818 
+#S 0 14818 
+#S 0 14818 
+#S 0 14818 
+#S 0 14818 
+# 3 subpath constraints for genome
+#S 0 19757 
+#S 0 19757 
+#S 0 19757 
+#S 0 19757 
+#S 0 19757 
+# 4 subpath constraints for genome
+#S 0 24696 
+#S 0 24696 
+#S 0 24696 
+#S 0 24696 
+#S 0 24696 
+# 5 subpath constraints for genome
+#S 1346 4940 
+#S 1346 4940 
+#S 1346 4940 
+#S 4940 26040 
+#S 1346 4940 26040 
+# 6 subpath constraints for genome
+#S 0 30979 
+#S 0 30979 
+#S 0 30979 
+#S 0 30979 
+#S 0 30979 
+# 7 subpath constraints for genome
+#S 0 35918 
+#S 0 35918 
+#S 0 35918 
+#S 0 35918 
+#S 0 35918 
+# 8 subpath constraints for genome
+#S 0 40857 
+#S 0 40857 
+#S 0 40857 
+#S 0 40857 
+#S 0 40857 
+# 9 subpath constraints for genome
+#S 0 45796 
+#S 0 45796 
+#S 0 45796 
+#S 0 45796 
+#S 0 45796 
+# 10 subpath constraints for genome
+#S 0 50735 
+#S 0 50735 
+#S 0 50735 
+#S 0 50735 
+#S 0 50735 
+# 11 subpath constraints for genome
+#S 0 55674 
+#S 0 55674 
+#S 0 55674 
+#S 0 55674 
+#S 0 55674 
+# 12 subpath constraints for genome
+#S 0 60613 
+#S 0 60613 
+#S 0 60613 
+#S 0 60613 
+#S 0 60613 
+# 13 subpath constraints for genome
+#S 0 65552 
+#S 0 65552 
+#S 0 65552 
+#S 0 65552 
+#S 0 65552 
+# 14 subpath constraints for genome
+#S 0 70491 
+#S 0 70491 
+#S 0 70491 
+#S 0 70491 
+#S 0 70491 
+# 15 subpath constraints for genome
+#S 70667 1 
+#S 70667 1 
+#S 70647 70667 1 
+#S 70667 70647 70667 1 
+#S 70667 1 
+# 16 subpath constraints for genome
+#S 0 80348 
+#S 0 80348 
+#S 0 80348 
+#S 0 80348 
+#S 0 80348 
+# 17 subpath constraints for genome
+#S 0 85287 
+#S 0 85287 
+#S 0 85287 
+#S 0 85287 
+#S 0 85287 
+# 18 subpath constraints for genome
+#S 0 90226 
+#S 0 90226 
+#S 0 90226 
+#S 0 90226 
+#S 0 90226 
+# 19 subpath constraints for genome
+#S 0 95165 
+#S 
+#S 0 95165 
+#S 0 95165 
+#S 0 95165 
+44
+1345 1346 31
+1346 4940 47
+4940 1 27
+4940 26040 31
+14818 1 56
+19757 1 14
+24696 1 6
+26040 1 44
+30979 1 41
+35918 1 61
+40857 1 8
+45796 1 12
+50735 1 11
+55674 1 11
+60613 1 71
+65552 1 111
+70491 1 15
+70647 70667 64
+70667 70647 33
+70667 1 33
+80348 1 108
+85287 1 19
+90226 1 88
+95165 1 21
+0 1346 35
+0 1345 26
+0 1 29
+0 14818 66
+0 19757 23
+0 24696 12
+0 30979 34
+0 35918 69
+0 40857 10
+0 45796 10
+0 50735 10
+0 55674 12
+0 60613 69
+0 65552 90
+0 70491 23
+0 70647 30
+0 80348 91
+0 85287 21
+0 90226 74
+0 95165 23

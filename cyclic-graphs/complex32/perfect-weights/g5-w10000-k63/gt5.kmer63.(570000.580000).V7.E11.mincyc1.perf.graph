@@ -1,0 +1,70 @@
+#gt5.kmer63.(570000.580000).V7.E11.mincyc1.perf
+#construct.py -o cyclic-graphs/complex32/perfect-weights/g5-w10000-k63/ -g 5 -w 10000 -k 63 --mincycles 1 --nreads 5 --readlength 1000 -D complex32
+#kmersize=63
+#windowsize=10000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal-44
+#ngenomes=5
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/complex32/perfect-weights/g5-w10000-k63/
+#pdf=False
+#png=False
+#style=default
+#poisson_edge_errors=False
+#dataset=complex32
+#abundances=None
+#left_index=None
+#right_index=None
+#unique source is 0, unique sink is 1
+#genomes: GCF_000005845.2_ASM584v2_genomic.fna.gz GCF_000006925.2_ASM692v2_genomic.fna.gz GCF_000006945.2_ASM694v2_genomic.fna.gz GCF_000009045.1_ASM904v1_genomic.fna.gz GCF_000013285.1_ASM1328v1_genomic.fna.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 16 0 1 
+#T 7 0 16275 16291 16275 16291 1 
+#T 1 0 29801 1 
+#T 7 0 39740 1 
+#T 1 0 49679 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 1 subpath constraints for genome
+#S 0 16275 16291 16275 
+#S 0 16275 16291 16275 16291 1 
+#S 16291 1 
+#S 0 16275 
+#S 0 16275 
+# 2 subpath constraints for genome
+#S 0 29801 
+#S 0 29801 
+#S 0 29801 
+#S 0 29801 
+#S 0 29801 
+# 3 subpath constraints for genome
+#S 0 39740 
+#S 0 39740 
+#S 0 39740 
+#S 0 39740 
+#S 0 39740 
+# 4 subpath constraints for genome
+#S 0 49679 
+#S 0 49679 
+#S 0 49679 
+#S 0 49679 
+#S 0 49679 
+11
+16275 16291 14
+16291 16275 7
+16291 1 7
+29801 1 1
+39740 1 7
+49679 1 1
+0 1 16
+0 16275 7
+0 29801 1
+0 39740 7
+0 49679 1

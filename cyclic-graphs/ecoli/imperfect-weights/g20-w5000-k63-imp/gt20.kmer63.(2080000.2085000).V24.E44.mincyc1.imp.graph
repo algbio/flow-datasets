@@ -1,0 +1,208 @@
+#gt20.kmer63.(2080000.2085000).V24.E44.mincyc1.imp
+#construct.py -o cyclic-graphs/ecoli/imperfect-weights/g20-w5000-k63-imp/ -g 20 -w 5000 -k 63 --distribution lognormal11 --mincycles 1 --nreads 5 --readlength 1000 -D ecoli --poisson-edge-errors
+#kmersize=63
+#windowsize=5000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal11
+#ngenomes=20
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/ecoli/imperfect-weights/g20-w5000-k63-imp/
+#pdf=False
+#png=False
+#style=default
+#poisson_edge_errors=True
+#dataset=ecoli
+#abundances=None
+#left_index=None
+#right_index=None
+#unique source is 0, unique sink is 1
+#genomes: GCA_000005845.2_ASM584v2.fna.gz GCA_000006665.1_ASM666v1.fna.gz GCA_000007445.1_ASM744v1.fna.gz GCA_000008865.2_ASM886v2.fna.gz GCA_000009565.2_ASM956v1.fna.gz GCA_000010245.1_ASM1024v1.fna.gz GCA_000010385.1_ASM1038v1.fna.gz GCA_000010485.1_ASM1048v1.fna.gz GCA_000010745.1_ASM1074v1.fna.gz GCA_000010765.1_ASM1076v1.fna.gz GCA_000013265.1_ASM1326v1.fna.gz GCA_000013305.1_ASM1330v1.fna.gz GCA_000014845.1_ASM1484v1.fna.gz GCA_000017745.1_ASM1774v1.fna.gz GCA_000017765.1_ASM1776v1.fna.gz GCA_000017985.1_ASM1798v1.fna.gz GCA_000019385.1_ASM1938v1.fna.gz GCA_000019425.1_ASM1942v1.fna.gz GCA_000019645.1_ASM1964v1.fna.gz GCA_000021125.1_ASM2112v1.fna.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 20 0 2 2803 4940 1 
+#T 84 0 1 
+#T 29 0 14818 1 
+#T 61 0 19757 1 
+#T 45 0 24696 1 
+#T 12 0 26833 2 2803 1 
+#T 31 0 31772 1 
+#T 8 0 36711 1 
+#T 100 0 41650 1 
+#T 2 0 46589 1 
+#T 8 0 51528 1 
+#T 20 0 56467 1 
+#T 43 0 61406 1 
+#T 39 0 66345 1 
+#T 32 0 71284 1 
+#T 9 0 76223 1 
+#T 34 0 81162 1 
+#T 20 0 86101 1 
+#T 60 0 91040 1 
+#T 9 0 91041 91294 91041 91294 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 2 2803 4940 
+#S 2803 4940 
+#S 2 2803 4940 
+#S 2803 4940 
+#S 2803 4940 
+# 1 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 2 subpath constraints for genome
+#S 0 14818 
+#S 0 14818 
+#S 0 14818 
+#S 0 14818 
+#S 0 14818 
+# 3 subpath constraints for genome
+#S 0 19757 
+#S 0 19757 
+#S 0 19757 
+#S 0 19757 
+#S 0 19757 
+# 4 subpath constraints for genome
+#S 0 24696 
+#S 0 24696 
+#S 0 24696 
+#S 0 24696 
+#S 0 24696 
+# 5 subpath constraints for genome
+#S 2 2803 
+#S 0 26833 2 2803 
+#S 2 2803 
+#S 0 26833 
+#S 0 26833 2 2803 
+# 6 subpath constraints for genome
+#S 0 31772 
+#S 0 31772 
+#S 0 31772 
+#S 0 31772 
+#S 0 31772 
+# 7 subpath constraints for genome
+#S 0 36711 
+#S 0 36711 
+#S 0 36711 
+#S 0 36711 
+#S 0 36711 
+# 8 subpath constraints for genome
+#S 0 41650 
+#S 0 41650 
+#S 0 41650 
+#S 0 41650 
+#S 0 41650 
+# 9 subpath constraints for genome
+#S 0 46589 
+#S 0 46589 
+#S 0 46589 
+#S 0 46589 
+#S 0 46589 
+# 10 subpath constraints for genome
+#S 0 51528 
+#S 0 51528 
+#S 0 51528 
+#S 0 51528 
+#S 0 51528 
+# 11 subpath constraints for genome
+#S 0 56467 
+#S 0 56467 
+#S 0 56467 
+#S 0 56467 
+#S 0 56467 
+# 12 subpath constraints for genome
+#S 0 61406 
+#S 0 61406 
+#S 0 61406 
+#S 0 61406 
+#S 0 61406 
+# 13 subpath constraints for genome
+#S 0 66345 
+#S 0 66345 
+#S 0 66345 
+#S 0 66345 
+#S 0 66345 
+# 14 subpath constraints for genome
+#S 0 71284 
+#S 0 71284 
+#S 0 71284 
+#S 0 71284 
+#S 0 71284 
+# 15 subpath constraints for genome
+#S 0 76223 
+#S 0 76223 
+#S 0 76223 
+#S 0 76223 
+#S 0 76223 
+# 16 subpath constraints for genome
+#S 0 81162 
+#S 0 81162 
+#S 0 81162 
+#S 0 81162 
+#S 0 81162 
+# 17 subpath constraints for genome
+#S 0 86101 
+#S 0 86101 
+#S 0 86101 
+#S 0 86101 
+#S 0 86101 
+# 18 subpath constraints for genome
+#S 0 91040 
+#S 0 91040 
+#S 0 91040 
+#S 0 91040 
+#S 0 91040 
+# 19 subpath constraints for genome
+#S 91294 91041 91294 1 
+#S 91294 1 
+#S 91294 1 
+#S 91294 1 
+#S 91294 1 
+44
+2 2803 37
+2803 1 15
+2803 4940 15
+4940 1 24
+14818 1 33
+19757 1 58
+24696 1 44
+26833 2 12
+31772 1 30
+36711 1 11
+41650 1 112
+46589 1 1
+51528 1 9
+56467 1 17
+61406 1 32
+66345 1 35
+71284 1 28
+76223 1 8
+81162 1 38
+86101 1 22
+91040 1 66
+91041 91294 20
+91294 91041 6
+91294 1 7
+0 2 27
+0 91041 3
+0 1 77
+0 14818 34
+0 19757 67
+0 24696 52
+0 26833 14
+0 31772 37
+0 36711 8
+0 41650 121
+0 46589 2
+0 51528 8
+0 56467 25
+0 61406 43
+0 66345 47
+0 71284 18
+0 76223 13
+0 81162 26
+0 86101 22
+0 91040 59

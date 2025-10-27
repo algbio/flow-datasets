@@ -1,0 +1,92 @@
+#gt5.kmer63.(3200000.3250000).V22.E33.mincyc20.imp
+#construct.py -o cyclic-graphs/JGI/imperfect-weights/g5-w50000-k63-imp/ -g 5 -w 50000 -k 63 --mincycles 1 --nreads 5 --readlength 1000 -D JGI --poisson-edge-errors
+#kmersize=63
+#windowsize=50000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal-44
+#ngenomes=5
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/JGI/imperfect-weights/g5-w50000-k63-imp/
+#pdf=False
+#png=False
+#style=default
+#poisson_edge_errors=True
+#dataset=JGI
+#abundances=None
+#left_index=None
+#right_index=None
+#unique source is 0, unique sink is 1
+#genomes: Clostridium_perfringensATCC_13124.fasta.gz Clostridium_thermocellumVPI_7372_ATCC_27405.fasta.gz Coraliomargarita_akajimensis_DSM_45221.fasta.gz Corynebacterium_glutamicum_ATCC_13032.fasta.gz Desulfosporosinus_acidiphilus_SJ4_DSM_22704.fasta.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 35 0 19 35 19 35 624 662 624 662 15505 15508 15530 15535 15596 15610 15613 15676 15679 15693 15696 15508 15530 15822 15596 15610 15613 15887 15676 15679 15693 15696 15505 15508 15530 15535 15822 15596 15610 15679 15693 1 
+#T 3 0 1 
+#T 8 0 149634 1 
+#T 89 0 199573 1 
+#T 42 0 249512 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 662 15505 
+#S 662 15505 
+#S 15693 1 
+#S 15693 1 
+#S 662 15505 
+# 1 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 2 subpath constraints for genome
+#S 0 149634 
+#S 0 149634 
+#S 0 149634 
+#S 0 149634 
+#S 0 149634 
+# 3 subpath constraints for genome
+#S 0 199573 
+#S 0 199573 
+#S 0 199573 
+#S 0 199573 
+#S 0 199573 
+# 4 subpath constraints for genome
+#S 0 249512 
+#S 0 249512 
+#S 0 249512 
+#S 0 249512 
+#S 0 249512 
+33
+19 35 79
+35 19 38
+35 624 35
+624 662 66
+662 624 29
+662 15505 33
+15505 15508 76
+15508 15530 125
+15530 15535 52
+15530 15822 51
+15535 15596 25
+15535 15822 28
+15596 15610 108
+15610 15613 64
+15610 15679 34
+15613 15676 40
+15613 15887 27
+15676 15679 79
+15679 15693 92
+15693 15696 79
+15693 1 37
+15696 15508 26
+15696 15505 32
+15822 15596 73
+15887 15676 33
+149634 1 10
+199573 1 116
+249512 1 44
+0 19 33
+0 1 5
+0 149634 10
+0 199573 84
+0 249512 41

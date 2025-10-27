@@ -1,0 +1,223 @@
+#gt20.kmer63.(1450000.1500000).V33.E59.mincyc8.perf
+#construct.py -o cyclic-graphs/medium20/perfect-weights/g20-w50000-k63/ -g 20 -w 50000 -k 63 --mincycles 1 --nreads 5 --readlength 1000 -D medium20
+#kmersize=63
+#windowsize=50000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal-44
+#ngenomes=20
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/medium20/perfect-weights/g20-w50000-k63/
+#pdf=False
+#png=False
+#style=default
+#poisson_edge_errors=False
+#dataset=medium20
+#abundances=None
+#left_index=None
+#right_index=None
+#unique source is 0, unique sink is 1
+#genomes: GCF_000005845.2_ASM584v2_genomic.fna.gz GCF_000009045.1_ASM904v1_genomic.fna.gz GCF_000013285.1_ASM1328v1_genomic.fna.gz GCF_000025905.1_ASM2590v1_genomic.fna.gz GCF_000092125.1_ASM9212v1_genomic.fna.gz GCF_000143845.1_ASM14384v1_genomic.fna.gz GCF_000159115.1_ASM15911v1_genomic.fna.gz GCF_000175375.1_ASM17537v1_genomic.fna.gz GCF_000184345.1_ASM18434v2_genomic.fna.gz GCF_000185725.2_Segn_rugo_CDC_945_V2_genomic.fna.gz GCF_000196035.1_ASM19603v1_genomic.fna.gz GCF_000265425.1_ASM26542v1_genomic.fna.gz GCF_000325705.1_ASM32570v1_genomic.fna.gz GCF_000376705.1_ASM37670v1_genomic.fna.gz GCF_003999335.1_ASM399933v1_genomic.fna.gz GCF_008632635.1_ASM863263v1_genomic.fna.gz GCF_017638885.1_ASM1763888v1_genomic.fna.gz GCF_019704535.1_ASM1970453v1_genomic.fna.gz GCF_019890915.1_ASM1989091v1_genomic.fna.gz GCF_900638215.1_56553_A01_genomic.fna.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 5 0 16347 16356 16440 16501 16347 16356 16723 16440 16501 1 
+#T 1 0 1 
+#T 8 0 149746 1 
+#T 6 0 199685 1 
+#T 4 0 206152 206166 206152 206166 206152 206166 206152 206166 206152 206166 206152 206166 206152 206166 206152 206166 206152 206166 211299 212329 211299 212329 1 
+#T 7 0 298307 1 
+#T 6 0 348246 1 
+#T 2 0 398185 1 
+#T 4 0 448124 1 
+#T 13 0 450646 450649 450646 450649 1 
+#T 2 0 547998 1 
+#T 7 0 597937 1 
+#T 2 0 598236 598294 598236 598294 1 
+#T 16 0 697756 1 
+#T 3 0 747695 1 
+#T 3 0 797634 1 
+#T 3 0 828275 828287 828275 828287 838308 838322 838308 838322 1 
+#T 1 0 897484 1 
+#T 2 0 947423 1 
+#T 5 0 997362 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 16501 1 
+#S 16501 1 
+#S 16501 1 
+#S 16501 1 
+#S 0 16347 
+# 1 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 2 subpath constraints for genome
+#S 0 149746 
+#S 0 149746 
+#S 0 149746 
+#S 0 149746 
+#S 0 149746 
+# 3 subpath constraints for genome
+#S 0 199685 
+#S 0 199685 
+#S 0 199685 
+#S 0 199685 
+#S 0 199685 
+# 4 subpath constraints for genome
+#S 212329 211299 
+#S 212329 1 
+#S 212329 211299 212329 
+#S 212329 211299 
+#S 206166 211299 
+# 5 subpath constraints for genome
+#S 0 298307 
+#S 0 298307 
+#S 0 298307 
+#S 0 298307 
+#S 0 298307 
+# 6 subpath constraints for genome
+#S 0 348246 
+#S 0 348246 
+#S 0 348246 
+#S 0 348246 
+#S 0 348246 
+# 7 subpath constraints for genome
+#S 0 398185 
+#S 0 398185 
+#S 0 398185 
+#S 0 398185 
+#S 0 398185 
+# 8 subpath constraints for genome
+#S 0 448124 
+#S 0 448124 
+#S 0 448124 
+#S 0 448124 
+#S 0 448124 
+# 9 subpath constraints for genome
+#S 450649 1 
+#S 450649 450646 450649 1 
+#S 450649 1 
+#S 450649 1 
+#S 450649 1 
+# 10 subpath constraints for genome
+#S 0 547998 
+#S 0 547998 
+#S 0 547998 
+#S 0 547998 
+#S 0 547998 
+# 11 subpath constraints for genome
+#S 0 597937 
+#S 0 597937 
+#S 0 597937 
+#S 0 597937 
+#S 0 597937 
+# 12 subpath constraints for genome
+#S 598294 1 
+#S 598294 1 
+#S 598294 1 
+#S 598294 1 
+#S 598294 1 
+# 13 subpath constraints for genome
+#S 0 697756 
+#S 0 697756 
+#S 0 697756 
+#S 0 697756 
+#S 0 697756 
+# 14 subpath constraints for genome
+#S 0 747695 
+#S 0 747695 
+#S 0 747695 
+#S 0 747695 
+#S 0 747695 
+# 15 subpath constraints for genome
+#S 0 797634 
+#S 0 797634 
+#S 0 797634 
+#S 0 797634 
+#S 0 797634 
+# 16 subpath constraints for genome
+#S 838322 1 
+#S 0 828275 
+#S 0 828275 828287 828275 
+#S 0 828275 
+#S 838322 1 
+# 17 subpath constraints for genome
+#S 0 897484 
+#S 0 897484 
+#S 0 897484 
+#S 0 897484 
+#S 0 897484 
+# 18 subpath constraints for genome
+#S 0 947423 
+#S 0 947423 
+#S 0 947423 
+#S 0 947423 
+#S 0 947423 
+# 19 subpath constraints for genome
+#S 0 997362 
+#S 0 997362 
+#S 0 997362 
+#S 0 997362 
+#S 0 997362 
+59
+16347 16356 10
+16356 16440 5
+16356 16723 5
+16440 16501 10
+16501 16347 5
+16501 1 5
+16723 16440 5
+149746 1 8
+199685 1 6
+206152 206166 36
+206166 206152 32
+206166 211299 4
+211299 212329 8
+212329 211299 4
+212329 1 4
+298307 1 7
+348246 1 6
+398185 1 2
+448124 1 4
+450646 450649 26
+450649 450646 13
+450649 1 13
+547998 1 2
+597937 1 7
+598236 598294 4
+598294 598236 2
+598294 1 2
+697756 1 16
+747695 1 3
+797634 1 3
+828275 828287 6
+828287 828275 3
+828287 838308 3
+838308 838322 6
+838322 838308 3
+838322 1 3
+897484 1 1
+947423 1 2
+997362 1 5
+0 16347 5
+0 1 1
+0 149746 8
+0 199685 6
+0 206152 4
+0 298307 7
+0 348246 6
+0 398185 2
+0 448124 4
+0 450646 13
+0 547998 2
+0 597937 7
+0 598236 2
+0 697756 16
+0 747695 3
+0 797634 3
+0 828275 3
+0 897484 1
+0 947423 2
+0 997362 5

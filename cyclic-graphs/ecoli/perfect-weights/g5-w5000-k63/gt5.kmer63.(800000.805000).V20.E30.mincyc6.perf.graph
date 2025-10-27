@@ -1,0 +1,89 @@
+#gt5.kmer63.(800000.805000).V20.E30.mincyc6.perf
+#construct.py -o cyclic-graphs/ecoli/perfect-weights/g5-w5000-k63/ -g 5 -w 5000 -k 63 --distribution lognormal11 --mincycles 1 --nreads 5 --readlength 1000 -D ecoli
+#kmersize=63
+#windowsize=5000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal11
+#ngenomes=5
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/ecoli/perfect-weights/g5-w5000-k63/
+#pdf=False
+#png=False
+#style=default
+#poisson_edge_errors=False
+#dataset=ecoli
+#abundances=None
+#left_index=None
+#right_index=None
+#unique source is 0, unique sink is 1
+#genomes: GCA_000005845.2_ASM584v2.fna.gz GCA_000006665.1_ASM666v1.fna.gz GCA_000007445.1_ASM744v1.fna.gz GCA_000008865.2_ASM886v2.fna.gz GCA_000009565.2_ASM956v1.fna.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 51 0 1 
+#T 34 0 4941 6087 6150 9661 9879 1 
+#T 9 0 13103 13104 13118 13122 13209 13230 13292 13104 13118 13122 13394 13209 13230 13456 13292 13104 13118 13458 13103 13104 13118 13104 13118 13458 1 
+#T 28 0 14946 4941 6087 15008 6150 9661 1 
+#T 15 0 19947 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 1 subpath constraints for genome
+#S 6150 9661 
+#S 6150 9661 9879 
+#S 4941 6087 6150 9661 
+#S 4941 6087 6150 9661 
+#S 6150 9661 9879 
+# 2 subpath constraints for genome
+#S 13458 1 
+#S 13458 1 
+#S 0 13103 
+#S 0 13103 13104 13118 13122 13209 
+#S 0 13103 
+# 3 subpath constraints for genome
+#S 4941 6087 15008 6150 9661 
+#S 6150 9661 
+#S 6150 9661 
+#S 6150 9661 
+#S 4941 6087 15008 6150 9661 
+# 4 subpath constraints for genome
+#S 0 19947 
+#S 0 19947 
+#S 0 19947 
+#S 0 19947 
+#S 0 19947 
+30
+4941 6087 62
+6087 6150 34
+6087 15008 28
+6150 9661 62
+9661 1 28
+9661 9879 34
+9879 1 34
+13103 13104 18
+13104 13118 45
+13118 13122 18
+13118 13458 18
+13118 13104 9
+13122 13209 9
+13122 13394 9
+13209 13230 18
+13230 13292 9
+13230 13456 9
+13292 13104 18
+13394 13209 9
+13456 13292 9
+13458 13103 9
+13458 1 9
+14946 4941 28
+15008 6150 28
+19947 1 15
+0 4941 34
+0 1 51
+0 13103 9
+0 14946 28
+0 19947 15

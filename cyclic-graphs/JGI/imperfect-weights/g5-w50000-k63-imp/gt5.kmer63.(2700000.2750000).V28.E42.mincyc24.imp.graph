@@ -1,0 +1,101 @@
+#gt5.kmer63.(2700000.2750000).V28.E42.mincyc24.imp
+#construct.py -o cyclic-graphs/JGI/imperfect-weights/g5-w50000-k63-imp/ -g 5 -w 50000 -k 63 --mincycles 1 --nreads 5 --readlength 1000 -D JGI --poisson-edge-errors
+#kmersize=63
+#windowsize=50000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal-44
+#ngenomes=5
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/JGI/imperfect-weights/g5-w50000-k63-imp/
+#pdf=False
+#png=False
+#style=default
+#poisson_edge_errors=True
+#dataset=JGI
+#abundances=None
+#left_index=None
+#right_index=None
+#unique source is 0, unique sink is 1
+#genomes: Clostridium_perfringensATCC_13124.fasta.gz Clostridium_thermocellumVPI_7372_ATCC_27405.fasta.gz Coraliomargarita_akajimensis_DSM_45221.fasta.gz Corynebacterium_glutamicum_ATCC_13032.fasta.gz Desulfosporosinus_acidiphilus_SJ4_DSM_22704.fasta.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 35 0 14179 14205 14268 14270 14284 14285 14179 14205 14372 14270 14284 14179 14205 14372 14268 14270 14284 14285 1 
+#T 3 0 80944 80983 80944 80983 1 
+#T 8 0 1 
+#T 89 0 153391 156967 157031 158581 158660 158730 158793 158836 158899 158948 153391 156967 162320 157031 158581 162400 158660 158730 162462 158793 158836 162525 158899 158948 168678 168692 168678 168692 1 
+#T 42 0 244259 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 14285 1 
+#S 0 14179 
+#S 14285 1 
+#S 14285 1 
+#S 14285 1 
+# 1 subpath constraints for genome
+#S 0 80944 
+#S 80983 1 
+#S 80983 1 
+#S 80983 1 
+#S 0 80944 
+# 2 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 3 subpath constraints for genome
+#S 158948 153391 
+#S 168692 1 
+#S 168692 168678 
+#S 168692 1 
+#S 168692 1 
+# 4 subpath constraints for genome
+#S 0 244259 
+#S 0 244259 
+#S 0 244259 
+#S 0 244259 
+#S 0 244259 
+42
+14179 14205 99
+14205 14268 35
+14205 14372 56
+14268 14270 69
+14270 14284 109
+14284 14285 75
+14284 14179 33
+14285 14179 33
+14285 1 42
+14372 14270 42
+14372 14268 38
+80944 80983 2
+80983 80944 3
+80983 1 4
+153391 156967 182
+156967 157031 71
+156967 162320 73
+157031 158581 181
+158581 158660 85
+158581 162400 98
+158660 158730 162
+158730 158793 94
+158730 162462 91
+158793 158836 187
+158836 158899 91
+158836 162525 95
+158899 158948 169
+158948 153391 82
+158948 168678 83
+162320 157031 85
+162400 158660 97
+162462 158793 86
+162525 158899 75
+168678 168692 186
+168692 168678 79
+168692 1 99
+244259 1 57
+0 14179 39
+0 80944 4
+0 1 11
+0 153391 87
+0 244259 45

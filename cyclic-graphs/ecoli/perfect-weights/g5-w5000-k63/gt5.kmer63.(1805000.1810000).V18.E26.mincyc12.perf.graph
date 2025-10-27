@@ -1,0 +1,85 @@
+#gt5.kmer63.(1805000.1810000).V18.E26.mincyc12.perf
+#construct.py -o cyclic-graphs/ecoli/perfect-weights/g5-w5000-k63/ -g 5 -w 5000 -k 63 --distribution lognormal11 --mincycles 1 --nreads 5 --readlength 1000 -D ecoli
+#kmersize=63
+#windowsize=5000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal11
+#ngenomes=5
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/ecoli/perfect-weights/g5-w5000-k63/
+#pdf=False
+#png=False
+#style=default
+#poisson_edge_errors=False
+#dataset=ecoli
+#abundances=None
+#left_index=None
+#right_index=None
+#unique source is 0, unique sink is 1
+#genomes: GCA_000005845.2_ASM584v2.fna.gz GCA_000006665.1_ASM666v1.fna.gz GCA_000007445.1_ASM744v1.fna.gz GCA_000008865.2_ASM886v2.fna.gz GCA_000009565.2_ASM956v1.fna.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 104 0 1 
+#T 61 0 6393 6396 6478 6486 6577 6586 6829 6393 6396 7009 6478 6486 7092 6577 6586 7128 7188 7229 6829 6393 6396 7009 6478 6486 7092 6577 6586 7128 7394 7188 7229 1 
+#T 31 0 14430 1 
+#T 124 0 19369 1 
+#T 21 0 24308 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 1 subpath constraints for genome
+#S 7229 1 
+#S 0 6393 
+#S 0 6393 6396 6478 6486 6577 6586 6829 6393 6396 7009 6478 6486 7092 6577 6586 7128 
+#S 6396 7009 6478 6486 7092 6577 6586 7128 7188 7229 6829 6393 6396 7009 6478 6486 7092 6577 6586 7128 7394 7188 7229 1 
+#S 7229 1 
+# 2 subpath constraints for genome
+#S 0 14430 
+#S 0 14430 
+#S 0 14430 
+#S 0 14430 
+#S 0 14430 
+# 3 subpath constraints for genome
+#S 0 19369 
+#S 0 19369 
+#S 0 19369 
+#S 0 19369 
+#S 0 19369 
+# 4 subpath constraints for genome
+#S 0 24308 
+#S 0 24308 
+#S 0 24308 
+#S 0 24308 
+#S 0 24308 
+26
+6393 6396 183
+6396 6478 61
+6396 7009 122
+6478 6486 183
+6486 6577 61
+6486 7092 122
+6577 6586 183
+6586 6829 61
+6586 7128 122
+6829 6393 122
+7009 6478 122
+7092 6577 122
+7128 7188 61
+7128 7394 61
+7188 7229 122
+7229 6829 61
+7229 1 61
+7394 7188 61
+14430 1 31
+19369 1 124
+24308 1 21
+0 1 104
+0 6393 61
+0 14430 31
+0 19369 124
+0 24308 21

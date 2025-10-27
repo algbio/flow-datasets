@@ -1,0 +1,97 @@
+#gt5.kmer63.(2780000.2790000).V26.E38.mincyc52.perf
+#construct.py -o cyclic-graphs/complex32/perfect-weights/g5-w10000-k63/ -g 5 -w 10000 -k 63 --mincycles 1 --nreads 5 --readlength 1000 -D complex32
+#kmersize=63
+#windowsize=10000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal-44
+#ngenomes=5
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/complex32/perfect-weights/g5-w10000-k63/
+#pdf=False
+#png=False
+#style=default
+#poisson_edge_errors=False
+#dataset=complex32
+#abundances=None
+#left_index=None
+#right_index=None
+#unique source is 0, unique sink is 1
+#genomes: GCF_000005845.2_ASM584v2_genomic.fna.gz GCF_000006925.2_ASM692v2_genomic.fna.gz GCF_000006945.2_ASM694v2_genomic.fna.gz GCF_000009045.1_ASM904v1_genomic.fna.gz GCF_000013285.1_ASM1328v1_genomic.fna.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 16 0 1 
+#T 7 0 19879 1 
+#T 1 0 29818 1 
+#T 7 0 39757 1 
+#T 1 0 47926 47927 47940 47942 47943 48004 48028 48102 48194 48211 48276 48293 48355 48439 48458 48459 47926 47927 47940 48439 48458 48817 47927 47940 47942 47943 48887 48004 48028 48963 48102 48194 48211 48194 48211 49103 48276 48293 49162 48355 48439 48458 48459 48817 47927 47940 47942 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 1 subpath constraints for genome
+#S 0 19879 
+#S 0 19879 
+#S 0 19879 
+#S 0 19879 
+#S 0 19879 
+# 2 subpath constraints for genome
+#S 0 29818 
+#S 0 29818 
+#S 0 29818 
+#S 0 29818 
+#S 0 29818 
+# 3 subpath constraints for genome
+#S 0 39757 
+#S 0 39757 
+#S 0 39757 
+#S 0 39757 
+#S 0 39757 
+# 4 subpath constraints for genome
+#S 0 47926 
+#S 0 47926 
+#S 0 47926 
+#S 0 47926 47927 47940 47942 47943 48004 48028 48102 48194 
+#S 0 47926 
+38
+19879 1 7
+29818 1 1
+39757 1 7
+47926 47927 2
+47927 47940 4
+47940 47942 3
+47940 48439 1
+47942 47943 2
+47942 1 1
+47943 48004 1
+47943 48887 1
+48004 48028 2
+48028 48102 1
+48028 48963 1
+48102 48194 2
+48194 48211 3
+48211 48276 1
+48211 48194 1
+48211 49103 1
+48276 48293 2
+48293 48355 1
+48293 49162 1
+48355 48439 2
+48439 48458 3
+48458 48459 2
+48458 48817 1
+48459 47926 1
+48459 48817 1
+48817 47927 2
+48887 48004 1
+48963 48102 1
+49103 48276 1
+49162 48355 1
+0 1 16
+0 19879 7
+0 29818 1
+0 39757 7
+0 47926 1

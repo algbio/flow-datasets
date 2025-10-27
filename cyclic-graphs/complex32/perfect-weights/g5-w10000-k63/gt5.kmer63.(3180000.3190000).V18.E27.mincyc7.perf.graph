@@ -1,0 +1,86 @@
+#gt5.kmer63.(3180000.3190000).V18.E27.mincyc7.perf
+#construct.py -o cyclic-graphs/complex32/perfect-weights/g5-w10000-k63/ -g 5 -w 10000 -k 63 --mincycles 1 --nreads 5 --readlength 1000 -D complex32
+#kmersize=63
+#windowsize=10000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal-44
+#ngenomes=5
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/complex32/perfect-weights/g5-w10000-k63/
+#pdf=False
+#png=False
+#style=default
+#poisson_edge_errors=False
+#dataset=complex32
+#abundances=None
+#left_index=None
+#right_index=None
+#unique source is 0, unique sink is 1
+#genomes: GCF_000005845.2_ASM584v2_genomic.fna.gz GCF_000006925.2_ASM692v2_genomic.fna.gz GCF_000006945.2_ASM694v2_genomic.fna.gz GCF_000009045.1_ASM904v1_genomic.fna.gz GCF_000013285.1_ASM1328v1_genomic.fna.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 16 0 1 
+#T 7 0 9941 9969 10107 10244 10333 10336 9941 9969 11968 10107 10244 12056 10333 10336 13312 13321 13384 13625 13312 13321 13748 13384 13625 1 
+#T 1 0 24005 24005 24005 24005 1 
+#T 7 0 39321 1 
+#T 1 0 49260 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 1 subpath constraints for genome
+#S 13625 1 
+#S 13625 1 
+#S 13625 1 
+#S 13625 1 
+#S 10336 9941 9969 11968 10107 10244 12056 10333 10336 
+# 2 subpath constraints for genome
+#S 0 24005 
+#S 24005 1 
+#S 0 24005 24005 24005 24005 1 
+#S 24005 1 
+#S 24005 1 
+# 3 subpath constraints for genome
+#S 0 39321 
+#S 0 39321 
+#S 0 39321 
+#S 0 39321 
+#S 0 39321 
+# 4 subpath constraints for genome
+#S 0 49260 
+#S 
+#S 0 49260 
+#S 0 49260 
+#S 0 49260 
+27
+9941 9969 14
+9969 10107 7
+9969 11968 7
+10107 10244 14
+10244 10333 7
+10244 12056 7
+10333 10336 14
+10336 9941 7
+10336 13312 7
+11968 10107 7
+12056 10333 7
+13312 13321 14
+13321 13384 7
+13321 13748 7
+13384 13625 14
+13625 13312 7
+13625 1 7
+13748 13384 7
+24005 24005 3
+24005 1 1
+39321 1 7
+49260 1 1
+0 9941 7
+0 1 16
+0 24005 1
+0 39321 7
+0 49260 1

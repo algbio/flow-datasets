@@ -1,0 +1,97 @@
+#gt5.kmer63.(3210000.3220000).V26.E38.mincyc18.imp
+#construct.py -o cyclic-graphs/complex32/imperfect-weights/g5-w10000-k63-imp/ -g 5 -w 10000 -k 63 --mincycles 1 --nreads 5 --readlength 1000 -D complex32 --poisson-edge-errors
+#kmersize=63
+#windowsize=10000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal-44
+#ngenomes=5
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/complex32/imperfect-weights/g5-w10000-k63-imp/
+#pdf=False
+#png=False
+#style=default
+#poisson_edge_errors=True
+#dataset=complex32
+#abundances=None
+#left_index=None
+#right_index=None
+#unique source is 0, unique sink is 1
+#genomes: GCF_000005845.2_ASM584v2_genomic.fna.gz GCF_000006925.2_ASM692v2_genomic.fna.gz GCF_000006945.2_ASM694v2_genomic.fna.gz GCF_000009045.1_ASM904v1_genomic.fna.gz GCF_000013285.1_ASM1328v1_genomic.fna.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 16 0 9557 9558 9646 9738 9777 9880 9900 1 
+#T 7 0 9558 9646 10031 9738 9777 10133 9880 9900 19729 1 
+#T 1 0 1 
+#T 7 0 39607 1 
+#T 1 0 45167 45170 45192 45197 45258 45272 45275 45338 45341 45355 45358 45170 45192 45484 45258 45272 45275 45549 45338 45341 45355 45358 45167 45170 45192 45197 45484 45258 45272 45341 45355 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 0 9557 
+#S 0 9557 
+#S 0 9557 
+#S 
+#S 0 9557 
+# 1 subpath constraints for genome
+#S 9900 19729 
+#S 9646 10031 9738 9777 10133 9880 9900 19729 
+#S 9900 19729 
+#S 9900 19729 
+#S 9900 19729 
+# 2 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 3 subpath constraints for genome
+#S 0 39607 
+#S 0 39607 
+#S 0 39607 
+#S 0 39607 
+#S 0 39607 
+# 4 subpath constraints for genome
+#S 45355 1 
+#S 0 45167 45170 45192 45197 45258 45272 45275 45338 45341 45355 45358 45170 45192 45484 45258 45272 45275 45549 45338 45341 45355 
+#S 45355 1 
+#S 0 45167 
+#S 45355 1 
+38
+9557 9558 20
+9558 9646 23
+9646 9738 16
+9646 10031 11
+9738 9777 22
+9777 9880 23
+9777 10133 9
+9880 9900 26
+9900 1 17
+9900 19729 7
+10031 9738 8
+10133 9880 6
+19729 1 7
+39607 1 10
+45167 45170 4
+45170 45192 1
+45192 45197 2
+45192 45484 2
+45197 45258 1
+45197 45484 1
+45258 45272 1
+45272 45275 3
+45272 45341 1
+45275 45338 2
+45275 45549 1
+45338 45341 2
+45341 45355 1
+45355 45358 1
+45355 1 2
+45358 45170 1
+45358 45167 4
+45484 45258 2
+45549 45338 1
+0 9558 8
+0 9557 15
+0 1 1
+0 39607 8
+0 45167 1

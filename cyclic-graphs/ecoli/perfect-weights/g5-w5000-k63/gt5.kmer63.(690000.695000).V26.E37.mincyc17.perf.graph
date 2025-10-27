@@ -1,0 +1,96 @@
+#gt5.kmer63.(690000.695000).V26.E37.mincyc17.perf
+#construct.py -o cyclic-graphs/ecoli/perfect-weights/g5-w5000-k63/ -g 5 -w 5000 -k 63 --distribution lognormal11 --mincycles 1 --nreads 5 --readlength 1000 -D ecoli
+#kmersize=63
+#windowsize=5000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal11
+#ngenomes=5
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/ecoli/perfect-weights/g5-w5000-k63/
+#pdf=False
+#png=False
+#style=default
+#poisson_edge_errors=False
+#dataset=ecoli
+#abundances=None
+#left_index=None
+#right_index=None
+#unique source is 0, unique sink is 1
+#genomes: GCA_000005845.2_ASM584v2.fna.gz GCA_000006665.1_ASM666v1.fna.gz GCA_000007445.1_ASM744v1.fna.gz GCA_000008865.2_ASM886v2.fna.gz GCA_000009565.2_ASM956v1.fna.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 31 0 1 
+#T 45 0 4941 5033 5048 5033 5048 8723 8786 9644 9863 1 
+#T 8 0 14802 1 
+#T 102 0 15021 4941 5033 5048 5033 5048 8723 15083 8786 9644 1 
+#T 5 0 15084 15090 15153 15187 15414 15495 15563 15588 15699 15766 15084 15090 17016 15153 15187 17242 15414 15495 17309 15563 15588 17419 15699 15766 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 1 subpath constraints for genome
+#S 5048 8723 
+#S 5048 8723 
+#S 5048 8723 
+#S 5048 8723 
+#S 5048 8723 8786 9644 
+# 2 subpath constraints for genome
+#S 0 14802 
+#S 0 14802 
+#S 0 14802 
+#S 0 14802 
+#S 0 14802 
+# 3 subpath constraints for genome
+#S 8786 9644 
+#S 5048 8723 15083 8786 9644 
+#S 5048 8723 
+#S 8786 9644 
+#S 5048 8723 
+# 4 subpath constraints for genome
+#S 15588 17419 15699 15766 1 
+#S 15766 1 
+#S 15766 1 
+#S 15766 1 
+#S 15766 1 
+37
+4941 5033 147
+5033 5048 294
+5048 5033 147
+5048 8723 147
+8723 8786 45
+8723 15083 102
+8786 9644 147
+9644 1 102
+9644 9863 45
+9863 1 45
+14802 1 8
+15021 4941 102
+15083 8786 102
+15084 15090 10
+15090 15153 5
+15090 17016 5
+15153 15187 10
+15187 15414 5
+15187 17242 5
+15414 15495 10
+15495 15563 5
+15495 17309 5
+15563 15588 10
+15588 15699 5
+15588 17419 5
+15699 15766 10
+15766 15084 5
+15766 1 5
+17016 15153 5
+17242 15414 5
+17309 15563 5
+17419 15699 5
+0 4941 45
+0 15084 5
+0 1 31
+0 14802 8
+0 15021 102

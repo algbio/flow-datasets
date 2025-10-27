@@ -1,0 +1,179 @@
+#gt15.kmer63.(950000.1000000).V29.E50.mincyc8.imp
+#construct.py -o cyclic-graphs/JGI/imperfect-weights/g15-w50000-k63-imp/ -g 15 -w 50000 -k 63 --mincycles 1 --nreads 5 --readlength 1000 -D JGI --poisson-edge-errors
+#kmersize=63
+#windowsize=50000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal-44
+#ngenomes=15
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/JGI/imperfect-weights/g15-w50000-k63-imp/
+#pdf=False
+#png=False
+#style=default
+#poisson_edge_errors=True
+#dataset=JGI
+#abundances=None
+#left_index=None
+#right_index=None
+#unique source is 0, unique sink is 1
+#genomes: Clostridium_perfringensATCC_13124.fasta.gz Clostridium_thermocellumVPI_7372_ATCC_27405.fasta.gz Coraliomargarita_akajimensis_DSM_45221.fasta.gz Corynebacterium_glutamicum_ATCC_13032.fasta.gz Desulfosporosinus_acidiphilus_SJ4_DSM_22704.fasta.gz Desulfosporosinus_meridiei_DSM_13257.fasta.gz Desulfotomaculum_gibsoniae_DSM_7213.fasta.gz E.coli_K12_ATCC_700926.fasta.gz Echinicola_vietnamensis_DSM_17526.fasta.gz Fervidobacterium_pennivorans_DSM_9078.fasta.gz Frateuria_aurantia_DSM_6220.fasta.gz Halovivax_ruber_XH-70.fasta.gz Hirschia_baltica_ATCC_49814.fasta.gz Meiothermus_silvanus_DSM_9946.fasta.gz Natronobacterium_gregoryi_SP2.fasta.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 35 0 1 
+#T 3 0 64627 64677 64929 65109 64627 64677 65525 64929 65109 1 
+#T 8 0 141902 141978 141902 141978 142103 142121 142206 142103 142121 142208 142206 142103 142121 142208 1 
+#T 89 0 153122 154359 157100 157113 157100 157113 153122 154359 1 
+#T 42 0 213246 214751 213246 214751 1 
+#T 1 0 296527 1 
+#T 7 0 346466 1 
+#T 1 0 396405 1 
+#T 1 0 446344 1 
+#T 3 0 496283 1 
+#T 2 0 546222 1 
+#T 19 0 596161 1 
+#T 5 0 646100 1 
+#T 2 0 696039 1 
+#T 3 0 745978 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 1 subpath constraints for genome
+#S 65109 1 
+#S 65109 1 
+#S 65109 1 
+#S 65109 1 
+#S 65109 1 
+# 2 subpath constraints for genome
+#S 0 141902 
+#S 0 141902 
+#S 0 141902 
+#S 0 141902 
+#S 0 141902 
+# 3 subpath constraints for genome
+#S 154359 1 
+#S 154359 1 
+#S 154359 1 
+#S 154359 1 
+#S 154359 1 
+# 4 subpath constraints for genome
+#S 214751 213246 214751 
+#S 214751 1 
+#S 0 213246 
+#S 0 213246 
+#S 214751 213246 
+# 5 subpath constraints for genome
+#S 0 296527 
+#S 0 296527 
+#S 0 296527 
+#S 0 296527 
+#S 0 296527 
+# 6 subpath constraints for genome
+#S 0 346466 
+#S 0 346466 
+#S 0 346466 
+#S 0 346466 
+#S 0 346466 
+# 7 subpath constraints for genome
+#S 0 396405 
+#S 0 396405 
+#S 0 396405 
+#S 0 396405 
+#S 0 396405 
+# 8 subpath constraints for genome
+#S 0 446344 
+#S 0 446344 
+#S 0 446344 
+#S 0 446344 
+#S 0 446344 
+# 9 subpath constraints for genome
+#S 0 496283 
+#S 0 496283 
+#S 0 496283 
+#S 0 496283 
+#S 0 496283 
+# 10 subpath constraints for genome
+#S 0 546222 
+#S 0 546222 
+#S 0 546222 
+#S 0 546222 
+#S 0 546222 
+# 11 subpath constraints for genome
+#S 0 596161 
+#S 0 596161 
+#S 0 596161 
+#S 0 596161 
+#S 0 596161 
+# 12 subpath constraints for genome
+#S 0 646100 
+#S 0 646100 
+#S 0 646100 
+#S 0 646100 
+#S 0 646100 
+# 13 subpath constraints for genome
+#S 0 696039 
+#S 0 696039 
+#S 0 696039 
+#S 0 696039 
+#S 0 696039 
+# 14 subpath constraints for genome
+#S 0 745978 
+#S 0 745978 
+#S 0 745978 
+#S 0 745978 
+#S 0 745978 
+50
+64627 64677 6
+64677 64929 3
+64677 65525 1
+64929 65109 11
+65109 64627 3
+65109 1 2
+65525 64929 1
+141902 141978 18
+141978 141902 7
+141978 142103 9
+142103 142121 28
+142121 142206 9
+142121 142208 17
+142206 142103 13
+142208 142206 13
+142208 1 13
+153122 154359 187
+154359 157100 96
+154359 1 98
+157100 157113 189
+157113 157100 103
+157113 153122 86
+213246 214751 79
+214751 213246 52
+214751 1 51
+296527 1 3
+346466 1 7
+396405 1 1
+446344 1 1
+496283 1 1
+546222 1 1
+596161 1 21
+646100 1 1
+696039 1 1
+745978 1 3
+0 1 41
+0 64627 2
+0 141902 5
+0 153122 99
+0 213246 39
+0 296527 1
+0 346466 10
+0 396405 1
+0 446344 1
+0 496283 2
+0 546222 3
+0 596161 16
+0 646100 6
+0 696039 1
+0 745978 3

@@ -1,0 +1,89 @@
+#gt5.kmer63.(930000.935000).V21.E30.mincyc2.perf
+#construct.py -o cyclic-graphs/ecoli/perfect-weights/g5-w5000-k63/ -g 5 -w 5000 -k 63 --distribution lognormal11 --mincycles 1 --nreads 5 --readlength 1000 -D ecoli
+#kmersize=63
+#windowsize=5000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal11
+#ngenomes=5
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/ecoli/perfect-weights/g5-w5000-k63/
+#pdf=False
+#png=False
+#style=default
+#poisson_edge_errors=False
+#dataset=ecoli
+#abundances=None
+#left_index=None
+#right_index=None
+#unique source is 0, unique sink is 1
+#genomes: GCA_000005845.2_ASM584v2.fna.gz GCA_000006665.1_ASM666v1.fna.gz GCA_000007445.1_ASM744v1.fna.gz GCA_000008865.2_ASM886v2.fna.gz GCA_000009565.2_ASM956v1.fna.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 18 0 1 
+#T 15 0 6591 6592 7008 7071 7130 7193 8615 8678 9879 1 
+#T 19 0 14818 1 
+#T 12 0 6592 7008 14880 7071 7130 14942 7193 8615 15004 8678 9879 16655 1 
+#T 18 0 17195 17294 17351 17370 17195 17294 17427 17351 17370 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 1 subpath constraints for genome
+#S 0 6591 6592 7008 7071 7130 7193 8615 
+#S 8678 9879 
+#S 7071 7130 7193 8615 
+#S 8678 9879 
+#S 0 6591 6592 7008 
+# 2 subpath constraints for genome
+#S 0 14818 
+#S 0 14818 
+#S 0 14818 
+#S 0 14818 
+#S 0 14818 
+# 3 subpath constraints for genome
+#S 8678 9879 16655 
+#S 7193 8615 15004 
+#S 9879 16655 
+#S 7193 8615 
+#S 7008 14880 7071 7130 14942 7193 8615 
+# 4 subpath constraints for genome
+#S 17370 1 
+#S 17195 17294 17351 17370 17195 17294 17427 17351 17370 1 
+#S 17370 1 
+#S 17370 1 
+#S 17370 1 
+30
+6591 6592 15
+6592 7008 27
+7008 7071 15
+7008 14880 12
+7071 7130 27
+7130 7193 15
+7130 14942 12
+7193 8615 27
+8615 8678 15
+8615 15004 12
+8678 9879 27
+9879 1 15
+9879 16655 12
+14818 1 19
+14880 7071 12
+14942 7193 12
+15004 8678 12
+16655 1 12
+17195 17294 36
+17294 17351 18
+17294 17427 18
+17351 17370 36
+17370 17195 18
+17370 1 18
+17427 17351 18
+0 6592 12
+0 1 18
+0 6591 15
+0 14818 19
+0 17195 18

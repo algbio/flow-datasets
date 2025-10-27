@@ -1,0 +1,184 @@
+#gt15.kmer63.(4365000.4370000).V33.E55.mincyc18.imp
+#construct.py -o cyclic-graphs/ecoli/imperfect-weights/g15-w5000-k63-imp/ -g 15 -w 5000 -k 63 --distribution lognormal11 --mincycles 1 --nreads 5 --readlength 1000 -D ecoli --poisson-edge-errors
+#kmersize=63
+#windowsize=5000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal11
+#ngenomes=15
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/ecoli/imperfect-weights/g15-w5000-k63-imp/
+#pdf=False
+#png=False
+#style=default
+#poisson_edge_errors=True
+#dataset=ecoli
+#abundances=None
+#left_index=None
+#right_index=None
+#unique source is 0, unique sink is 1
+#genomes: GCA_000005845.2_ASM584v2.fna.gz GCA_000006665.1_ASM666v1.fna.gz GCA_000007445.1_ASM744v1.fna.gz GCA_000008865.2_ASM886v2.fna.gz GCA_000009565.2_ASM956v1.fna.gz GCA_000010245.1_ASM1024v1.fna.gz GCA_000010385.1_ASM1038v1.fna.gz GCA_000010485.1_ASM1048v1.fna.gz GCA_000010745.1_ASM1074v1.fna.gz GCA_000010765.1_ASM1076v1.fna.gz GCA_000013265.1_ASM1326v1.fna.gz GCA_000013305.1_ASM1330v1.fna.gz GCA_000014845.1_ASM1484v1.fna.gz GCA_000017745.1_ASM1774v1.fna.gz GCA_000017765.1_ASM1776v1.fna.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 10 0 2 262 4940 1 
+#T 15 0 1 
+#T 40 0 14818 1 
+#T 111 0 19757 1 
+#T 25 0 24696 1 
+#T 30 0 29374 2 262 1 
+#T 46 0 34313 1 
+#T 12 0 39252 1 
+#T 11 0 41508 41588 41589 41592 41677 41678 41683 41690 41716 42035 42036 41589 41592 42155 41677 41678 41683 41690 41716 42158 42271 42295 42035 42036 41678 41683 42271 42295 41508 41588 41690 41716 42158 1 
+#T 32 0 47303 47447 47303 47447 1 
+#T 61 0 53736 1 
+#T 20 0 58675 1 
+#T 72 0 63614 1 
+#T 59 0 68553 1 
+#T 22 0 73492 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 262 4940 
+#S 262 4940 
+#S 262 4940 
+#S 262 4940 
+#S 262 4940 
+# 1 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 2 subpath constraints for genome
+#S 0 14818 
+#S 0 14818 
+#S 0 14818 
+#S 0 14818 
+#S 0 14818 
+# 3 subpath constraints for genome
+#S 
+#S 0 19757 
+#S 0 19757 
+#S 0 19757 
+#S 0 19757 
+# 4 subpath constraints for genome
+#S 0 24696 
+#S 0 24696 
+#S 0 24696 
+#S 0 24696 
+#S 0 24696 
+# 5 subpath constraints for genome
+#S 0 29374 
+#S 0 29374 
+#S 0 29374 
+#S 0 29374 
+#S 0 29374 
+# 6 subpath constraints for genome
+#S 0 34313 
+#S 0 34313 
+#S 0 34313 
+#S 0 34313 
+#S 0 34313 
+# 7 subpath constraints for genome
+#S 0 39252 
+#S 0 39252 
+#S 0 39252 
+#S 0 39252 
+#S 0 39252 
+# 8 subpath constraints for genome
+#S 0 41508 41588 41589 41592 41677 41678 41683 41690 41716 42035 
+#S 0 41508 
+#S 41716 42035 42036 41589 41592 42155 41677 41678 41683 41690 41716 42158 42271 42295 42035 42036 41678 41683 42271 42295 41508 
+#S 42295 41508 41588 41690 41716 42158 1 
+#S 42036 41678 41683 42271 42295 41508 41588 41690 41716 42158 1 
+# 9 subpath constraints for genome
+#S 0 47303 
+#S 0 47303 
+#S 0 47303 47447 47303 47447 
+#S 0 47303 
+#S 47303 47447 47303 47447 1 
+# 10 subpath constraints for genome
+#S 0 53736 
+#S 0 53736 
+#S 0 53736 
+#S 0 53736 
+#S 0 53736 
+# 11 subpath constraints for genome
+#S 0 58675 
+#S 0 58675 
+#S 0 58675 
+#S 0 58675 
+#S 0 58675 
+# 12 subpath constraints for genome
+#S 0 63614 
+#S 0 63614 
+#S 0 63614 
+#S 0 63614 
+#S 0 63614 
+# 13 subpath constraints for genome
+#S 
+#S 0 68553 
+#S 0 68553 
+#S 0 68553 
+#S 0 68553 
+# 14 subpath constraints for genome
+#S 0 73492 
+#S 0 73492 
+#S 0 73492 
+#S 0 73492 
+#S 0 73492 
+55
+2 262 35
+262 1 34
+262 4940 12
+4940 1 10
+14818 1 40
+19757 1 107
+24696 1 27
+29374 2 24
+34313 1 42
+39252 1 17
+41508 41588 32
+41588 41589 13
+41588 41690 10
+41589 41592 23
+41592 41677 6
+41592 42155 14
+41677 41678 22
+41678 41683 30
+41683 41690 22
+41683 42271 10
+41690 41716 34
+41716 42035 14
+41716 42158 24
+42035 42036 26
+42036 41589 9
+42036 41678 10
+42155 41677 13
+42158 42271 9
+42158 1 8
+42271 42295 20
+42295 42035 11
+42295 41508 12
+47303 47447 61
+47447 47303 42
+47447 1 29
+53736 1 54
+58675 1 21
+63614 1 71
+68553 1 61
+73492 1 16
+0 2 16
+0 1 16
+0 14818 42
+0 19757 105
+0 24696 21
+0 29374 33
+0 34313 50
+0 39252 8
+0 41508 17
+0 47303 24
+0 53736 67
+0 58675 22
+0 63614 79
+0 68553 63
+0 73492 24

@@ -1,0 +1,89 @@
+#gt5.kmer63.(950000.1000000).V19.E30.mincyc8.imp
+#construct.py -o cyclic-graphs/JGI/imperfect-weights/g5-w50000-k63-imp/ -g 5 -w 50000 -k 63 --mincycles 1 --nreads 5 --readlength 1000 -D JGI --poisson-edge-errors
+#kmersize=63
+#windowsize=50000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal-44
+#ngenomes=5
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/JGI/imperfect-weights/g5-w50000-k63-imp/
+#pdf=False
+#png=False
+#style=default
+#poisson_edge_errors=True
+#dataset=JGI
+#abundances=None
+#left_index=None
+#right_index=None
+#unique source is 0, unique sink is 1
+#genomes: Clostridium_perfringensATCC_13124.fasta.gz Clostridium_thermocellumVPI_7372_ATCC_27405.fasta.gz Coraliomargarita_akajimensis_DSM_45221.fasta.gz Corynebacterium_glutamicum_ATCC_13032.fasta.gz Desulfosporosinus_acidiphilus_SJ4_DSM_22704.fasta.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 35 0 1 
+#T 3 0 64627 64677 64929 65109 64627 64677 65525 64929 65109 1 
+#T 8 0 141902 141978 141902 141978 142103 142121 142206 142103 142121 142208 142206 142103 142121 142208 1 
+#T 89 0 153122 154359 157100 157113 157100 157113 153122 154359 1 
+#T 42 0 213246 214751 213246 214751 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 1 subpath constraints for genome
+#S 0 64627 
+#S 0 64627 
+#S 65109 1 
+#S 0 64627 
+#S 65109 1 
+# 2 subpath constraints for genome
+#S 142208 1 
+#S 142208 1 
+#S 0 141902 
+#S 142208 1 
+#S 0 141902 
+# 3 subpath constraints for genome
+#S 154359 1 
+#S 153122 154359 157100 
+#S 154359 1 
+#S 154359 1 
+#S 154359 1 
+# 4 subpath constraints for genome
+#S 214751 213246 
+#S 214751 213246 
+#S 213246 214751 213246 
+#S 0 213246 
+#S 0 213246 
+30
+64627 64677 4
+64677 64929 8
+64677 65525 3
+64929 65109 5
+65109 64627 6
+65109 1 1
+65525 64929 2
+141902 141978 25
+141978 141902 14
+141978 142103 6
+142103 142121 25
+142121 142206 6
+142121 142208 14
+142206 142103 17
+142208 142206 7
+142208 1 14
+153122 154359 177
+154359 157100 99
+154359 1 82
+157100 157113 184
+157113 157100 95
+157113 153122 85
+213246 214751 71
+214751 213246 37
+214751 1 46
+0 1 28
+0 64627 1
+0 141902 3
+0 153122 94
+0 213246 32

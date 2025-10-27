@@ -1,0 +1,190 @@
+#gt15.kmer63.(2405000.2410000).V39.E61.mincyc2.perf
+#construct.py -o cyclic-graphs/ecoli/perfect-weights/g15-w5000-k63/ -g 15 -w 5000 -k 63 --distribution lognormal11 --mincycles 1 --nreads 5 --readlength 1000 -D ecoli
+#kmersize=63
+#windowsize=5000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal11
+#ngenomes=15
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/ecoli/perfect-weights/g15-w5000-k63/
+#pdf=False
+#png=False
+#style=default
+#poisson_edge_errors=False
+#dataset=ecoli
+#abundances=None
+#left_index=None
+#right_index=None
+#unique source is 0, unique sink is 1
+#genomes: GCA_000005845.2_ASM584v2.fna.gz GCA_000006665.1_ASM666v1.fna.gz GCA_000007445.1_ASM744v1.fna.gz GCA_000008865.2_ASM886v2.fna.gz GCA_000009565.2_ASM956v1.fna.gz GCA_000010245.1_ASM1024v1.fna.gz GCA_000010385.1_ASM1038v1.fna.gz GCA_000010485.1_ASM1048v1.fna.gz GCA_000010745.1_ASM1074v1.fna.gz GCA_000010765.1_ASM1076v1.fna.gz GCA_000013265.1_ASM1326v1.fna.gz GCA_000013305.1_ASM1330v1.fna.gz GCA_000014845.1_ASM1484v1.fna.gz GCA_000017745.1_ASM1774v1.fna.gz GCA_000017765.1_ASM1776v1.fna.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 71 0 2 270 4940 1 
+#T 15 0 1 
+#T 23 0 14818 1 
+#T 32 0 19757 1 
+#T 55 0 24696 1 
+#T 26 0 29366 2 270 1 
+#T 73 0 32852 32880 32958 32984 32852 32880 33256 32958 32984 1 
+#T 69 0 39188 1 
+#T 70 0 44127 1 
+#T 176 0 49066 1 
+#T 43 0 54005 1 
+#T 51 0 54166 54175 54328 54415 54517 54526 54688 54721 54785 54800 54863 54886 1 
+#T 10 0 63883 1 
+#T 147 0 68822 1 
+#T 40 0 72959 54166 54175 73111 54328 54415 73212 54517 54526 73373 54688 54721 73436 54785 54800 73498 54863 54886 73579 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 270 4940 
+#S 270 4940 
+#S 270 4940 
+#S 270 4940 
+#S 270 4940 
+# 1 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 2 subpath constraints for genome
+#S 0 14818 
+#S 0 14818 
+#S 0 14818 
+#S 0 14818 
+#S 0 14818 
+# 3 subpath constraints for genome
+#S 0 19757 
+#S 0 19757 
+#S 0 19757 
+#S 0 19757 
+#S 0 19757 
+# 4 subpath constraints for genome
+#S 0 24696 
+#S 0 24696 
+#S 0 24696 
+#S 0 24696 
+#S 0 24696 
+# 5 subpath constraints for genome
+#S 0 29366 2 270 
+#S 2 270 
+#S 0 29366 
+#S 0 29366 
+#S 2 270 
+# 6 subpath constraints for genome
+#S 32984 1 
+#S 0 32852 
+#S 0 32852 
+#S 0 32852 
+#S 0 32852 
+# 7 subpath constraints for genome
+#S 0 39188 
+#S 0 39188 
+#S 0 39188 
+#S 0 39188 
+#S 0 39188 
+# 8 subpath constraints for genome
+#S 0 44127 
+#S 0 44127 
+#S 0 44127 
+#S 0 44127 
+#S 0 44127 
+# 9 subpath constraints for genome
+#S 0 49066 
+#S 0 49066 
+#S 0 49066 
+#S 0 49066 
+#S 0 49066 
+# 10 subpath constraints for genome
+#S 0 54005 
+#S 0 54005 
+#S 0 54005 
+#S 0 54005 
+#S 0 54005 
+# 11 subpath constraints for genome
+#S 0 54166 54175 54328 54415 54517 54526 54688 54721 54785 54800 54863 54886 1 
+#S 54886 1 
+#S 54886 1 
+#S 54886 1 
+#S 54886 1 
+# 12 subpath constraints for genome
+#S 0 63883 
+#S 0 63883 
+#S 0 63883 
+#S 0 63883 
+#S 0 63883 
+# 13 subpath constraints for genome
+#S 0 68822 
+#S 0 68822 
+#S 0 68822 
+#S 0 68822 
+#S 0 68822 
+# 14 subpath constraints for genome
+#S 0 72959 
+#S 54688 54721 73436 54785 54800 73498 54863 54886 73579 
+#S 54526 73373 54688 54721 73436 54785 54800 73498 54863 54886 73579 
+#S 0 72959 
+#S 54526 73373 54688 54721 73436 54785 54800 73498 54863 54886 73579 
+61
+2 270 97
+270 1 26
+270 4940 71
+4940 1 71
+14818 1 23
+19757 1 32
+24696 1 55
+29366 2 26
+32852 32880 146
+32880 32958 73
+32880 33256 73
+32958 32984 146
+32984 32852 73
+32984 1 73
+33256 32958 73
+39188 1 69
+44127 1 70
+49066 1 176
+54005 1 43
+54166 54175 91
+54175 54328 51
+54175 73111 40
+54328 54415 91
+54415 54517 51
+54415 73212 40
+54517 54526 91
+54526 54688 51
+54526 73373 40
+54688 54721 91
+54721 54785 51
+54721 73436 40
+54785 54800 91
+54800 54863 51
+54800 73498 40
+54863 54886 91
+54886 1 51
+54886 73579 40
+63883 1 10
+68822 1 147
+72959 54166 40
+73111 54328 40
+73212 54517 40
+73373 54688 40
+73436 54785 40
+73498 54863 40
+73579 1 40
+0 2 71
+0 1 15
+0 14818 23
+0 19757 32
+0 24696 55
+0 29366 26
+0 32852 73
+0 39188 69
+0 44127 70
+0 49066 176
+0 54005 43
+0 54166 51
+0 63883 10
+0 68822 147
+0 72959 40

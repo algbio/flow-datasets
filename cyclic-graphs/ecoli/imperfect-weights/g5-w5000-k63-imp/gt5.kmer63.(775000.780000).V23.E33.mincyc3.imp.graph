@@ -1,0 +1,92 @@
+#gt5.kmer63.(775000.780000).V23.E33.mincyc3.imp
+#construct.py -o cyclic-graphs/ecoli/imperfect-weights/g5-w5000-k63-imp/ -g 5 -w 5000 -k 63 --distribution lognormal11 --mincycles 1 --nreads 5 --readlength 1000 -D ecoli --poisson-edge-errors
+#kmersize=63
+#windowsize=5000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal11
+#ngenomes=5
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/ecoli/imperfect-weights/g5-w5000-k63-imp/
+#pdf=False
+#png=False
+#style=default
+#poisson_edge_errors=True
+#dataset=ecoli
+#abundances=None
+#left_index=None
+#right_index=None
+#unique source is 0, unique sink is 1
+#genomes: GCA_000005845.2_ASM584v2.fna.gz GCA_000006665.1_ASM666v1.fna.gz GCA_000007445.1_ASM744v1.fna.gz GCA_000008865.2_ASM886v2.fna.gz GCA_000009565.2_ASM956v1.fna.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 10 0 1 
+#T 12 0 4941 5757 5820 5911 5974 6312 6327 6312 6327 6531 6547 6621 6636 6621 6636 6531 6547 7184 7247 9610 9830 1 
+#T 12 0 14769 1 
+#T 4 0 14989 4941 5757 15051 5820 5911 15113 5974 6312 6327 6312 6327 6531 6547 6621 6636 6621 6636 6531 6547 7184 15175 7247 9610 1 
+#T 63 0 20114 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 1 subpath constraints for genome
+#S 7247 9610 
+#S 7247 9610 
+#S 4941 5757 5820 5911 5974 6312 6327 6312 
+#S 6636 6531 6547 7184 7247 9610 
+#S 7247 9610 
+# 2 subpath constraints for genome
+#S 0 14769 
+#S 0 14769 
+#S 0 14769 
+#S 0 14769 
+#S 0 14769 
+# 3 subpath constraints for genome
+#S 0 14989 4941 5757 15051 
+#S 7247 9610 
+#S 7247 9610 
+#S 0 14989 4941 5757 15051 
+#S 7247 9610 
+# 4 subpath constraints for genome
+#S 0 20114 
+#S 0 20114 
+#S 0 20114 
+#S 0 20114 
+#S 0 20114 
+33
+4941 5757 15
+5757 5820 10
+5757 15051 4
+5820 5911 18
+5911 5974 7
+5911 15113 2
+5974 6312 17
+6312 6327 33
+6327 6312 13
+6327 6531 14
+6531 6547 25
+6547 6621 20
+6547 7184 25
+6621 6636 36
+6636 6621 13
+6636 6531 18
+7184 7247 11
+7184 15175 4
+7247 9610 19
+9610 1 6
+9610 9830 10
+9830 1 10
+14769 1 13
+14989 4941 3
+15051 5820 4
+15113 5974 4
+15175 7247 2
+20114 1 73
+0 4941 10
+0 1 13
+0 14769 9
+0 14989 3
+0 20114 56

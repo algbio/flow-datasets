@@ -1,0 +1,86 @@
+#gt5.kmer63.(665000.670000).V19.E27.mincyc8.perf
+#construct.py -o cyclic-graphs/ecoli/perfect-weights/g5-w5000-k63/ -g 5 -w 5000 -k 63 --distribution lognormal11 --mincycles 1 --nreads 5 --readlength 1000 -D ecoli
+#kmersize=63
+#windowsize=5000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal11
+#ngenomes=5
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/ecoli/perfect-weights/g5-w5000-k63/
+#pdf=False
+#png=False
+#style=default
+#poisson_edge_errors=False
+#dataset=ecoli
+#abundances=None
+#left_index=None
+#right_index=None
+#unique source is 0, unique sink is 1
+#genomes: GCA_000005845.2_ASM584v2.fna.gz GCA_000006665.1_ASM666v1.fna.gz GCA_000007445.1_ASM744v1.fna.gz GCA_000008865.2_ASM886v2.fna.gz GCA_000009565.2_ASM956v1.fna.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 14 0 1 
+#T 24 0 4941 6482 6495 7128 7146 7209 7215 7446 7506 6482 6495 9057 7128 7146 9119 7209 7215 9533 9839 1 
+#T 20 0 14778 1 
+#T 42 0 15085 4941 6482 6495 7128 7146 7209 7215 7446 15143 7506 6482 6495 9057 7128 7146 9119 7209 7215 9533 1 
+#T 26 0 20082 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 0 1 
+#S 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 1 subpath constraints for genome
+#S 4941 6482 
+#S 4941 6482 6495 7128 7146 7209 7215 7446 7506 
+#S 6495 7128 7146 7209 7215 7446 7506 6482 
+#S 6495 7128 7146 7209 7215 7446 7506 6482 
+#S 6495 9057 7128 7146 9119 7209 7215 9533 9839 
+# 2 subpath constraints for genome
+#S 0 14778 
+#S 0 14778 
+#S 0 14778 
+#S 0 14778 
+#S 0 14778 
+# 3 subpath constraints for genome
+#S 6495 7128 7146 7209 7215 7446 15143 7506 6482 
+#S 6495 7128 7146 7209 7215 7446 15143 7506 6482 
+#S 4941 6482 6495 7128 7146 7209 7215 7446 
+#S 7506 6482 6495 9057 
+#S 6495 7128 7146 7209 7215 7446 15143 7506 6482 
+# 4 subpath constraints for genome
+#S 0 20082 
+#S 0 20082 
+#S 0 20082 
+#S 0 20082 
+#S 0 20082 
+27
+4941 6482 66
+6482 6495 132
+6495 7128 66
+6495 9057 66
+7128 7146 132
+7146 7209 66
+7146 9119 66
+7209 7215 132
+7215 7446 66
+7215 9533 66
+7446 7506 24
+7446 15143 42
+7506 6482 66
+9057 7128 66
+9119 7209 66
+9533 1 42
+9533 9839 24
+9839 1 24
+14778 1 20
+15085 4941 42
+15143 7506 42
+20082 1 26
+0 4941 24
+0 1 14
+0 14778 20
+0 15085 42
+0 20082 26

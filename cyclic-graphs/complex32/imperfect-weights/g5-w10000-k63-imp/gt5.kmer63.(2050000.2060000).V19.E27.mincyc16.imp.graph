@@ -1,0 +1,86 @@
+#gt5.kmer63.(2050000.2060000).V19.E27.mincyc16.imp
+#construct.py -o cyclic-graphs/complex32/imperfect-weights/g5-w10000-k63-imp/ -g 5 -w 10000 -k 63 --mincycles 1 --nreads 5 --readlength 1000 -D complex32 --poisson-edge-errors
+#kmersize=63
+#windowsize=10000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal-44
+#ngenomes=5
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/complex32/imperfect-weights/g5-w10000-k63-imp/
+#pdf=False
+#png=False
+#style=default
+#poisson_edge_errors=True
+#dataset=complex32
+#abundances=None
+#left_index=None
+#right_index=None
+#unique source is 0, unique sink is 1
+#genomes: GCF_000005845.2_ASM584v2_genomic.fna.gz GCF_000006925.2_ASM692v2_genomic.fna.gz GCF_000006945.2_ASM694v2_genomic.fna.gz GCF_000009045.1_ASM904v1_genomic.fna.gz GCF_000013285.1_ASM1328v1_genomic.fna.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 16 0 1 
+#T 7 0 10145 10240 10303 10413 10476 10654 10771 10828 10891 10951 10145 10240 17234 10303 10413 17296 10476 10654 17412 10771 10828 17474 10891 10951 1 
+#T 1 0 29313 1 
+#T 7 0 39252 1 
+#T 1 0 49191 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 1 subpath constraints for genome
+#S 0 10145 10240 10303 10413 10476 10654 10771 10828 10891 10951 10145 
+#S 10413 17296 10476 10654 17412 10771 10828 17474 10891 10951 1 
+#S 10476 10654 17412 10771 10828 17474 10891 10951 1 
+#S 10951 10145 
+#S 10951 10145 
+# 2 subpath constraints for genome
+#S 0 29313 
+#S 0 29313 
+#S 0 29313 
+#S 0 29313 
+#S 0 29313 
+# 3 subpath constraints for genome
+#S 0 39252 
+#S 0 39252 
+#S 0 39252 
+#S 0 39252 
+#S 0 39252 
+# 4 subpath constraints for genome
+#S 0 49191 
+#S 0 49191 
+#S 0 49191 
+#S 0 49191 
+#S 0 49191 
+27
+10145 10240 12
+10240 10303 5
+10240 17234 8
+10303 10413 12
+10413 10476 11
+10413 17296 12
+10476 10654 10
+10654 10771 8
+10654 17412 9
+10771 10828 14
+10828 10891 6
+10828 17474 9
+10891 10951 20
+10951 10145 3
+10951 1 5
+17234 10303 8
+17296 10476 7
+17412 10771 6
+17474 10891 7
+29313 1 3
+39252 1 5
+49191 1 1
+0 1 15
+0 10145 7
+0 29313 4
+0 39252 6
+0 49191 1

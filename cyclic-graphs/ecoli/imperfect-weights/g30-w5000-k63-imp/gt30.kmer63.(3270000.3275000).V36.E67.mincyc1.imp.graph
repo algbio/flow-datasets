@@ -1,0 +1,301 @@
+#gt30.kmer63.(3270000.3275000).V36.E67.mincyc1.imp
+#construct.py -o cyclic-graphs/ecoli/imperfect-weights/g30-w5000-k63-imp/ -g 30 -w 5000 -k 63 --distribution lognormal11 --mincycles 1 --nreads 5 --readlength 1000 -D ecoli --poisson-edge-errors
+#kmersize=63
+#windowsize=5000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal11
+#ngenomes=30
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/ecoli/imperfect-weights/g30-w5000-k63-imp/
+#pdf=False
+#png=False
+#style=default
+#poisson_edge_errors=True
+#dataset=ecoli
+#abundances=None
+#left_index=None
+#right_index=None
+#unique source is 0, unique sink is 1
+#genomes: GCA_000005845.2_ASM584v2.fna.gz GCA_000006665.1_ASM666v1.fna.gz GCA_000007445.1_ASM744v1.fna.gz GCA_000008865.2_ASM886v2.fna.gz GCA_000009565.2_ASM956v1.fna.gz GCA_000010245.1_ASM1024v1.fna.gz GCA_000010385.1_ASM1038v1.fna.gz GCA_000010485.1_ASM1048v1.fna.gz GCA_000010745.1_ASM1074v1.fna.gz GCA_000010765.1_ASM1076v1.fna.gz GCA_000013265.1_ASM1326v1.fna.gz GCA_000013305.1_ASM1330v1.fna.gz GCA_000014845.1_ASM1484v1.fna.gz GCA_000017745.1_ASM1774v1.fna.gz GCA_000017765.1_ASM1776v1.fna.gz GCA_000017985.1_ASM1798v1.fna.gz GCA_000019385.1_ASM1938v1.fna.gz GCA_000019425.1_ASM1942v1.fna.gz GCA_000019645.1_ASM1964v1.fna.gz GCA_000021125.1_ASM2112v1.fna.gz GCA_000022225.1_ASM2222v1.fna.gz GCA_000022345.1_ASM2234v1.fna.gz GCA_000022665.2_ASM2266v1.fna.gz GCA_000023365.1_ASM2336v1.fna.gz GCA_000023665.1_ASM2366v1.fna.gz GCA_000025165.1_ASM2516v1.fna.gz GCA_000025745.1_ASM2574v1.fna.gz GCA_000026245.1_ASM2624v1.fna.gz GCA_000026265.1_ASM2626v1.fna.gz GCA_000026285.2_ASM2628v2.fna.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 32 0 32 34 40 32 34 40 4931 1 
+#T 114 0 1 
+#T 28 0 14809 1 
+#T 38 0 19748 1 
+#T 27 0 19749 24681 24687 1 
+#T 81 0 34 40 4931 24832 1 
+#T 114 0 29771 1 
+#T 32 0 34710 1 
+#T 108 0 39649 1 
+#T 46 0 44588 1 
+#T 54 0 49527 1 
+#T 16 0 54466 1 
+#T 35 0 59405 1 
+#T 33 0 64344 1 
+#T 93 0 69283 1 
+#T 38 0 74222 1 
+#T 14 0 79161 1 
+#T 29 0 84100 1 
+#T 125 0 89039 1 
+#T 42 0 93978 1 
+#T 41 0 98917 1 
+#T 38 0 103856 1 
+#T 24 0 103862 19749 24681 1 
+#T 113 0 108801 1 
+#T 120 0 113740 1 
+#T 50 0 118679 1 
+#T 14 0 123618 1 
+#T 37 0 128557 1 
+#T 56 0 133496 1 
+#T 15 0 138435 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 40 4931 
+#S 40 4931 
+#S 40 4931 
+#S 40 4931 
+#S 40 4931 
+# 1 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 2 subpath constraints for genome
+#S 0 14809 
+#S 0 14809 
+#S 0 14809 
+#S 0 14809 
+#S 0 14809 
+# 3 subpath constraints for genome
+#S 0 19748 
+#S 0 19748 
+#S 0 19748 
+#S 0 19748 
+#S 0 19748 
+# 4 subpath constraints for genome
+#S 19749 24681 24687 
+#S 19749 24681 24687 
+#S 19749 24681 
+#S 19749 24681 
+#S 19749 24681 
+# 5 subpath constraints for genome
+#S 40 4931 
+#S 40 4931 
+#S 40 4931 
+#S 40 4931 
+#S 40 4931 24832 
+# 6 subpath constraints for genome
+#S 0 29771 
+#S 0 29771 
+#S 0 29771 
+#S 0 29771 
+#S 0 29771 
+# 7 subpath constraints for genome
+#S 0 34710 
+#S 0 34710 
+#S 0 34710 
+#S 0 34710 
+#S 0 34710 
+# 8 subpath constraints for genome
+#S 0 39649 
+#S 0 39649 
+#S 0 39649 
+#S 0 39649 
+#S 0 39649 
+# 9 subpath constraints for genome
+#S 0 44588 
+#S 0 44588 
+#S 0 44588 
+#S 0 44588 
+#S 0 44588 
+# 10 subpath constraints for genome
+#S 0 49527 
+#S 0 49527 
+#S 0 49527 
+#S 0 49527 
+#S 0 49527 
+# 11 subpath constraints for genome
+#S 0 54466 
+#S 0 54466 
+#S 0 54466 
+#S 0 54466 
+#S 0 54466 
+# 12 subpath constraints for genome
+#S 0 59405 
+#S 0 59405 
+#S 0 59405 
+#S 0 59405 
+#S 0 59405 
+# 13 subpath constraints for genome
+#S 0 64344 
+#S 0 64344 
+#S 0 64344 
+#S 0 64344 
+#S 0 64344 
+# 14 subpath constraints for genome
+#S 0 69283 
+#S 0 69283 
+#S 0 69283 
+#S 0 69283 
+#S 0 69283 
+# 15 subpath constraints for genome
+#S 0 74222 
+#S 0 74222 
+#S 0 74222 
+#S 0 74222 
+#S 0 74222 
+# 16 subpath constraints for genome
+#S 0 79161 
+#S 0 79161 
+#S 0 79161 
+#S 0 79161 
+#S 0 79161 
+# 17 subpath constraints for genome
+#S 0 84100 
+#S 0 84100 
+#S 0 84100 
+#S 0 84100 
+#S 0 84100 
+# 18 subpath constraints for genome
+#S 0 89039 
+#S 0 89039 
+#S 0 89039 
+#S 0 89039 
+#S 0 89039 
+# 19 subpath constraints for genome
+#S 0 93978 
+#S 0 93978 
+#S 0 93978 
+#S 0 93978 
+#S 0 93978 
+# 20 subpath constraints for genome
+#S 0 98917 
+#S 0 98917 
+#S 0 98917 
+#S 0 98917 
+#S 0 98917 
+# 21 subpath constraints for genome
+#S 0 103856 
+#S 0 103856 
+#S 0 103856 
+#S 0 103856 
+#S 0 103856 
+# 22 subpath constraints for genome
+#S 19749 24681 
+#S 19749 24681 
+#S 19749 24681 
+#S 19749 24681 
+#S 19749 24681 
+# 23 subpath constraints for genome
+#S 0 108801 
+#S 0 108801 
+#S 0 108801 
+#S 0 108801 
+#S 0 108801 
+# 24 subpath constraints for genome
+#S 0 113740 
+#S 0 113740 
+#S 0 113740 
+#S 0 113740 
+#S 0 113740 
+# 25 subpath constraints for genome
+#S 0 118679 
+#S 0 118679 
+#S 0 118679 
+#S 0 118679 
+#S 0 118679 
+# 26 subpath constraints for genome
+#S 0 123618 
+#S 0 123618 
+#S 0 123618 
+#S 0 123618 
+#S 0 123618 
+# 27 subpath constraints for genome
+#S 0 128557 
+#S 0 128557 
+#S 0 128557 
+#S 0 128557 
+#S 0 128557 
+# 28 subpath constraints for genome
+#S 0 133496 
+#S 0 133496 
+#S 0 133496 
+#S 0 133496 
+#S 0 133496 
+# 29 subpath constraints for genome
+#S 0 138435 
+#S 0 138435 
+#S 0 138435 
+#S 0 138435 
+#S 0 138435 
+67
+32 34 62
+34 40 185
+40 32 30
+40 4931 127
+4931 1 32
+4931 24832 73
+14809 1 25
+19748 1 34
+19749 24681 50
+24681 1 28
+24681 24687 39
+24687 1 30
+24832 1 69
+29771 1 106
+34710 1 36
+39649 1 104
+44588 1 56
+49527 1 40
+54466 1 22
+59405 1 32
+64344 1 36
+69283 1 82
+74222 1 38
+79161 1 20
+84100 1 34
+89039 1 130
+93978 1 43
+98917 1 39
+103856 1 34
+103862 19749 20
+108801 1 119
+113740 1 124
+118679 1 56
+123618 1 8
+128557 1 43
+133496 1 57
+138435 1 8
+0 19749 20
+0 34 72
+0 32 31
+0 1 114
+0 14809 28
+0 19748 31
+0 29771 129
+0 34710 31
+0 39649 110
+0 44588 43
+0 49527 75
+0 54466 16
+0 59405 38
+0 64344 28
+0 69283 79
+0 74222 45
+0 79161 14
+0 84100 25
+0 89039 113
+0 93978 44
+0 98917 42
+0 103856 34
+0 103862 26
+0 108801 97
+0 113740 102
+0 118679 56
+0 123618 11
+0 128557 37
+0 133496 67
+0 138435 18

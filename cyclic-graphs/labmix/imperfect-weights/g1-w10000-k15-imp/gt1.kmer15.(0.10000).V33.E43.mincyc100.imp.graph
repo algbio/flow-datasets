@@ -1,0 +1,74 @@
+#gt1.kmer15.(0.10000).V33.E43.mincyc100.imp
+#construct.py -o cyclic-graphs/labmix/imperfect-weights/g1-w10000-k15-imp/ -g 1 -w 10000 -k 15 --mincycles 1 --nreads 5 --readlength 1000 -D labmix --poisson-edge-errors
+#kmersize=15
+#windowsize=10000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal-44
+#ngenomes=1
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/labmix/imperfect-weights/g1-w10000-k15-imp/
+#pdf=False
+#png=False
+#style=default
+#poisson_edge_errors=True
+#dataset=labmix
+#abundances=None
+#left_index=None
+#right_index=None
+#unique source is 0, unique sink is 1
+#genomes: 896.fasta 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 17 0 8 26 42 57 77 124 139 169 206 295 310 323 338 376 394 396 411 463 478 623 4780 4786 4780 4786 8 26 9092 42 57 9111 77 124 9125 139 169 9161 206 295 9175 310 323 9189 338 376 9206 394 396 9220 411 463 9234 478 623 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 623 4780 4786 4780 
+#S 623 4780 
+#S 623 4780 
+#S 623 4780 
+#S 623 4780 
+43
+8 26 33
+26 42 16
+26 9092 12
+42 57 32
+57 77 17
+57 9111 17
+77 124 34
+124 139 15
+124 9125 10
+139 169 24
+169 206 16
+169 9161 16
+206 295 29
+295 310 15
+295 9175 12
+310 323 44
+323 338 13
+323 9189 15
+338 376 47
+376 394 14
+376 9206 23
+394 396 35
+396 411 28
+396 9220 17
+411 463 46
+463 478 17
+463 9234 14
+478 623 35
+623 1 18
+623 4780 13
+4780 4786 27
+4786 4780 13
+4786 8 15
+9092 42 21
+9111 77 10
+9125 139 21
+9161 206 13
+9175 310 13
+9189 338 20
+9206 394 14
+9220 411 16
+9234 478 14
+0 8 14

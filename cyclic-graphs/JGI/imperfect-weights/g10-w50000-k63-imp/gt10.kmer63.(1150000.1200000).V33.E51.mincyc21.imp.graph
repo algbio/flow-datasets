@@ -1,0 +1,145 @@
+#gt10.kmer63.(1150000.1200000).V33.E51.mincyc21.imp
+#construct.py -o cyclic-graphs/JGI/imperfect-weights/g10-w50000-k63-imp/ -g 10 -w 50000 -k 63 --mincycles 1 --nreads 5 --readlength 1000 -D JGI --poisson-edge-errors
+#kmersize=63
+#windowsize=50000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal-44
+#ngenomes=10
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/JGI/imperfect-weights/g10-w50000-k63-imp/
+#pdf=False
+#png=False
+#style=default
+#poisson_edge_errors=True
+#dataset=JGI
+#abundances=None
+#left_index=None
+#right_index=None
+#unique source is 0, unique sink is 1
+#genomes: Clostridium_perfringensATCC_13124.fasta.gz Clostridium_thermocellumVPI_7372_ATCC_27405.fasta.gz Coraliomargarita_akajimensis_DSM_45221.fasta.gz Corynebacterium_glutamicum_ATCC_13032.fasta.gz Desulfosporosinus_acidiphilus_SJ4_DSM_22704.fasta.gz Desulfosporosinus_meridiei_DSM_13257.fasta.gz Desulfotomaculum_gibsoniae_DSM_7213.fasta.gz E.coli_K12_ATCC_700926.fasta.gz Echinicola_vietnamensis_DSM_17526.fasta.gz Fervidobacterium_pennivorans_DSM_9078.fasta.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 35 0 1 
+#T 3 0 99879 1 
+#T 8 0 149818 1 
+#T 89 0 199757 1 
+#T 42 0 228178 228185 228248 230933 230996 231960 232031 232033 232115 232128 228178 228185 232652 228248 230933 232714 230996 231960 232784 232031 232033 232865 232115 232128 1 
+#T 1 0 295959 1 
+#T 7 0 307568 307978 308134 308165 307568 307978 328701 308134 308165 1 
+#T 1 0 395394 1 
+#T 1 0 395457 395526 395457 395526 437353 437375 437550 437353 437375 437615 437550 437353 437375 437615 1 
+#T 3 0 495090 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 1 subpath constraints for genome
+#S 0 99879 
+#S 0 99879 
+#S 0 99879 
+#S 0 99879 
+#S 0 99879 
+# 2 subpath constraints for genome
+#S 0 149818 
+#S 0 149818 
+#S 0 149818 
+#S 0 149818 
+#S 0 149818 
+# 3 subpath constraints for genome
+#S 0 199757 
+#S 0 199757 
+#S 0 199757 
+#S 0 199757 
+#S 0 199757 
+# 4 subpath constraints for genome
+#S 232128 1 
+#S 0 228178 
+#S 232128 1 
+#S 0 228178 
+#S 0 228178 
+# 5 subpath constraints for genome
+#S 0 295959 
+#S 0 295959 
+#S 0 295959 
+#S 0 295959 
+#S 0 295959 
+# 6 subpath constraints for genome
+#S 308165 1 
+#S 308165 1 
+#S 308165 1 
+#S 308165 307568 
+#S 308165 307568 
+# 7 subpath constraints for genome
+#S 0 395394 
+#S 0 395394 
+#S 0 395394 
+#S 0 395394 
+#S 0 395394 
+# 8 subpath constraints for genome
+#S 437615 1 
+#S 395526 437353 
+#S 395526 437353 
+#S 395526 437353 
+#S 395526 437353 
+# 9 subpath constraints for genome
+#S 0 495090 
+#S 0 495090 
+#S 0 495090 
+#S 0 495090 
+#S 0 495090 
+51
+99879 1 1
+149818 1 4
+199757 1 56
+228178 228185 89
+228185 228248 36
+228185 232652 33
+228248 230933 96
+230933 230996 43
+230933 232714 47
+230996 231960 79
+231960 232031 41
+231960 232784 30
+232031 232033 95
+232033 232115 45
+232033 232865 39
+232115 232128 95
+232128 228178 44
+232128 1 36
+232652 228248 34
+232714 230996 42
+232784 232031 41
+232865 232115 47
+295959 1 2
+307568 307978 13
+307978 308134 5
+307978 328701 11
+308134 308165 17
+308165 307568 7
+308165 1 4
+328701 308134 5
+395394 1 1
+395457 395526 2
+395526 395457 1
+395526 437353 1
+437353 437375 3
+437375 437550 1
+437375 437615 1
+437550 437353 2
+437615 437550 1
+437615 1 1
+495090 1 3
+0 1 29
+0 99879 3
+0 149818 5
+0 199757 86
+0 228178 44
+0 295959 2
+0 307568 7
+0 395394 1
+0 395457 1
+0 495090 3

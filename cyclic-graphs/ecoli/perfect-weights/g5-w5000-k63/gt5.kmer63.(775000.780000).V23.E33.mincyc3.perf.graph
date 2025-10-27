@@ -1,0 +1,92 @@
+#gt5.kmer63.(775000.780000).V23.E33.mincyc3.perf
+#construct.py -o cyclic-graphs/ecoli/perfect-weights/g5-w5000-k63/ -g 5 -w 5000 -k 63 --distribution lognormal11 --mincycles 1 --nreads 5 --readlength 1000 -D ecoli
+#kmersize=63
+#windowsize=5000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal11
+#ngenomes=5
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/ecoli/perfect-weights/g5-w5000-k63/
+#pdf=False
+#png=False
+#style=default
+#poisson_edge_errors=False
+#dataset=ecoli
+#abundances=None
+#left_index=None
+#right_index=None
+#unique source is 0, unique sink is 1
+#genomes: GCA_000005845.2_ASM584v2.fna.gz GCA_000006665.1_ASM666v1.fna.gz GCA_000007445.1_ASM744v1.fna.gz GCA_000008865.2_ASM886v2.fna.gz GCA_000009565.2_ASM956v1.fna.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 85 0 1 
+#T 217 0 4941 5757 5820 5911 5974 6312 6327 6312 6327 6531 6547 6621 6636 6621 6636 6531 6547 7184 7247 9610 9830 1 
+#T 149 0 14769 1 
+#T 23 0 14989 4941 5757 15051 5820 5911 15113 5974 6312 6327 6312 6327 6531 6547 6621 6636 6621 6636 6531 6547 7184 15175 7247 9610 1 
+#T 44 0 20114 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 1 subpath constraints for genome
+#S 7247 9610 
+#S 7247 9610 9830 
+#S 7247 9610 9830 
+#S 7247 9610 9830 
+#S 7247 9610 9830 
+# 2 subpath constraints for genome
+#S 0 14769 
+#S 0 14769 
+#S 0 14769 
+#S 0 14769 
+#S 0 14769 
+# 3 subpath constraints for genome
+#S 6636 6531 6547 7184 15175 7247 9610 
+#S 0 14989 4941 5757 15051 5820 5911 
+#S 5757 15051 5820 5911 15113 5974 6312 6327 6312 6327 6531 6547 6621 6636 6621 6636 6531 
+#S 7247 9610 
+#S 5974 6312 6327 6312 6327 6531 6547 6621 6636 6621 6636 6531 6547 7184 
+# 4 subpath constraints for genome
+#S 0 20114 
+#S 0 20114 
+#S 0 20114 
+#S 0 20114 
+#S 0 20114 
+33
+4941 5757 240
+5757 5820 217
+5757 15051 23
+5820 5911 240
+5911 5974 217
+5911 15113 23
+5974 6312 240
+6312 6327 480
+6327 6312 240
+6327 6531 240
+6531 6547 480
+6547 6621 240
+6547 7184 240
+6621 6636 480
+6636 6621 240
+6636 6531 240
+7184 7247 217
+7184 15175 23
+7247 9610 240
+9610 1 23
+9610 9830 217
+9830 1 217
+14769 1 149
+14989 4941 23
+15051 5820 23
+15113 5974 23
+15175 7247 23
+20114 1 44
+0 4941 217
+0 1 85
+0 14769 149
+0 14989 23
+0 20114 44

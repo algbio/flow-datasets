@@ -1,0 +1,84 @@
+#gt5.kmer63.(500000.550000).V17.E25.mincyc9.perf
+#construct.py -o cyclic-graphs/JGI/perfect-weights/g5-w50000-k63/ -g 5 -w 50000 -k 63 --mincycles 1 --nreads 5 --readlength 1000 -D JGI
+#kmersize=63
+#windowsize=50000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal-44
+#ngenomes=5
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/JGI/perfect-weights/g5-w50000-k63/
+#pdf=False
+#png=False
+#style=default
+#poisson_edge_errors=False
+#dataset=JGI
+#abundances=None
+#left_index=None
+#right_index=None
+#unique source is 0, unique sink is 1
+#genomes: Clostridium_perfringensATCC_13124.fasta.gz Clostridium_thermocellumVPI_7372_ATCC_27405.fasta.gz Coraliomargarita_akajimensis_DSM_45221.fasta.gz Corynebacterium_glutamicum_ATCC_13032.fasta.gz Desulfosporosinus_acidiphilus_SJ4_DSM_22704.fasta.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 35 0 39284 39380 39284 39380 1 
+#T 3 0 67034 67068 67221 67224 67383 67905 68051 68112 67034 67068 70399 67221 67224 70557 67383 67905 70702 68051 68112 1 
+#T 8 0 1 
+#T 89 0 199036 1 
+#T 42 0 248975 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 0 39284 
+#S 0 39284 
+#S 0 39284 
+#S 0 39284 
+#S 0 39284 
+# 1 subpath constraints for genome
+#S 0 67034 
+#S 68112 67034 67068 70399 67221 67224 70557 
+#S 68112 1 
+#S 67905 68051 68112 67034 
+#S 0 67034 
+# 2 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 3 subpath constraints for genome
+#S 0 199036 
+#S 0 199036 
+#S 0 199036 
+#S 0 199036 
+#S 0 199036 
+# 4 subpath constraints for genome
+#S 0 248975 
+#S 0 248975 
+#S 0 248975 
+#S 0 248975 
+#S 0 248975 
+25
+39284 39380 70
+39380 39284 35
+39380 1 35
+67034 67068 6
+67068 67221 3
+67068 70399 3
+67221 67224 6
+67224 67383 3
+67224 70557 3
+67383 67905 6
+67905 68051 3
+67905 70702 3
+68051 68112 6
+68112 67034 3
+68112 1 3
+70399 67221 3
+70557 67383 3
+70702 68051 3
+199036 1 89
+248975 1 42
+0 39284 35
+0 67034 3
+0 1 8
+0 199036 89
+0 248975 42

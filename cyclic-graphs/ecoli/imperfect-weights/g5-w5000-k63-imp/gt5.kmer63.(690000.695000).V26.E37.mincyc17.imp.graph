@@ -1,0 +1,96 @@
+#gt5.kmer63.(690000.695000).V26.E37.mincyc17.imp
+#construct.py -o cyclic-graphs/ecoli/imperfect-weights/g5-w5000-k63-imp/ -g 5 -w 5000 -k 63 --distribution lognormal11 --mincycles 1 --nreads 5 --readlength 1000 -D ecoli --poisson-edge-errors
+#kmersize=63
+#windowsize=5000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal11
+#ngenomes=5
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/ecoli/imperfect-weights/g5-w5000-k63-imp/
+#pdf=False
+#png=False
+#style=default
+#poisson_edge_errors=True
+#dataset=ecoli
+#abundances=None
+#left_index=None
+#right_index=None
+#unique source is 0, unique sink is 1
+#genomes: GCA_000005845.2_ASM584v2.fna.gz GCA_000006665.1_ASM666v1.fna.gz GCA_000007445.1_ASM744v1.fna.gz GCA_000008865.2_ASM886v2.fna.gz GCA_000009565.2_ASM956v1.fna.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 40 0 1 
+#T 27 0 4941 5033 5048 5033 5048 8723 8786 9644 9863 1 
+#T 42 0 14802 1 
+#T 212 0 15021 4941 5033 5048 5033 5048 8723 15083 8786 9644 1 
+#T 18 0 15084 15090 15153 15187 15414 15495 15563 15588 15699 15766 15084 15090 17016 15153 15187 17242 15414 15495 17309 15563 15588 17419 15699 15766 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 1 subpath constraints for genome
+#S 5048 8723 
+#S 5048 8723 8786 9644 
+#S 8786 9644 9863 
+#S 8786 9644 9863 
+#S 5048 8723 8786 9644 9863 
+# 2 subpath constraints for genome
+#S 0 14802 
+#S 0 14802 
+#S 0 14802 
+#S 0 14802 
+#S 0 14802 
+# 3 subpath constraints for genome
+#S 8723 15083 8786 9644 
+#S 5048 8723 15083 8786 9644 
+#S 8786 9644 
+#S 5048 5033 5048 8723 
+#S 5048 5033 5048 8723 
+# 4 subpath constraints for genome
+#S 15187 17242 15414 15495 17309 15563 15588 17419 15699 15766 1 
+#S 15766 15084 15090 17016 15153 15187 17242 15414 15495 17309 15563 15588 17419 
+#S 15766 1 
+#S 15766 1 
+#S 15766 15084 
+37
+4941 5033 203
+5033 5048 487
+5048 5033 229
+5048 8723 243
+8723 8786 17
+8723 15083 179
+8786 9644 262
+9644 1 235
+9644 9863 18
+9863 1 32
+14802 1 35
+15021 4941 214
+15083 8786 214
+15084 15090 42
+15090 15153 13
+15090 17016 18
+15153 15187 35
+15187 15414 13
+15187 17242 12
+15414 15495 28
+15495 15563 13
+15495 17309 21
+15563 15588 39
+15588 15699 25
+15588 17419 15
+15699 15766 35
+15766 15084 15
+15766 1 18
+17016 15153 14
+17242 15414 14
+17309 15563 14
+17419 15699 13
+0 4941 28
+0 15084 23
+0 1 33
+0 14802 38
+0 15021 207

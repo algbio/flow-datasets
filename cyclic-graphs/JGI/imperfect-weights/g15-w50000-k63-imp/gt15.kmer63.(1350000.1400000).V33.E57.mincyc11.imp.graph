@@ -1,0 +1,186 @@
+#gt15.kmer63.(1350000.1400000).V33.E57.mincyc11.imp
+#construct.py -o cyclic-graphs/JGI/imperfect-weights/g15-w50000-k63-imp/ -g 15 -w 50000 -k 63 --mincycles 1 --nreads 5 --readlength 1000 -D JGI --poisson-edge-errors
+#kmersize=63
+#windowsize=50000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal-44
+#ngenomes=15
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/JGI/imperfect-weights/g15-w50000-k63-imp/
+#pdf=False
+#png=False
+#style=default
+#poisson_edge_errors=True
+#dataset=JGI
+#abundances=None
+#left_index=None
+#right_index=None
+#unique source is 0, unique sink is 1
+#genomes: Clostridium_perfringensATCC_13124.fasta.gz Clostridium_thermocellumVPI_7372_ATCC_27405.fasta.gz Coraliomargarita_akajimensis_DSM_45221.fasta.gz Corynebacterium_glutamicum_ATCC_13032.fasta.gz Desulfosporosinus_acidiphilus_SJ4_DSM_22704.fasta.gz Desulfosporosinus_meridiei_DSM_13257.fasta.gz Desulfotomaculum_gibsoniae_DSM_7213.fasta.gz E.coli_K12_ATCC_700926.fasta.gz Echinicola_vietnamensis_DSM_17526.fasta.gz Fervidobacterium_pennivorans_DSM_9078.fasta.gz Frateuria_aurantia_DSM_6220.fasta.gz Halovivax_ruber_XH-70.fasta.gz Hirschia_baltica_ATCC_49814.fasta.gz Meiothermus_silvanus_DSM_9946.fasta.gz Natronobacterium_gregoryi_SP2.fasta.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 35 0 1 
+#T 3 0 81977 81984 81995 82320 82326 81984 81995 82929 81977 81984 81995 82929 82320 82326 1 
+#T 8 0 149325 1 
+#T 89 0 164916 164943 165006 165042 164916 164943 165225 165006 165042 1 
+#T 42 0 200046 200061 200046 200061 1 
+#T 1 0 299061 1 
+#T 7 0 349000 1 
+#T 1 0 398939 1 
+#T 1 0 419764 419809 419764 419809 1 
+#T 3 0 498771 1 
+#T 2 0 548710 1 
+#T 19 0 598649 1 
+#T 5 0 648588 1 
+#T 2 0 648792 649870 648792 649870 1 
+#T 3 0 703717 703737 703851 703914 703851 703914 727696 727703 703717 703737 727696 727703 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 1 subpath constraints for genome
+#S 0 81977 
+#S 0 81977 
+#S 0 81977 
+#S 0 81977 
+#S 82326 1 
+# 2 subpath constraints for genome
+#S 0 149325 
+#S 0 149325 
+#S 0 149325 
+#S 0 149325 
+#S 0 149325 
+# 3 subpath constraints for genome
+#S 165042 1 
+#S 165042 1 
+#S 165042 1 
+#S 165042 1 
+#S 165042 1 
+# 4 subpath constraints for genome
+#S 200061 1 
+#S 200061 1 
+#S 200061 200046 
+#S 200061 1 
+#S 200061 1 
+# 5 subpath constraints for genome
+#S 0 299061 
+#S 0 299061 
+#S 0 299061 
+#S 0 299061 
+#S 0 299061 
+# 6 subpath constraints for genome
+#S 0 349000 
+#S 0 349000 
+#S 0 349000 
+#S 0 349000 
+#S 0 349000 
+# 7 subpath constraints for genome
+#S 0 398939 
+#S 0 398939 
+#S 0 398939 
+#S 0 398939 
+#S 0 398939 
+# 8 subpath constraints for genome
+#S 0 419764 
+#S 0 419764 
+#S 0 419764 
+#S 419809 1 
+#S 0 419764 
+# 9 subpath constraints for genome
+#S 0 498771 
+#S 0 498771 
+#S 0 498771 
+#S 0 498771 
+#S 0 498771 
+# 10 subpath constraints for genome
+#S 0 548710 
+#S 0 548710 
+#S 0 548710 
+#S 0 548710 
+#S 0 548710 
+# 11 subpath constraints for genome
+#S 0 598649 
+#S 0 598649 
+#S 0 598649 
+#S 0 598649 
+#S 0 598649 
+# 12 subpath constraints for genome
+#S 0 648588 
+#S 0 648588 
+#S 0 648588 
+#S 0 648588 
+#S 0 648588 
+# 13 subpath constraints for genome
+#S 649870 648792 
+#S 649870 648792 
+#S 649870 1 
+#S 649870 648792 
+#S 649870 648792 649870 
+# 14 subpath constraints for genome
+#S 703737 727696 
+#S 703737 727696 
+#S 703737 727696 
+#S 0 703717 703737 703851 703914 703851 
+#S 703737 727696 
+57
+81977 81984 1
+81984 81995 5
+81995 82320 1
+81995 82929 9
+82320 82326 5
+82326 81984 1
+82326 1 4
+82929 81977 3
+82929 82320 1
+149325 1 8
+164916 164943 212
+164943 165006 87
+164943 165225 110
+165006 165042 166
+165042 164916 94
+165042 1 96
+165225 165006 75
+200046 200061 92
+200061 200046 47
+200061 1 30
+299061 1 2
+349000 1 12
+398939 1 1
+419764 419809 5
+419809 419764 2
+419809 1 1
+498771 1 1
+548710 1 1
+598649 1 20
+648588 1 2
+648792 649870 5
+649870 648792 3
+649870 1 1
+703717 703737 5
+703737 703851 3
+703737 727696 4
+703851 703914 6
+703914 703851 1
+703914 727696 2
+727696 727703 3
+727703 703717 3
+727703 1 1
+0 1 46
+0 81977 4
+0 149325 10
+0 164916 104
+0 200046 54
+0 299061 2
+0 349000 6
+0 398939 1
+0 419764 1
+0 498771 6
+0 548710 1
+0 598649 14
+0 648588 3
+0 648792 5
+0 703717 6

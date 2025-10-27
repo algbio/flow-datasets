@@ -1,0 +1,75 @@
+#gt5.kmer63.(2900000.2950000).V10.E16.mincyc3.imp
+#construct.py -o cyclic-graphs/medium20/imperfect-weights/g5-w50000-k63-imp/ -g 5 -w 50000 -k 63 --mincycles 1 --nreads 5 --readlength 1000 -D medium20 --poisson-edge-errors
+#kmersize=63
+#windowsize=50000
+#acyclic=False
+#mincycles=1
+#distribution=lognormal-44
+#ngenomes=5
+#nreads=5
+#readlength=1000
+#outdir=cyclic-graphs/medium20/imperfect-weights/g5-w50000-k63-imp/
+#pdf=False
+#png=False
+#style=default
+#poisson_edge_errors=True
+#dataset=medium20
+#abundances=None
+#left_index=None
+#right_index=None
+#unique source is 0, unique sink is 1
+#genomes: GCF_000005845.2_ASM584v2_genomic.fna.gz GCF_000009045.1_ASM904v1_genomic.fna.gz GCF_000013285.1_ASM1328v1_genomic.fna.gz GCF_000025905.1_ASM2590v1_genomic.fna.gz GCF_000092125.1_ASM9212v1_genomic.fna.gz 
+# ground truth paths, in the format 'weight node1 node2 node3 ... '
+#T 5 0 47386 47405 47407 47483 47386 47405 47483 47386 47405 47407 1 
+#T 1 0 1 
+#T 8 0 149763 1 
+#T 6 0 199702 1 
+#T 4 0 202285 202294 202285 202294 202285 202294 1 
+# subpath constraints, in the format 'node1 node2 node3 ... '
+# 0 subpath constraints for genome
+#S 0 47386 
+#S 0 47386 
+#S 0 47386 
+#S 0 47386 
+#S 0 47386 
+# 1 subpath constraints for genome
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+#S 0 1 
+# 2 subpath constraints for genome
+#S 0 149763 
+#S 0 149763 
+#S 0 149763 
+#S 0 149763 
+#S 0 149763 
+# 3 subpath constraints for genome
+#S 0 199702 
+#S 0 199702 
+#S 0 199702 
+#S 0 199702 
+#S 0 199702 
+# 4 subpath constraints for genome
+#S 202294 1 
+#S 0 202285 202294 202285 202294 202285 202294 1 
+#S 202294 1 
+#S 202294 1 
+#S 202294 1 
+16
+47386 47405 13
+47405 47407 6
+47405 47483 1
+47407 47483 8
+47407 1 7
+47483 47386 11
+149763 1 6
+199702 1 5
+202285 202294 9
+202294 202285 7
+202294 1 6
+0 47386 13
+0 1 1
+0 149763 14
+0 199702 5
+0 202285 4
