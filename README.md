@@ -65,7 +65,7 @@ dot -V
 `construct.py` writes one `.graph` file per processed genome window. Filenames encode metadata, e.g.:
 
 ```
-gt5.kmer21.(0.2000).V153.E212.mincyc7.e0.5.graph
+gt5.kmer21.(0.2000).V153.E212.mincyc7.errors.graph
 ```
 
 Meaning:
@@ -76,7 +76,7 @@ Meaning:
 * `V153.E212` – 153 nodes, 212 edges after compaction
 * `mincyc7` – graph had ≥7 (actually 7) simple cycles (present only if `--mincycles > 0`)
 * `acyc` – present instead of `mincyc*` if `--acyclic`
-* `e0.5` – imperfect edge flow parameter `--erroreps` (see below)
+* `errors` – present if `--poisson-edge-errors` was used
 
 If PDF / PNG rendering was requested, companion files `.graph.dot.pdf` and/or `.graph.dot.png` are produced (the intermediate `.dot` source is automatically removed in `construct.py`).
 
@@ -88,7 +88,7 @@ Plain text with comment lines beginning `#`. Key sections:
 * `#S <node seq...>` – (optional) subpath constraints produced from simulated reads
 * Final data block: first a line with the number of edges `E`, followed by `E` lines of `u v weight`.
 
-Edge weights are integer flows. When you supply explicit abundances (`--abundances`) weights are “perfect”. Otherwise, if `--erroreps < 1`, some edges may have an added *imperfect* (truncated Poisson) sample recorded only implicitly via changed `weight` (original `perfect_weight` is added in‑memory only, not in the file).
+Edge weights are integer flows. When you supply explicit abundances (`--abundances`) weights are “perfect”. Otherwise, if `--poisson-edge-errors` is used, some edges may have an added *imperfect* (Poisson) sample recorded only implicitly via changed `weight` (original `perfect_weight` is added in‑memory only, not in the file).
 
 ---
 
@@ -106,7 +106,7 @@ Creates one graph per window (or whole genome) across a chosen number of genomes
 | `-D`, `--dataset` | No | `ecoli` | Dataset: one of `ecoli`, `labmix`, `complex32`, `medium20`, `helicobacter-hepaticus`, `JGI`, `ebola`, `measles`, `sars_cov_2`. Each may define fixed abundances (see below). |
 | `-d`, `--distribution` | No | `lognormal-44` | Abundance distribution when not using dataset‑fixed or explicit abundances. Choices: `lognormal-44` (heavy tailed), `lognormal11` (moderate). Ignored if dataset provides fixed values or if `--abundances` is set. |
 | `-A`, `--abundances` | No | `None` | Comma-separated explicit float abundances for exactly `g` genomes. Disallows `--distribution` and disables Poisson perturbation (edge weights remain those values, rounded internally to integers where applied). |
-| `-e`, `--erroreps` | No | 1.0 | Imperfect flow sampling epsilon in `[0,1]`. `1.0` = sample full Poisson around each perfect edge flow; `0` = deterministic median (no variance). Values in between truncate Poisson to central interval of width `epsilon` around median before sampling. Ignored if `--abundances` or dataset fixed abundances? (Still applied unless explicit abundances were given; dataset-provided integers are subject to imperfect sampling if `epsilon < 1`). |
+| `--poisson-edge-errors` | No | off | Add Poisson-sampled noise to edge weights. |
 | `-a`, `--acyclic` | No | off | Keep only windows whose resulting graph is a DAG (mutually exclusive with `--mincycles`). |
 | `-c`, `--mincycles` | No | 0 | Keep only graphs with at least this many (simple) cycles (enumerated up to 100). Mutually exclusive with `--acyclic`. |
 | `-r`, `--nreads` | No | 0 | Number of simulated read starts per genome (for subpath constraints). Requires `--readlength`. |
@@ -119,15 +119,9 @@ Creates one graph per window (or whole genome) across a chosen number of genomes
 
 Datasets that include an abundances TSV (`labmix`, `complex32`, `medium20`, `JGI`, `ebola`) provide fixed integer (rounded) abundances. In these cases a user-supplied `--abundances` is ignored with an INFO message. For `ecoli` (and any dataset lacking a TSV such as `measles` or `sars_cov_2`) abundances are sampled via `--distribution` unless you pass `--abundances`.
 
-### Imperfect Edge Flows (`--erroreps`)
+### Imperfect Edge Flows (`--poisson-edge-errors`)
 
-For each perfect integer edge weight `f`, an “imperfect” weight is sampled from a (possibly truncated) Poisson distribution with mean `f`:
-
-* `epsilon = 1` – sample from full Poisson(f)
-* `0 < epsilon < 1` – restrict to central interval of CDF width `epsilon` about the median, then sample
-* `epsilon = 0` – deterministic median (equals `f` for integer Poisson median; fallback keeps at least 1 if original was >0)
-
-Set `--erroreps 1` (default) for realistic noise; reduce toward 0 to suppress variation.
+If `--poisson-edge-errors` is specified, for each perfect integer edge weight `f`, an “imperfect” weight is sampled from a Poisson distribution with mean `f`. This introduces realistic noise into the edge flows. 
 
 ### Simulated Read Subpaths
 
@@ -168,7 +162,7 @@ Run one directly (ensure executable bit):
 ## Tips & Troubleshooting
 
 * ERROR about existing output directory: choose a fresh `-o` path; directories are not overwritten.
-* Flow conservation assertion failure: indicates a bug or unexpected abundance transform; try re-running with `-e 0` to simplify or inspect earlier log messages.
+* Flow conservation assertion failure: indicates a bug or unexpected abundance transform; try re-running without `--poisson-edge-errors` to simplify or inspect earlier log messages.
 * Large graphs: rendering may time out; increase `--timeout` or skip rendering during construction and batch render later with `render.py`.
 * Missing `dot`: install Graphviz and ensure your shell sees it (`which dot`).
 
