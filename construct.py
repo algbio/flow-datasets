@@ -41,10 +41,13 @@ def get_genome(filePath):
     return ''.join(genome)
 
 def augment_dbGraph_from_string(string, index, order, abundance):
-    global dbGraph, kmer_paths
+    global dbGraph, kmer_paths, args
 
     for i in range(len(string) - (order-1)):
         kmer = string[i:i+order]
+        # Skip k-mers containing 'N' unless --keep-n is specified
+        if not args.keep_n and 'N' in kmer:
+            continue
         dbGraph[kmer] = dbGraph.get(kmer, 0) + abundance
         kmer1 = kmer[:-1]
         kmer2 = kmer[1:]
@@ -54,7 +57,7 @@ def augment_dbGraph_from_string(string, index, order, abundance):
 
 
 def construct_subpaths(genome, index, order):
-    global read_starts, subpaths, kmer2id
+    global read_starts, subpaths, kmer2id, args
 
     subpaths[index] = []
     for start in read_starts[index]:
@@ -62,6 +65,12 @@ def construct_subpaths(genome, index, order):
         for i in range(min(len(genome)-start-1-order, args.readlength)):
             # nodes are k-1 mers
             kmer = genome[start+i:start+i+order-1]
+            # Skip k-mers containing 'N' unless --keep-n is specified
+            if not args.keep_n and 'N' in kmer:
+                break
+            if kmer not in kmer2id:
+                # Skip this read if a k-mer is not in the graph
+                break
             nodeid = kmer2id[kmer]
             new_path.append(nodeid)
         subpaths[index].append(new_path)
@@ -317,6 +326,7 @@ parser.add_argument('-D', '--dataset', type=str, default='ecoli', choices=['ecol
 parser.add_argument('-A', '--abundances', type=str, default=None, help='Comma-separated list of abundances (floats) for the g genomes; mutually exclusive with --distribution and keeps exact float weights (no Poisson perturbation). Length must equal --ngenomes.')
 parser.add_argument('--left_index', type=int, default=None, help='Filter nodes: only render nodes with ID >= left_index (inclusive). If not specified, no lower bound filtering.')
 parser.add_argument('--right_index', type=int, default=None, help='Filter nodes: only render nodes with ID <= right_index (inclusive). If not specified, no upper bound filtering.')
+parser.add_argument('--keep-n', dest='keep_n', action='store_true', help='Keep k-mers with N characters (default: skip N characters)')
 
 args = parser.parse_args()
 
