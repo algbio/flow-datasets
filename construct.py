@@ -41,13 +41,10 @@ def get_genome(filePath):
     return ''.join(genome)
 
 def augment_dbGraph_from_string(string, index, order, abundance):
-    global dbGraph, kmer_paths, args
+    global dbGraph, kmer_paths
 
     for i in range(len(string) - (order-1)):
         kmer = string[i:i+order]
-        # Skip k-mers containing 'N' unless --keep-n is specified
-        if not args.keep_n and 'N' in kmer:
-            continue
         dbGraph[kmer] = dbGraph.get(kmer, 0) + abundance
         kmer1 = kmer[:-1]
         kmer2 = kmer[1:]
@@ -57,7 +54,7 @@ def augment_dbGraph_from_string(string, index, order, abundance):
 
 
 def construct_subpaths(genome, index, order):
-    global read_starts, subpaths, kmer2id, args
+    global read_starts, subpaths, kmer2id
 
     subpaths[index] = []
     for start in read_starts[index]:
@@ -65,12 +62,6 @@ def construct_subpaths(genome, index, order):
         for i in range(min(len(genome)-start-1-order, args.readlength)):
             # nodes are k-1 mers
             kmer = genome[start+i:start+i+order-1]
-            # Skip k-mers containing 'N' unless --keep-n is specified
-            if not args.keep_n and 'N' in kmer:
-                break
-            if kmer not in kmer2id:
-                # Skip this read if a k-mer is not in the graph
-                break
             nodeid = kmer2id[kmer]
             new_path.append(nodeid)
         subpaths[index].append(new_path)
@@ -256,6 +247,12 @@ def count_simple_cycles(G, bound):
     
     return count
 
+def clean_genome_for_n(genome, keep_n):
+    """Remove 'N' characters from genome unless keep_n is True."""
+    if keep_n:
+        return genome
+    return genome.replace('N', '')
+
 def write_to_catfish_format(G, filename):
     global s, t, genomeFiles, genomeAbundances, paths, subpaths, removedNodes, args_str
 
@@ -384,6 +381,7 @@ max_length = 0
 for gt in range(args.ngenomes,args.ngenomes+1):
     for genomeFile in genomeFiles[:gt]:
         genome = get_genome(f'{genome_dir}/{genomeFile}')
+        genome = clean_genome_for_n(genome, args.keep_n)
         min_length = min(min_length, len(genome))
         max_length = max(max_length, len(genome))
         genomes.append(genome)
@@ -457,6 +455,7 @@ for gt in range(args.ngenomes,args.ngenomes+1):
             n_cycles = 0
             if args.mincycles > 0:
                 n_cycles = count_simple_cycles(dbGraph_nx, 100)
+            print(f'Graph with gt={gt} and range ({range_start},{range_start+range_increment}) has {n_cycles} simple cycles. Minimum required is {args.mincycles}.')
             if n_cycles >= args.mincycles:
                 e_tag = 'imp' if args.poisson_edge_errors else 'perf'
                 filename = f'{outdir}/gt{gt}.kmer{k}.({range_start}.{range_start+range_increment}).V{dbGraph_nx.number_of_nodes()}.E{dbGraph_nx.number_of_edges()}.mincyc{n_cycles}.{e_tag}'
